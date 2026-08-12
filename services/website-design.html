@@ -1050,7 +1050,100 @@ END PART 6A
 ====================================================== -->
 
 <style>
+/* ==========================================================
+OBARA DIGITAL SERVICE PAGE FOUNDATION
+MATCHES INDEX-V2 HOMEPAGE
+========================================================== */
 
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#0a0e17;
+    color:#f9fafb;
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button,
+a{
+    font-family:inherit;
+}
+
+a{
+    color:inherit;
+}
+
+.container{
+    width:min(1200px, calc(100% - 40px));
+    margin:0 auto;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    min-height:52px;
+    padding:14px 26px;
+    border-radius:12px;
+    font-weight:700;
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.btn-primary{
+    color:#fff;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 35px rgba(37,99,235,.35);
+}
+
+.btn-secondary{
+    color:#f9fafb;
+    background:rgba(255,255,255,.04);
+    border-color:rgba(255,255,255,.16);
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,.08);
+    border-color:#2563eb;
+}
+
+.btn-outline{
+    color:#fff;
+    background:transparent;
+    border:2px solid rgba(255,255,255,.18);
+}
+
+.btn-outline:hover{
+    color:#fff;
+    background:#2563eb;
+    border-color:#2563eb;
+}
 /*==========================================================
 PART 1
 SERVICE HERO
@@ -1209,10 +1302,37 @@ RIGHT SIDE
 .browser-banner{
     height:180px;
     border-radius:16px;
-    background:#1e293b;
     margin-bottom:22px;
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(59,130,246,.35),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #172554,
+            #1e3a8a 45%,
+            #0f172a
+        );
+    border:1px solid rgba(255,255,255,.08);
+    position:relative;
+    overflow:hidden;
 }
 
+.browser-banner::after{
+    content:"";
+    position:absolute;
+    left:28px;
+    right:28px;
+    bottom:28px;
+    height:12px;
+    border-radius:20px;
+    background:rgba(255,255,255,.18);
+    box-shadow:
+        0 -28px 0 rgba(255,255,255,.10),
+        0 -56px 0 rgba(255,255,255,.07);
+}
 .browser-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -1361,11 +1481,12 @@ PART 2B
 WHY YOUR BUSINESS NEEDS A PROFESSIONAL WEBSITE
 ==========================================================*/
 
-linear-gradient(180deg,#0a0e17 0%,#111827 100%){
+.business-needs-section{
     padding:120px 0;
-    background:linear-gradient(180deg,#08111f 0%,#0d1b2e 100%);
+    background:linear-gradient(180deg,#0a0e17 0%,#111827 100%);
     position:relative;
     overflow:hidden;
+}
 }
 
 .business-needs-section::before{
@@ -1405,17 +1526,18 @@ linear-gradient(180deg,#0a0e17 0%,#111827 100%){
 }
 
 .section-description{
-    color:#cbd5e1;
-    line-height:1.9;
+    color:#e5e7eb;
+    line-height:1.85;
     font-size:1.08rem;
+    max-width:780px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.benefits-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+.benefit-card p{
+    color:#e5e7eb;
+    line-height:1.8;
 }
-
 .benefit-card{
     background:rgba(255,255,255,.04);
     border:1px solid rgba(255,255,255,.08);
