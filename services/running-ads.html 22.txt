@@ -1,0 +1,8903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Meta & Google Ads Management Services in Nigeria | Obara Digital
+    </title>
+
+    <meta
+        name="description"
+        content="Professional Meta Ads and Google Ads management services for businesses in Nigeria and worldwide. Get more leads, enquiries, sales and customers with profitable advertising campaigns."
+    >
+
+    <meta
+        name="keywords"
+        content="Meta Ads management Nigeria, Facebook Ads Nigeria, Instagram Ads Nigeria, Google Ads management Nigeria, Google Ads expert Nigeria, digital advertising agency Nigeria, paid ads management"
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://www.obaradigital.online/services/running-ads.html"
+    >
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- ==========================================================
+    PART 1A
+    RUNNING ADS SERVICE PAGE
+    FOUNDATION
+    ========================================================== -->
+
+   <style>
+
+   /* ==========================================================
+       OBARA DIGITAL SERVICE PAGE FOUNDATION
+       MATCHES INDEX-V2 HOMEPAGE
+    ========================================================== */
+
+    *,
+    *::before,
+    *::after{
+        box-sizing:border-box;
+    }
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    body{
+        margin:0;
+        padding:0;
+        background:#0a0e17;
+        color:#f9fafb;
+        font-family:'Inter',sans-serif;
+        line-height:1.6;
+        overflow-x:hidden;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+        display:block;
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    a{
+        font-family:inherit;
+    }
+
+    a{
+        color:inherit;
+    }
+
+    .container{
+        width:min(1200px, calc(100% - 40px));
+        margin:0 auto;
+    }
+
+
+/* ==========================================================
+SERVICE PAGE HEADER
+========================================================== */
+
+.site-header{
+
+    position:relative;
+
+    z-index:1000;
+
+    width:100%;
+
+    background:
+        rgba(10,14,23,.88);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+
+.site-nav{
+
+    position:relative;
+
+    min-height:78px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+.site-logo{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    letter-spacing:-.03em;
+}
+
+
+.site-logo span{
+
+    color:#38bdf8;
+}
+
+.site-nav-toggle{
+    display:none;
+}
+
+.site-nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:26px;
+}
+
+
+.site-nav-links a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    font-size:.88rem;
+
+    font-weight:600;
+
+    transition:
+        color .25s ease;
+}
+
+
+.site-nav-links a:hover{
+
+    color:#ffffff;
+}
+
+
+.site-nav-links .site-nav-cta{
+
+    color:#ffffff;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    box-shadow:
+        0 8px 22px
+        rgba(37,99,235,.20);
+}
+
+
+.site-nav-links .site-nav-cta:hover{
+
+    color:#ffffff;
+
+    transform:
+        translateY(-1px);
+}
+
+
+
+    /* ==========================================================
+       BUTTONS
+    ========================================================== */
+
+    .btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+        min-height:52px;
+        padding:14px 26px;
+        border-radius:12px;
+        font-weight:700;
+        text-decoration:none;
+        border:1px solid transparent;
+        cursor:pointer;
+        transition:all .3s ease;
+    }
+
+    .btn-primary{
+        color:#fff;
+        background:linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+        box-shadow:
+            0 12px 30px rgba(37,99,235,.25);
+    }
+
+    .btn-primary:hover{
+        transform:translateY(-2px);
+        box-shadow:
+            0 16px 35px rgba(37,99,235,.35);
+    }
+
+    .btn-secondary{
+        color:#f9fafb;
+        background:rgba(255,255,255,.04);
+        border-color:rgba(255,255,255,.16);
+    }
+
+    .btn-secondary:hover{
+        background:rgba(255,255,255,.08);
+        border-color:#2563eb;
+        transform:translateY(-2px);
+    }
+
+    .btn-outline{
+        color:#fff;
+        background:transparent;
+        border:2px solid rgba(255,255,255,.18);
+    }
+
+    .btn-outline:hover{
+        color:#fff;
+        background:#2563eb;
+        border-color:#2563eb;
+        transform:translateY(-2px);
+    }
+
+
+    /* ==========================================================
+       SECTION FOUNDATION
+    ========================================================== */
+
+    .section{
+        position:relative;
+        padding:110px 0;
+    }
+
+    .section-header{
+        max-width:850px;
+        margin:0 auto 60px;
+        text-align:center;
+    }
+
+    .section-label{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        padding:8px 16px;
+        border-radius:999px;
+        color:#38bdf8;
+        background:rgba(37,99,235,.10);
+        border:1px solid rgba(59,130,246,.25);
+        font-size:.82rem;
+        font-weight:800;
+        letter-spacing:.08em;
+        text-transform:uppercase;
+        margin-bottom:20px;
+    }
+
+    .section-title{
+        margin:0 0 18px;
+        color:#fff;
+        font-family:'Space Grotesk',sans-serif;
+        font-size:clamp(2rem,4vw,3.5rem);
+        line-height:1.1;
+        letter-spacing:-.03em;
+    }
+
+    .section-subtitle{
+        margin:0 auto;
+        max-width:780px;
+        color:#cbd5e1;
+        font-size:1.08rem;
+        line-height:1.85;
+    }
+
+    .gradient-text{
+        background:linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+        -webkit-background-clip:text;
+        background-clip:text;
+        color:transparent;
+    }
+
+
+    /* ==========================================================
+       RESPONSIVE FOUNDATION
+    ========================================================== */
+
+    @media(max-width:768px){
+
+        .container{
+            width:min(
+                100% - 28px,
+                1200px
+            );
+        }
+
+        .section{
+            padding:80px 0;
+        }
+
+        .section-header{
+            margin-bottom:42px;
+        }
+
+        .btn{
+            width:100%;
+        }
+
+    }
+/* ==========================================================
+   PART 1B
+   RUNNING ADS HERO
+   OBARA DIGITAL
+========================================================== */
+
+.ads-hero{
+    position:relative;
+    min-height:760px;
+    display:flex;
+    align-items:center;
+    padding:150px 0 110px;
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(37,99,235,.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 65%,
+            rgba(56,189,248,.10),
+            transparent 30%
+        ),
+        #0a0e17;
+}
+
+
+/* ==========================================================
+   HERO GRID
+========================================================== */
+
+.ads-hero-grid{
+    display:grid;
+    grid-template-columns:
+        minmax(0,1.02fr)
+        minmax(0,.98fr);
+
+    align-items:center;
+    gap:70px;
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.ads-hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.ads-hero-content h1{
+    margin:0 0 26px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:
+        clamp(
+            3rem,
+            5.5vw,
+            5.5rem
+        );
+
+    line-height:1.02;
+
+    letter-spacing:-.045em;
+
+    max-width:760px;
+}
+
+.ads-hero-description{
+    max-width:700px;
+
+    margin:0 0 32px;
+
+    color:#cbd5e1;
+
+    font-size:1.12rem;
+
+    line-height:1.85;
+}
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.ads-hero-buttons{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-bottom:30px;
+}
+
+.ads-hero-buttons .btn{
+    min-width:210px;
+}
+
+
+/* ==========================================================
+   TRUST ROW
+========================================================== */
+
+.ads-trust-row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:22px;
+}
+
+.ads-trust-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#94a3b8;
+
+    font-size:.9rem;
+    font-weight:600;
+}
+
+.ads-trust-item i{
+    color:#38bdf8;
+}
+
+
+/* ==========================================================
+   HERO VISUAL
+========================================================== */
+
+.ads-hero-visual{
+    position:relative;
+    min-height:560px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* ==========================================================
+   ADS DASHBOARD
+========================================================== */
+
+.ads-dashboard{
+    position:relative;
+
+    width:100%;
+    max-width:590px;
+
+    padding:18px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #0f172a
+        );
+
+    border:1px solid
+        rgba(96,165,250,.18);
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.45),
+        0 0 80px rgba(37,99,235,.10);
+
+    overflow:hidden;
+
+    transform:
+        perspective(1200px)
+        rotateY(-4deg)
+        rotateX(2deg);
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+}
+
+.ads-dashboard:hover{
+    transform:
+        perspective(1200px)
+        rotateY(0deg)
+        rotateX(0deg)
+        translateY(-5px);
+
+    box-shadow:
+        0 45px 110px rgba(0,0,0,.50),
+        0 0 90px rgba(37,99,235,.16);
+}
+
+
+/* ==========================================================
+   DASHBOARD TOP BAR
+========================================================== */
+
+.dashboard-topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    min-height:52px;
+
+    padding:0 8px 16px;
+
+    border-bottom:1px solid
+        rgba(255,255,255,.07);
+}
+
+.dashboard-dots{
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.dashboard-dots span{
+    width:10px;
+    height:10px;
+
+    display:block;
+
+    border-radius:50%;
+
+    background:#334155;
+}
+
+.dashboard-title{
+    color:#94a3b8;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.03em;
+}
+
+
+/* ==========================================================
+   DASHBOARD MAIN
+========================================================== */
+
+.dashboard-main{
+    padding:25px 10px 10px;
+}
+
+
+/* ==========================================================
+   DASHBOARD HIGHLIGHT
+========================================================== */
+
+.dashboard-highlight{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:28px;
+
+    padding:20px 22px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.16),
+            rgba(56,189,248,.07)
+        );
+
+    border:1px solid
+        rgba(59,130,246,.15);
+}
+
+.dashboard-highlight span{
+    color:#cbd5e1;
+
+    font-size:.9rem;
+}
+
+.dashboard-highlight strong{
+    color:#38bdf8;
+
+    font-size:1rem;
+}
+
+
+/* ==========================================================
+   DASHBOARD CHART
+========================================================== */
+
+.dashboard-chart{
+    position:relative;
+
+    height:220px;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(30,41,59,.72),
+            rgba(15,23,42,.72)
+        );
+
+    border:1px solid
+        rgba(255,255,255,.05);
+
+    overflow:hidden;
+}
+
+.dashboard-chart::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        linear-gradient(
+            rgba(148,163,184,.07) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(148,163,184,.07) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        50px 44px;
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+   CHART LINES
+========================================================== */
+
+.chart-line{
+    position:absolute;
+
+    left:7%;
+    right:7%;
+
+    height:4px;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    box-shadow:
+        0 0 18px rgba(56,189,248,.30);
+
+    transform-origin:left center;
+}
+
+.chart-line-one{
+    top:68%;
+
+    transform:
+        rotate(-10deg)
+        scaleX(.88);
+}
+
+.chart-line-two{
+    top:52%;
+
+    transform:
+        rotate(-7deg)
+        scaleX(.73);
+
+    opacity:.45;
+}
+
+.chart-line-three{
+    top:36%;
+
+    transform:
+        rotate(-5deg)
+        scaleX(.56);
+
+    opacity:.20;
+}
+
+
+/* ==========================================================
+   DASHBOARD STATS
+========================================================== */
+
+.dashboard-stats{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:12px;
+}
+
+.dashboard-stat{
+    min-height:100px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:
+        rgba(30,41,59,.70);
+
+    border:1px solid
+        rgba(255,255,255,.05);
+}
+
+.dashboard-stat span{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#94a3b8;
+
+    font-size:.75rem;
+
+    font-weight:600;
+}
+
+.dashboard-stat strong{
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+}
+
+
+/* ==========================================================
+   FLOATING CARDS
+========================================================== */
+
+.ads-floating-card{
+    position:absolute;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:15px 20px;
+
+    border-radius:16px;
+
+    background:
+        rgba(15,23,42,.94);
+
+    border:1px solid
+        rgba(96,165,250,.16);
+
+    color:#ffffff;
+
+    font-size:.86rem;
+
+    font-weight:700;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35);
+
+    z-index:3;
+
+    animation:
+        adsFloat 4s ease-in-out infinite;
+}
+
+.ads-floating-card i{
+    color:#38bdf8;
+}
+
+.ads-floating-card-one{
+    top:12%;
+    right:-25px;
+}
+
+.ads-floating-card-two{
+    bottom:14%;
+    left:-30px;
+
+    animation-delay:1.3s;
+}
+
+
+/* ==========================================================
+   FLOATING ANIMATION
+========================================================== */
+
+@keyframes adsFloat{
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+/* ==========================================================
+   HERO RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+    .ads-hero{
+        padding-top:120px;
+    }
+
+    .ads-hero-grid{
+        grid-template-columns:1fr;
+
+        gap:70px;
+    }
+
+    .ads-hero-content{
+        max-width:850px;
+        margin:0 auto;
+
+        text-align:center;
+    }
+
+    .ads-hero-content .section-label{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .ads-hero-description{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .ads-hero-buttons{
+        justify-content:center;
+    }
+
+    .ads-trust-row{
+        justify-content:center;
+    }
+
+    .ads-hero-visual{
+        min-height:520px;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .ads-hero{
+        min-height:auto;
+
+        padding:
+            110px 0
+            80px;
+    }
+
+    .ads-hero-grid{
+        gap:45px;
+    }
+
+    .ads-hero-content h1{
+        font-size:
+            clamp(
+                2.6rem,
+                11vw,
+                4rem
+            );
+
+        letter-spacing:-.035em;
+    }
+
+    .ads-hero-description{
+        font-size:1rem;
+        line-height:1.75;
+    }
+
+    .ads-hero-buttons{
+        flex-direction:column;
+    }
+
+    .ads-hero-buttons .btn{
+        width:100%;
+        min-width:0;
+    }
+
+    .ads-trust-row{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .ads-hero-visual{
+        min-height:420px;
+    }
+
+    .ads-dashboard{
+        padding:12px;
+
+        border-radius:20px;
+
+        transform:none;
+    }
+
+    .ads-dashboard:hover{
+        transform:translateY(-3px);
+    }
+
+    .dashboard-main{
+        padding:
+            18px 5px 5px;
+    }
+
+    .dashboard-chart{
+        height:170px;
+    }
+
+    .dashboard-stats{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-stat{
+        min-height:auto;
+    }
+
+    .ads-floating-card{
+        padding:12px 15px;
+        font-size:.76rem;
+    }
+
+    .ads-floating-card-one{
+        top:4%;
+        right:-8px;
+    }
+
+    .ads-floating-card-two{
+        bottom:6%;
+        left:-8px;
+    }
+
+}
+/* ==========================================================
+   PART 1C
+   WHY BUSINESSES WASTE MONEY ON ADS
+   OBARA DIGITAL
+========================================================== */
+
+.ads-problem-section{
+    position:relative;
+    background:#0a0e17;
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+   SUBTLE BACKGROUND GLOW
+========================================================== */
+
+.ads-problem-section::before{
+    content:"";
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    top:10%;
+    left:-280px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.10),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+.ads-problem-section::after{
+    content:"";
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    right:-250px;
+    bottom:5%;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.07),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+   PROBLEM GRID
+   DESKTOP = 3 COLUMNS
+========================================================== */
+
+.ads-problem-grid{
+    position:relative;
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0,1fr));
+
+    gap:24px;
+
+    width:100%;
+}
+
+
+/* ==========================================================
+   PROBLEM CARD
+========================================================== */
+
+.ads-problem-card{
+    position:relative;
+
+    min-height:310px;
+
+    padding:36px 32px;
+
+    display:flex;
+    flex-direction:column;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.88),
+            rgba(15,23,42,.72)
+        );
+
+    border:1px solid
+        rgba(148,163,184,.13);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.ads-problem-card:hover{
+    transform:translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.50);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,31,54,.96),
+            rgba(15,23,42,.90)
+        );
+
+    box-shadow:
+        0 28px 65px rgba(0,0,0,.30),
+        0 0 35px rgba(37,99,235,.08);
+}
+
+
+/* ==========================================================
+   PROBLEM ICON
+========================================================== */
+
+.ads-problem-icon{
+    width:68px;
+    height:68px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    margin-bottom:25px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:1.55rem;
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.20);
+}
+
+.ads-problem-card:hover .ads-problem-icon{
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.32);
+
+    transform:translateY(-2px);
+}
+
+
+/* ==========================================================
+   PROBLEM CARD HEADING
+========================================================== */
+
+.ads-problem-card h3{
+    margin:0 0 14px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.25rem;
+
+    line-height:1.35;
+
+    letter-spacing:-.015em;
+}
+
+
+/* ==========================================================
+   PROBLEM CARD TEXT
+========================================================== */
+
+.ads-problem-card p{
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.98rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+   SOLUTION CTA
+========================================================== */
+
+.ads-problem-cta{
+    position:relative;
+    z-index:1;
+
+    margin-top:60px;
+
+    padding:35px 38px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:35px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.14),
+            rgba(56,189,248,.06)
+        );
+
+    border:1px solid
+        rgba(59,130,246,.18);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.15);
+}
+
+
+/* ==========================================================
+   CTA LABEL
+========================================================== */
+
+.ads-problem-cta-label{
+    display:inline-flex;
+
+    margin-bottom:10px;
+
+    color:#38bdf8;
+
+    font-size:.78rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================================
+   CTA HEADING
+========================================================== */
+
+.ads-problem-cta h3{
+    margin:0 0 8px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+
+    line-height:1.3;
+}
+
+
+/* ==========================================================
+   CTA TEXT
+========================================================== */
+
+.ads-problem-cta p{
+    max-width:650px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    line-height:1.75;
+}
+
+
+/* ==========================================================
+   CTA BUTTON
+========================================================== */
+
+.ads-problem-cta .btn{
+    flex-shrink:0;
+
+    min-width:220px;
+}
+
+
+/* ==========================================================
+   TABLET
+   2 CARDS PER ROW
+========================================================== */
+
+@media(max-width:1100px){
+
+    .ads-problem-grid{
+        grid-template-columns:
+            repeat(2, minmax(0,1fr));
+
+        gap:22px;
+    }
+
+    .ads-problem-card{
+        min-height:290px;
+    }
+
+    .ads-problem-cta{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .ads-problem-cta .btn{
+        width:auto;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   1 CARD PER ROW
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-problem-grid{
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .ads-problem-card{
+        min-height:auto;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-problem-icon{
+        width:60px;
+        height:60px;
+
+        margin-bottom:21px;
+
+        border-radius:16px;
+
+        font-size:1.35rem;
+    }
+
+    .ads-problem-card h3{
+        font-size:1.18rem;
+    }
+
+    .ads-problem-card p{
+        font-size:.95rem;
+
+        line-height:1.75;
+    }
+
+    .ads-problem-cta{
+        margin-top:40px;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+
+        gap:25px;
+    }
+
+    .ads-problem-cta h3{
+        font-size:1.25rem;
+    }
+
+    .ads-problem-cta p{
+        font-size:.95rem;
+    }
+
+    .ads-problem-cta .btn{
+        width:100%;
+    }
+
+}
+/* ==========================================================
+PART 2B
+PAID ADS SERVICES CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+SERVICES SECTION
+========================================================== */
+
+.ads-services-section{
+    position:relative;
+    background:#0a0e17;
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+SUBTLE BACKGROUND EFFECT
+========================================================== */
+
+.ads-services-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    top:5%;
+    right:-350px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+SERVICES GRID
+3 COLUMNS DESKTOP
+========================================================== */
+
+.ads-services-grid{
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:24px;
+
+    width:100%;
+}
+
+
+/* ==========================================================
+SERVICE CARD
+========================================================== */
+
+.ads-service-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:430px;
+
+    padding:34px 30px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.90),
+            rgba(15,23,42,.72)
+        );
+
+    border:1px solid
+        rgba(148,163,184,.13);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.18);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+/* ==========================================================
+CARD HOVER
+========================================================== */
+
+.ads-service-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.48);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,31,54,.96),
+            rgba(15,23,42,.90)
+        );
+
+    box-shadow:
+        0 28px 65px rgba(0,0,0,.30),
+        0 0 35px rgba(37,99,235,.08);
+}
+
+
+/* ==========================================================
+FEATURED CARD
+========================================================== */
+
+.ads-service-card-featured{
+
+    border-color:
+        rgba(59,130,246,.30);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30,58,138,.16),
+            rgba(15,23,42,.88)
+        );
+
+    box-shadow:
+        0 25px 60px rgba(37,99,235,.10);
+}
+
+
+.ads-service-card-featured:hover{
+
+    border-color:
+        rgba(59,130,246,.65);
+
+    box-shadow:
+        0 30px 70px rgba(37,99,235,.16);
+}
+
+
+/* ==========================================================
+CARD TOP
+========================================================== */
+
+.ads-service-card-top{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:26px;
+}
+
+
+/* ==========================================================
+SERVICE ICON
+========================================================== */
+
+.ads-service-icon{
+
+    width:66px;
+
+    height:66px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:1.55rem;
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.20);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.ads-service-card:hover
+.ads-service-icon{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 16px 35px rgba(37,99,235,.30);
+}
+
+
+/* ==========================================================
+SERVICE NUMBER
+========================================================== */
+
+.ads-service-number{
+
+    color:#64748b;
+
+    font-size:.82rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+}
+
+
+.ads-service-card-featured
+.ads-service-number{
+
+    color:#38bdf8;
+}
+
+
+/* ==========================================================
+SERVICE TITLE
+========================================================== */
+
+.ads-service-card h3{
+
+    margin:0 0 15px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.35rem;
+
+    line-height:1.3;
+
+    letter-spacing:-.015em;
+}
+
+
+/* ==========================================================
+SERVICE DESCRIPTION
+========================================================== */
+
+.ads-service-card > p{
+
+    margin:0 0 25px;
+
+    color:#cbd5e1;
+
+    font-size:.96rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+SERVICE LIST
+========================================================== */
+
+.ads-service-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin:0 0 28px;
+
+    padding:0;
+
+    list-style:none;
+}
+
+
+.ads-service-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:11px;
+
+    color:#dbe4ee;
+
+    font-size:.91rem;
+
+    line-height:1.55;
+}
+
+
+.ads-service-list li i{
+
+    flex-shrink:0;
+
+    margin-top:4px;
+
+    color:#38bdf8;
+
+    font-size:.75rem;
+}
+
+
+/* ==========================================================
+SERVICE LINK
+========================================================== */
+
+.ads-service-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-top:auto;
+
+    width:max-content;
+
+    color:#60a5fa;
+
+    font-size:.92rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:
+        color .25s ease,
+        gap .25s ease;
+}
+
+
+.ads-service-link:hover{
+
+    color:#ffffff;
+
+    gap:13px;
+}
+
+
+/* ==========================================================
+BOTTOM CTA
+========================================================== */
+
+.ads-services-bottom{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:55px;
+
+    padding:30px 35px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.10),
+            rgba(56,189,248,.05)
+        );
+
+    border:1px solid
+        rgba(59,130,246,.16);
+
+    text-align:center;
+}
+
+
+.ads-services-bottom p{
+
+    margin:0;
+
+    color:#dbe4ee;
+
+    font-size:1rem;
+
+    line-height:1.6;
+}
+
+
+.ads-services-bottom .btn{
+
+    flex-shrink:0;
+
+    min-width:250px;
+}
+
+
+/* ==========================================================
+TABLET
+2 COLUMNS
+========================================================== */
+
+@media(max-width:1100px){
+
+    .ads-services-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:22px;
+    }
+
+    .ads-service-card{
+
+        min-height:420px;
+    }
+
+    .ads-services-bottom{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+1 COLUMN
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-services-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .ads-service-card{
+
+        min-height:auto;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-service-card-top{
+
+        margin-bottom:22px;
+    }
+
+    .ads-service-icon{
+
+        width:60px;
+
+        height:60px;
+
+        border-radius:16px;
+
+        font-size:1.35rem;
+    }
+
+    .ads-service-card h3{
+
+        font-size:1.2rem;
+    }
+
+    .ads-service-card > p{
+
+        font-size:.95rem;
+
+        line-height:1.75;
+    }
+
+    .ads-service-list{
+
+        gap:10px;
+
+        margin-bottom:25px;
+    }
+
+    .ads-service-list li{
+
+        font-size:.9rem;
+    }
+
+    .ads-services-bottom{
+
+        margin-top:40px;
+
+        padding:28px 24px;
+
+        border-radius:20px;
+    }
+
+    .ads-services-bottom p{
+
+        font-size:.95rem;
+    }
+
+    .ads-services-bottom .btn{
+
+        width:100%;
+
+        min-width:0;
+    }
+
+}
+/* ==========================================================
+PART 3B
+ADVERTISING PROCESS CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+PROCESS SECTION
+========================================================== */
+
+.ads-process-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+BACKGROUND GLOW
+========================================================== */
+
+.ads-process-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    top:10%;
+    left:-350px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.ads-process-section::after{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    right:-300px;
+    bottom:0;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.06),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+PROCESS WRAPPER
+========================================================== */
+
+.ads-process-wrapper{
+
+    position:relative;
+
+    z-index:1;
+
+    max-width:950px;
+
+    margin:0 auto;
+}
+
+
+/* ==========================================================
+PROCESS STEP
+========================================================== */
+
+.ads-process-step{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        70px
+        76px
+        1fr;
+
+    align-items:start;
+
+    column-gap:22px;
+
+    padding:30px 0;
+
+    border-bottom:
+        1px solid
+        rgba(148,163,184,.10);
+}
+
+
+/* Remove border from final step */
+
+.ads-process-step:last-child{
+
+    border-bottom:none;
+}
+
+
+/* ==========================================================
+PROCESS NUMBER
+========================================================== */
+
+.ads-process-number{
+
+    padding-top:8px;
+
+    color:#64748b;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:.82rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-align:right;
+}
+
+
+/* ==========================================================
+PROCESS ICON
+========================================================== */
+
+.ads-process-icon{
+
+    width:68px;
+
+    height:68px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:1.45rem;
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,99,235,.20);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.ads-process-step:hover
+.ads-process-icon{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(37,99,235,.30);
+}
+
+
+/* ==========================================================
+PROCESS CONTENT
+========================================================== */
+
+.ads-process-content{
+
+    padding-top:2px;
+}
+
+
+/* ==========================================================
+PROCESS LABEL
+========================================================== */
+
+.ads-process-label{
+
+    display:inline-block;
+
+    margin-bottom:7px;
+
+    color:#38bdf8;
+
+    font-size:.76rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================================
+PROCESS HEADING
+========================================================== */
+
+.ads-process-content h3{
+
+    margin:0 0 10px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.35rem;
+
+    line-height:1.35;
+
+    letter-spacing:-.015em;
+}
+
+
+/* ==========================================================
+PROCESS DESCRIPTION
+========================================================== */
+
+.ads-process-content p{
+
+    max-width:680px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.98rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+PROCESS CTA
+========================================================== */
+
+.ads-process-cta{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:35px;
+
+    margin-top:60px;
+
+    padding:35px 38px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.13),
+            rgba(56,189,248,.06)
+        );
+
+    border:
+        1px solid
+        rgba(59,130,246,.18);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0,0,0,.15);
+}
+
+
+/* ==========================================================
+CTA LABEL
+========================================================== */
+
+.ads-process-cta-label{
+
+    display:inline-block;
+
+    margin-bottom:9px;
+
+    color:#38bdf8;
+
+    font-size:.76rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================================
+CTA HEADING
+========================================================== */
+
+.ads-process-cta h3{
+
+    margin:0 0 9px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+
+    line-height:1.35;
+}
+
+
+/* ==========================================================
+CTA TEXT
+========================================================== */
+
+.ads-process-cta p{
+
+    max-width:650px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.96rem;
+
+    line-height:1.75;
+}
+
+
+/* ==========================================================
+CTA BUTTON
+========================================================== */
+
+.ads-process-cta .btn{
+
+    flex-shrink:0;
+
+    min-width:220px;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:900px){
+
+    .ads-process-step{
+
+        grid-template-columns:
+            60px
+            68px
+            1fr;
+
+        column-gap:18px;
+    }
+
+    .ads-process-number{
+
+        font-size:.76rem;
+    }
+
+    .ads-process-icon{
+
+        width:60px;
+
+        height:60px;
+
+        border-radius:16px;
+
+        font-size:1.3rem;
+    }
+
+    .ads-process-content h3{
+
+        font-size:1.25rem;
+    }
+
+    .ads-process-cta{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:25px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-process-wrapper{
+
+        width:100%;
+    }
+
+    .ads-process-step{
+
+        grid-template-columns:
+            52px
+            60px
+            1fr;
+
+        column-gap:14px;
+
+        padding:26px 0;
+    }
+
+    .ads-process-number{
+
+        padding-top:7px;
+
+        font-size:.72rem;
+    }
+
+    .ads-process-icon{
+
+        width:56px;
+
+        height:56px;
+
+        border-radius:15px;
+
+        font-size:1.2rem;
+    }
+
+    .ads-process-label{
+
+        font-size:.7rem;
+    }
+
+    .ads-process-content h3{
+
+        font-size:1.15rem;
+
+        margin-bottom:8px;
+    }
+
+    .ads-process-content p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+    .ads-process-cta{
+
+        margin-top:40px;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-process-cta h3{
+
+        font-size:1.25rem;
+    }
+
+    .ads-process-cta p{
+
+        font-size:.93rem;
+    }
+
+    .ads-process-cta .btn{
+
+        width:100%;
+
+        min-width:0;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 3B
+========================================================== */
+/* ==========================================================
+PART 4B
+WHAT MAKES ADVERTISING WORK CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+SUCCESS SECTION
+========================================================== */
+
+.ads-success-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+BACKGROUND GLOW
+========================================================== */
+
+.ads-success-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:620px;
+    height:620px;
+
+    top:-220px;
+    right:-300px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.08),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.ads-success-section::after{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    bottom:-250px;
+    left:-250px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.05),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+SUCCESS GRID
+========================================================== */
+
+.ads-success-grid{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:22px;
+}
+
+
+/* ==========================================================
+SUCCESS CARD
+========================================================== */
+
+.ads-success-card{
+
+    position:relative;
+
+    padding:32px 30px;
+
+    min-height:310px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.92),
+            rgba(15,23,42,.72)
+        );
+
+    border:
+        1px solid
+        rgba(148,163,184,.12);
+
+    box-shadow:
+        0 18px 45px
+        rgba(0,0,0,.16);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+.ads-success-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,31,54,.96),
+            rgba(15,23,42,.90)
+        );
+
+    box-shadow:
+        0 28px 60px
+        rgba(0,0,0,.28),
+        0 0 30px
+        rgba(37,99,235,.07);
+}
+
+
+/* ==========================================================
+SUCCESS ICON
+========================================================== */
+
+.ads-success-icon{
+
+    width:62px;
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:25px;
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:1.4rem;
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,99,235,.20);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.ads-success-card:hover
+.ads-success-icon{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 16px 35px
+        rgba(37,99,235,.30);
+}
+
+
+/* ==========================================================
+SUCCESS NUMBER
+========================================================== */
+
+.ads-success-number{
+
+    position:absolute;
+
+    top:31px;
+    right:30px;
+
+    color:#475569;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+}
+
+
+/* ==========================================================
+SUCCESS CARD HEADING
+========================================================== */
+
+.ads-success-card h3{
+
+    margin:0 0 13px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.28rem;
+
+    line-height:1.35;
+
+    letter-spacing:-.015em;
+}
+
+
+/* ==========================================================
+SUCCESS CARD TEXT
+========================================================== */
+
+.ads-success-card p{
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+SUCCESS MESSAGE
+========================================================== */
+
+.ads-success-message{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-top:55px;
+
+    padding:32px 35px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.12),
+            rgba(56,189,248,.05)
+        );
+
+    border:
+        1px solid
+        rgba(59,130,246,.18);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.15);
+}
+
+
+/* ==========================================================
+SUCCESS MESSAGE ICON
+========================================================== */
+
+.ads-success-message-icon{
+
+    width:62px;
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:17px;
+
+    background:
+        rgba(37,99,235,.14);
+
+    border:
+        1px solid
+        rgba(59,130,246,.25);
+
+    color:#38bdf8;
+
+    font-size:1.35rem;
+}
+
+
+/* ==========================================================
+SUCCESS MESSAGE CONTENT
+========================================================== */
+
+.ads-success-message-content h3{
+
+    margin:0 0 8px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.35rem;
+
+    line-height:1.4;
+}
+
+
+.ads-success-message-content p{
+
+    max-width:850px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.96rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:1000px){
+
+    .ads-success-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:20px;
+    }
+
+    .ads-success-card{
+
+        min-height:290px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-success-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .ads-success-card{
+
+        min-height:auto;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-success-icon{
+
+        width:58px;
+        height:58px;
+
+        border-radius:16px;
+
+        font-size:1.3rem;
+    }
+
+    .ads-success-number{
+
+        top:29px;
+        right:25px;
+    }
+
+    .ads-success-card h3{
+
+        font-size:1.18rem;
+    }
+
+    .ads-success-card p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+    .ads-success-message{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:18px;
+
+        margin-top:40px;
+
+        padding:28px 24px;
+
+        border-radius:20px;
+    }
+
+    .ads-success-message-icon{
+
+        width:56px;
+        height:56px;
+
+        border-radius:15px;
+    }
+
+    .ads-success-message-content h3{
+
+        font-size:1.2rem;
+    }
+
+    .ads-success-message-content p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 4B
+========================================================== */
+
+/* ==========================================================
+PART 5B
+META ADS VS GOOGLE ADS CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+PLATFORM SECTION
+========================================================== */
+
+.ads-platform-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+BACKGROUND GLOW
+========================================================== */
+
+.ads-platform-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    top:-250px;
+    left:-300px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.07),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.ads-platform-section::after{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    right:-250px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.05),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+PLATFORM GRID
+========================================================== */
+
+.ads-platform-grid{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:25px;
+
+    max-width:1050px;
+
+    margin:0 auto;
+}
+
+
+/* ==========================================================
+PLATFORM CARD
+========================================================== */
+
+.ads-platform-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:38px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.94),
+            rgba(15,23,42,.78)
+        );
+
+    border:
+        1px solid
+        rgba(148,163,184,.12);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.18);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.ads-platform-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.38);
+
+    box-shadow:
+        0 28px 65px
+        rgba(0,0,0,.28);
+}
+
+
+/* ==========================================================
+FEATURED GOOGLE CARD
+========================================================== */
+
+.ads-platform-featured{
+
+    border-color:
+        rgba(59,130,246,.25);
+
+    box-shadow:
+        0 20px 55px
+        rgba(37,99,235,.10);
+}
+
+
+.ads-platform-featured:hover{
+
+    border-color:
+        rgba(59,130,246,.55);
+
+    box-shadow:
+        0 30px 70px
+        rgba(37,99,235,.15);
+}
+
+
+/* ==========================================================
+PLATFORM TOP
+========================================================== */
+
+.ads-platform-top{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:28px;
+}
+
+
+/* ==========================================================
+PLATFORM ICON
+========================================================== */
+
+.ads-platform-icon{
+
+    width:66px;
+
+    height:66px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    font-size:1.55rem;
+
+    color:#ffffff;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.18);
+}
+
+
+/* ==========================================================
+META ICON
+========================================================== */
+
+.meta-icon{
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+}
+
+
+/* ==========================================================
+GOOGLE ICON
+========================================================== */
+
+.google-icon{
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #60a5fa
+        );
+}
+
+
+/* ==========================================================
+PLATFORM TAG
+========================================================== */
+
+.ads-platform-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    min-height:34px;
+
+    padding:7px 13px;
+
+    border-radius:999px;
+
+    background:
+        rgba(59,130,246,.08);
+
+    border:
+        1px solid
+        rgba(59,130,246,.16);
+
+    color:#93c5fd;
+
+    font-size:.76rem;
+
+    font-weight:800;
+
+    letter-spacing:.04em;
+}
+
+
+/* ==========================================================
+PLATFORM HEADING
+========================================================== */
+
+.ads-platform-card h3{
+
+    margin:0 0 15px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.5rem;
+
+    line-height:1.35;
+
+    letter-spacing:-.02em;
+}
+
+
+/* ==========================================================
+PLATFORM DESCRIPTION
+========================================================== */
+
+.ads-platform-card > p{
+
+    margin:0 0 28px;
+
+    color:#cbd5e1;
+
+    font-size:.97rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+LIST TITLE
+========================================================== */
+
+.ads-platform-list-title{
+
+    margin-bottom:14px;
+
+    color:#ffffff;
+
+    font-size:.86rem;
+
+    font-weight:800;
+
+    letter-spacing:.02em;
+}
+
+
+/* ==========================================================
+PLATFORM LIST
+========================================================== */
+
+.ads-platform-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+}
+
+
+.ads-platform-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    color:#cbd5e1;
+
+    font-size:.94rem;
+
+    line-height:1.65;
+}
+
+
+.ads-platform-list li i{
+
+    flex-shrink:0;
+
+    margin-top:5px;
+
+    color:#38bdf8;
+
+    font-size:.78rem;
+}
+
+
+
+    line-height:1.7;
+}
+/* ==========================================================
+PLATFORM BOTTOM
+========================================================== */
+
+.ads-platform-bottom{
+
+    margin-top:30px;
+
+    padding-top:28px;
+
+    border-top:
+        1px solid
+        rgba(148,163,184,.10);
+}
+
+.ads-platform-bottom span{
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:.86rem;
+
+    line-height:1.7;
+}
+
+/* ==========================================================
+COMBINATION MESSAGE
+========================================================== */
+
+.ads-platform-combination{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    max-width:1050px;
+
+    margin:50px auto 0;
+
+    padding:32px 35px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.11),
+            rgba(56,189,248,.05)
+        );
+
+    border:
+        1px solid
+        rgba(59,130,246,.17);
+
+    box-shadow:
+        0 18px 50px
+        rgba(0,0,0,.14);
+}
+
+
+/* ==========================================================
+COMBINATION ICON
+========================================================== */
+
+.ads-platform-combination-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:16px;
+
+    background:
+        rgba(37,99,235,.14);
+
+    border:
+        1px solid
+        rgba(59,130,246,.22);
+
+    color:#38bdf8;
+
+    font-size:1.3rem;
+}
+
+
+/* ==========================================================
+COMBINATION CONTENT
+========================================================== */
+
+.ads-platform-combination-content h3{
+
+    margin:0 0 8px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.3rem;
+
+    line-height:1.4;
+}
+
+
+.ads-platform-combination-content p{
+
+    max-width:850px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:850px){
+
+    .ads-platform-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:650px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-platform-card{
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-platform-top{
+
+        margin-bottom:24px;
+    }
+
+    .ads-platform-icon{
+
+        width:58px;
+
+        height:58px;
+
+        border-radius:16px;
+
+        font-size:1.35rem;
+    }
+
+    .ads-platform-tag{
+
+        font-size:.7rem;
+
+        padding:6px 11px;
+    }
+
+    .ads-platform-card h3{
+
+        font-size:1.25rem;
+    }
+
+    .ads-platform-card > p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+    .ads-platform-list li{
+
+        font-size:.91rem;
+    }
+
+    .ads-platform-combination{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:18px;
+
+        margin-top:40px;
+
+        padding:28px 24px;
+
+        border-radius:20px;
+    }
+
+    .ads-platform-combination-icon{
+
+        width:56px;
+
+        height:56px;
+
+        border-radius:15px;
+    }
+
+    .ads-platform-combination-content h3{
+
+        font-size:1.18rem;
+    }
+
+    .ads-platform-combination-content p{
+
+        font-size:.92rem;
+
+        line-height:1.75;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 5B
+========================================================== */
+
+/* ==========================================================
+PART 6B
+WHO WE HELP WITH PAID ADS CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+AUDIENCE SECTION
+========================================================== */
+
+.ads-audience-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+BACKGROUND GLOW
+========================================================== */
+
+.ads-audience-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    top:-250px;
+    right:-300px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.07),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.ads-audience-section::after{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    left:-300px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.05),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+AUDIENCE GRID
+========================================================== */
+
+.ads-audience-grid{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:22px;
+}
+
+
+/* ==========================================================
+AUDIENCE CARD
+========================================================== */
+
+.ads-audience-card{
+
+    position:relative;
+
+    padding:32px 30px;
+
+    min-height:290px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.94),
+            rgba(15,23,42,.78)
+        );
+
+    border:
+        1px solid
+        rgba(148,163,184,.12);
+
+    box-shadow:
+        0 18px 45px
+        rgba(0,0,0,.16);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+.ads-audience-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.40);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,31,54,.96),
+            rgba(15,23,42,.90)
+        );
+
+    box-shadow:
+        0 28px 60px
+        rgba(0,0,0,.28);
+}
+
+
+/* ==========================================================
+AUDIENCE ICON
+========================================================== */
+
+.ads-audience-icon{
+
+    width:62px;
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:24px;
+
+    border-radius:17px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:1.35rem;
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,99,235,.20);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.ads-audience-card:hover
+.ads-audience-icon{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 16px 35px
+        rgba(37,99,235,.30);
+}
+
+
+/* ==========================================================
+AUDIENCE HEADING
+========================================================== */
+
+.ads-audience-card h3{
+
+    margin:0 0 12px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.25rem;
+
+    line-height:1.4;
+
+    letter-spacing:-.015em;
+}
+
+
+/* ==========================================================
+AUDIENCE DESCRIPTION
+========================================================== */
+
+.ads-audience-card p{
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.94rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+AUDIENCE LINK / LABEL
+========================================================== */
+
+.ads-audience-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    margin-top:auto;
+
+    padding-top:22px;
+
+    color:#38bdf8;
+
+    font-size:.78rem;
+
+    font-weight:800;
+
+    letter-spacing:.03em;
+
+    text-transform:uppercase;
+}
+
+
+/* ==========================================================
+AUDIENCE CTA
+========================================================== */
+
+.ads-audience-cta{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:35px;
+
+    margin-top:55px;
+
+    padding:35px 38px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.13),
+            rgba(56,189,248,.05)
+        );
+
+    border:
+        1px solid
+        rgba(59,130,246,.18);
+
+    box-shadow:
+        0 20px 55px
+        rgba(0,0,0,.15);
+}
+
+
+/* ==========================================================
+CTA CONTENT
+========================================================== */
+
+.ads-audience-cta-content{
+
+    max-width:720px;
+}
+
+
+.ads-audience-cta-label{
+
+    display:inline-block;
+
+    margin-bottom:9px;
+
+    color:#38bdf8;
+
+    font-size:.75rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+
+.ads-audience-cta-content h3{
+
+    margin:0 0 10px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+
+    line-height:1.4;
+}
+
+
+.ads-audience-cta-content p{
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+CTA BUTTON
+========================================================== */
+
+.ads-audience-cta .btn{
+
+    flex-shrink:0;
+
+    min-width:220px;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:1000px){
+
+    .ads-audience-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:20px;
+    }
+
+    .ads-audience-card{
+
+        min-height:280px;
+    }
+
+    .ads-audience-cta{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:25px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-audience-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .ads-audience-card{
+
+        min-height:auto;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-audience-icon{
+
+        width:58px;
+        height:58px;
+
+        border-radius:16px;
+
+        font-size:1.25rem;
+    }
+
+    .ads-audience-card h3{
+
+        font-size:1.18rem;
+    }
+
+    .ads-audience-card p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+    .ads-audience-link{
+
+        padding-top:20px;
+
+        font-size:.72rem;
+    }
+
+    .ads-audience-cta{
+
+        margin-top:40px;
+
+        padding:30px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-audience-cta-content h3{
+
+        font-size:1.22rem;
+    }
+
+    .ads-audience-cta-content p{
+
+        font-size:.93rem;
+
+        line-height:1.75;
+    }
+
+    .ads-audience-cta .btn{
+
+        width:100%;
+
+        min-width:0;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 6B
+========================================================== */
+/* ==========================================================
+PART 7B
+PRICING / CAMPAIGN PLANS CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+PRICING SECTION
+========================================================== */
+
+.ads-pricing-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+BACKGROUND GLOW
+========================================================== */
+
+.ads-pricing-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    top:-300px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.07),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+PRICING GRID
+========================================================== */
+
+.ads-pricing-grid{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:22px;
+
+    align-items:stretch;
+}
+
+
+/* ==========================================================
+PRICING CARD
+========================================================== */
+
+.ads-pricing-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:36px 32px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.94),
+            rgba(15,23,42,.78)
+        );
+
+    border:
+        1px solid
+        rgba(148,163,184,.12);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.18);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.ads-pricing-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,.40);
+
+    box-shadow:
+        0 30px 65px
+        rgba(0,0,0,.28);
+}
+
+
+/* ==========================================================
+FEATURED CARD
+========================================================== */
+
+.ads-pricing-featured{
+
+    border-color:
+        rgba(59,130,246,.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,32,57,.98),
+            rgba(15,23,42,.90)
+        );
+
+    box-shadow:
+        0 25px 65px
+        rgba(37,99,235,.12);
+}
+
+
+.ads-pricing-featured:hover{
+
+    border-color:
+        rgba(96,165,250,.65);
+
+    box-shadow:
+        0 32px 75px
+        rgba(37,99,235,.16);
+}
+
+
+/* ==========================================================
+MOST POPULAR BADGE
+========================================================== */
+
+.ads-pricing-popular{
+
+    position:absolute;
+
+    top:-13px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:7px 16px;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    color:#ffffff;
+
+    font-size:.72rem;
+
+    font-weight:800;
+
+    letter-spacing:.04em;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 10px 25px
+        rgba(37,99,235,.25);
+}
+
+
+/* ==========================================================
+PRICING HEADER
+========================================================== */
+
+.ads-pricing-header{
+
+    margin-bottom:25px;
+}
+
+
+.ads-pricing-label{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    color:#38bdf8;
+
+    font-size:.75rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+
+.ads-pricing-header h3{
+
+    margin:0 0 10px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.45rem;
+
+    line-height:1.35;
+
+    letter-spacing:-.02em;
+}
+
+
+.ads-pricing-header p{
+
+    margin:0;
+
+    color:#94a3b8;
+
+    font-size:.91rem;
+
+    line-height:1.7;
+}
+
+
+/* ==========================================================
+PRICE
+========================================================== */
+
+.ads-pricing-price{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:3px;
+
+    margin-bottom:5px;
+
+    color:#ffffff;
+}
+
+
+.ads-pricing-currency{
+
+    margin-bottom:8px;
+
+    color:#93c5fd;
+
+    font-size:1.25rem;
+
+    font-weight:800;
+}
+
+
+.ads-pricing-amount{
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:2.35rem;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    letter-spacing:-.04em;
+}
+
+
+.ads-pricing-period{
+
+    margin-bottom:5px;
+
+    color:#94a3b8;
+
+    font-size:.82rem;
+}
+
+
+/* ==========================================================
+PRICE NOTE
+========================================================== */
+
+.ads-pricing-card > .ads-pricing-note{
+
+    margin-bottom:25px;
+
+    color:#64748b;
+
+    font-size:.76rem;
+
+    font-weight:600;
+}
+
+
+/* ==========================================================
+FEATURE LIST
+========================================================== */
+
+.ads-pricing-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+}
+
+
+.ads-pricing-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:11px;
+
+    color:#cbd5e1;
+
+    font-size:.91rem;
+
+    line-height:1.65;
+}
+
+
+.ads-pricing-list li i{
+
+    flex-shrink:0;
+
+    margin-top:5px;
+
+    color:#38bdf8;
+
+    font-size:.75rem;
+}
+
+
+/* ==========================================================
+PRICING BUTTON
+========================================================== */
+
+.ads-pricing-btn{
+
+    width:100%;
+
+    margin-top:auto;
+
+    min-height:50px;
+}
+
+
+/* ==========================================================
+PRICING NOTE BOX
+========================================================== */
+
+.ads-pricing-note-box{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    margin-top:45px;
+
+    padding:28px 32px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid
+        rgba(148,163,184,.10);
+}
+
+
+/* ==========================================================
+NOTE ICON
+========================================================== */
+
+.ads-pricing-note-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:15px;
+
+    background:
+        rgba(37,99,235,.12);
+
+    border:
+        1px solid
+        rgba(59,130,246,.20);
+
+    color:#38bdf8;
+
+    font-size:1.15rem;
+}
+
+
+/* ==========================================================
+NOTE CONTENT
+========================================================== */
+
+.ads-pricing-note-box h3{
+
+    margin:0 0 7px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.12rem;
+
+    line-height:1.4;
+}
+
+
+.ads-pricing-note-box p{
+
+    max-width:900px;
+
+    margin:0;
+
+    color:#94a3b8;
+
+    font-size:.9rem;
+
+    line-height:1.75;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:1050px){
+
+    .ads-pricing-grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        max-width:800px;
+
+        margin:0 auto;
+    }
+
+    .ads-pricing-card:last-child{
+
+        grid-column:
+            1 / -1;
+
+        max-width:390px;
+
+        width:100%;
+
+        margin:0 auto;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-pricing-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        max-width:500px;
+    }
+
+    .ads-pricing-card{
+
+        padding:32px 25px;
+
+        border-radius:20px;
+    }
+
+    .ads-pricing-card:last-child{
+
+        grid-column:auto;
+
+        max-width:none;
+    }
+
+    .ads-pricing-popular{
+
+        font-size:.68rem;
+
+        padding:6px 13px;
+    }
+
+    .ads-pricing-header h3{
+
+        font-size:1.28rem;
+    }
+
+    .ads-pricing-header p{
+
+        font-size:.89rem;
+    }
+
+    .ads-pricing-amount{
+
+        font-size:2rem;
+    }
+
+    .ads-pricing-list li{
+
+        font-size:.9rem;
+    }
+
+    .ads-pricing-note-box{
+
+        flex-direction:column;
+
+        gap:16px;
+
+        margin-top:35px;
+
+        padding:26px 24px;
+
+        border-radius:20px;
+    }
+
+    .ads-pricing-note-icon{
+
+        width:50px;
+
+        height:50px;
+
+        border-radius:14px;
+    }
+
+    .ads-pricing-note-box h3{
+
+        font-size:1.05rem;
+    }
+
+    .ads-pricing-note-box p{
+
+        font-size:.88rem;
+
+        line-height:1.75;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 7B
+========================================================== */
+
+/* ==========================================================
+PART 8B
+FAQ + FINAL CTA CSS
+OBARA DIGITAL
+========================================================== */
+
+
+/* ==========================================================
+FAQ SECTION
+========================================================== */
+
+.ads-faq-section{
+    position:relative;
+
+    background:#0a0e17;
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+FAQ BACKGROUND GLOW
+========================================================== */
+
+.ads-faq-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    top:-300px;
+    right:-350px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.07),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+FAQ LIST
+========================================================== */
+
+.ads-faq-list{
+
+    position:relative;
+
+    z-index:1;
+
+    max-width:900px;
+
+    margin:0 auto;
+}
+
+
+/* ==========================================================
+FAQ ITEM
+========================================================== */
+
+.ads-faq-item{
+
+    margin-bottom:14px;
+
+    border:
+        1px solid
+        rgba(148,163,184,.12);
+
+    border-radius:18px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    overflow:hidden;
+
+    transition:
+        border-color .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.ads-faq-item:hover{
+
+    border-color:
+        rgba(59,130,246,.30);
+
+    background:
+        rgba(255,255,255,.035);
+}
+
+
+.ads-faq-item[open]{
+
+    border-color:
+        rgba(59,130,246,.38);
+
+    background:
+        rgba(37,99,235,.045);
+
+    box-shadow:
+        0 18px 45px
+        rgba(0,0,0,.14);
+}
+
+
+/* ==========================================================
+FAQ QUESTION
+========================================================== */
+
+.ads-faq-item summary{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:25px;
+
+    padding:24px 26px;
+
+    cursor:pointer;
+
+    list-style:none;
+
+    color:#f8fafc;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    line-height:1.5;
+}
+
+
+/* REMOVE DEFAULT ARROW */
+
+.ads-faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+
+.ads-faq-item summary::marker{
+    display:none;
+}
+
+
+/* ==========================================================
+FAQ ICON
+========================================================== */
+
+.ads-faq-icon{
+
+    width:34px;
+    height:34px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:10px;
+
+    background:
+        rgba(37,99,235,.10);
+
+    border:
+        1px solid
+        rgba(59,130,246,.18);
+
+    color:#38bdf8;
+
+    font-size:.75rem;
+
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+
+.ads-faq-item[open]
+.ads-faq-icon{
+
+    background:
+        rgba(37,99,235,.18);
+
+    transform:
+        rotate(45deg);
+}
+
+
+/* ==========================================================
+FAQ ANSWER
+========================================================== */
+
+.ads-faq-answer{
+
+    padding:
+        0 26px 25px;
+
+    border-top:
+        1px solid
+        rgba(148,163,184,.08);
+}
+
+
+.ads-faq-answer p{
+
+    margin:18px 0 0;
+
+    color:#cbd5e1;
+
+    font-size:.94rem;
+
+    line-height:1.85;
+}
+
+
+.ads-faq-answer p:first-child{
+
+    margin-top:20px;
+}
+
+
+/* ==========================================================
+FINAL CTA
+========================================================== */
+
+.ads-final-cta{
+
+    position:relative;
+
+    z-index:1;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.5fr)
+        minmax(280px,.7fr);
+
+    align-items:center;
+
+    gap:55px;
+
+    margin-top:80px;
+
+    padding:55px 50px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37,99,235,.14),
+            rgba(56,189,248,.055)
+        );
+
+    border:
+        1px solid
+        rgba(59,130,246,.20);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.20);
+
+    overflow:hidden;
+}
+
+
+/* ==========================================================
+CTA LIGHT EFFECT
+========================================================== */
+
+.ads-final-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    top:-260px;
+    right:-120px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(56,189,248,.12),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+.ads-final-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    bottom:-220px;
+    left:25%;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.10),
+            transparent 70%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+CTA CONTENT
+========================================================== */
+
+.ads-final-cta-content{
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+.ads-final-cta-label{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    color:#38bdf8;
+
+    font-size:.76rem;
+
+    font-weight:800;
+
+    letter-spacing:.09em;
+
+    text-transform:uppercase;
+}
+
+
+.ads-final-cta-content h2{
+
+    margin:0 0 18px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.1rem
+        );
+
+    line-height:1.12;
+
+    letter-spacing:-.035em;
+}
+
+
+.ads-final-cta-content p{
+
+    max-width:720px;
+
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+
+/* ==========================================================
+CTA POINTS
+========================================================== */
+
+.ads-final-cta-points{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px 25px;
+
+    margin-top:25px;
+}
+
+
+.ads-final-cta-points span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#dbeafe;
+
+    font-size:.82rem;
+
+    font-weight:600;
+}
+
+
+.ads-final-cta-points i{
+
+    color:#38bdf8;
+
+    font-size:.8rem;
+}
+
+
+/* ==========================================================
+CTA ACTION
+========================================================== */
+
+.ads-final-cta-action{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    gap:12px;
+}
+
+
+.ads-final-cta-action .btn{
+
+    width:100%;
+
+    min-height:54px;
+}
+
+
+.ads-final-cta-action small{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#94a3b8;
+
+    font-size:.75rem;
+
+    text-align:center;
+}
+
+
+/* ==========================================================
+WHATSAPP BUTTON
+========================================================== */
+
+.ads-final-cta-action
+.btn-primary{
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    box-shadow:
+        0 14px 35px
+        rgba(37,99,235,.22);
+}
+
+
+.ads-final-cta-action
+.btn-primary:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(37,99,235,.32);
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:950px){
+
+    .ads-final-cta{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        padding:45px 40px;
+    }
+
+    .ads-final-cta-action{
+
+        max-width:360px;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .ads-faq-item{
+
+        border-radius:16px;
+
+        margin-bottom:12px;
+    }
+
+    .ads-faq-item summary{
+
+        padding:20px;
+
+        gap:18px;
+
+        font-size:.94rem;
+    }
+
+    .ads-faq-icon{
+
+        width:31px;
+        height:31px;
+
+        border-radius:9px;
+
+        font-size:.7rem;
+    }
+
+    .ads-faq-answer{
+
+        padding:
+            0 20px 21px;
+    }
+
+    .ads-faq-answer p{
+
+        font-size:.9rem;
+
+        line-height:1.8;
+    }
+
+    .ads-final-cta{
+
+        margin-top:55px;
+
+        padding:38px 25px;
+
+        border-radius:22px;
+
+        gap:30px;
+    }
+
+    .ads-final-cta-content h2{
+
+        font-size:
+            clamp(
+                1.8rem,
+                8vw,
+                2.4rem
+            );
+    }
+
+    .ads-final-cta-content p{
+
+        font-size:.92rem;
+
+        line-height:1.75;
+    }
+
+    .ads-final-cta-points{
+
+        flex-direction:column;
+
+        gap:12px;
+    }
+
+    .ads-final-cta-action{
+
+        width:100%;
+
+        max-width:none;
+    }
+
+}
+
+
+/* ==========================================================
+END PART 8B
+========================================================== */
+
+
+/* ==========================================================
+SERVICE HEADER RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+    .site-nav{
+
+        min-height:70px;
+    }
+
+    .site-nav-links{
+
+        gap:16px;
+    }
+
+    .site-nav-links a{
+
+        font-size:.8rem;
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    .site-nav{
+    min-height:70px;
+}
+
+.site-nav-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:44px;
+    height:44px;
+
+    margin-left:auto;
+
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:12px;
+
+    background:rgba(255,255,255,.04);
+    color:#ffffff;
+
+    cursor:pointer;
+
+    font-size:1.1rem;
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.site-nav-toggle:hover{
+    background:rgba(37,99,235,.12);
+    border-color:rgba(59,130,246,.35);
+}
+
+.site-nav-links{
+    position:absolute;
+
+    top:calc(100% + 10px);
+    left:0;
+    right:0;
+
+    display:none;
+
+    flex-direction:column;
+    align-items:stretch;
+
+    gap:6px;
+
+    padding:14px;
+
+    background:#0a0e17;
+
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+
+    z-index:100;
+}
+
+.site-nav-links.is-open{
+    display:flex;
+}
+
+.site-nav-links a{
+    width:100%;
+
+    padding:12px 14px;
+
+    font-size:.85rem;
+
+    border-radius:10px;
+}
+
+.site-nav-links a:hover{
+    background:rgba(37,99,235,.10);
+}
+
+.site-nav-links .site-nav-cta{
+    padding:12px 14px;
+    text-align:center;
+}
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================================
+OBARA DIGITAL SERVICE PAGE HEADER
+========================================================== -->
+
+<header class="site-header">
+
+    <div class="container">
+
+        <nav class="site-nav" aria-label="Main navigation">
+
+            <a href="../index.html" class="site-logo">
+                Obara<span>Digital</span>
+            </a>
+           <button
+    class="site-nav-toggle"
+    type="button"
+    aria-label="Open navigation"
+    aria-expanded="false"
+    aria-controls="ads-mobile-menu"
+>
+    <i class="fas fa-bars" aria-hidden="true"></i>
+</button>
+
+
+            <div class="site-nav-links" id="ads-mobile-menu">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../index.html#services">
+                    Services
+                </a>
+
+                <a href="../index.html#portfolio">
+                    Portfolio
+                </a>
+
+                <a href="../index.html#process">
+                    Process
+                </a>
+
+                <a href="../blog.html">
+                    Blog
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a
+                    href="#contact"
+                    class="site-nav-cta"
+                >
+                    Get Started
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================================
+PART 1A
+SERVICE HERO
+RUNNING ADS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-hero">
+
+    <div class="container">
+
+        <div class="ads-hero-grid">
+
+            <!-- HERO CONTENT -->
+
+            <div class="ads-hero-content">
+
+                <div class="section-label">
+                    Meta & Google Ads Management
+                </div>
+
+                <h1>
+                    Run Ads That
+                    <span class="gradient-text">
+                        Generate Real Business
+                    </span>
+                    Results
+                </h1>
+
+                <p class="ads-hero-description">
+                    Stop wasting money on ads that get clicks but
+                    don't generate customers. We create, manage and
+                    optimize Meta and Google Ads campaigns designed
+                    to bring Nigerian businesses more qualified
+                    leads, enquiries, sales and growth.
+                </p>
+
+                <div class="ads-hero-buttons">
+
+                    <a
+                        href="#contact"
+                        class="btn btn-primary"
+                    >
+                        Get a Free Ads Consultation
+                        <i
+                            class="fas fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a
+                        href="#services"
+                        class="btn btn-secondary"
+                    >
+                        See How We Run Your Ads
+                    </a>
+
+                </div>
+
+                <div class="ads-trust-row">
+
+                    <div class="ads-trust-item">
+
+                        <i
+                            class="fas fa-chart-line"
+                            aria-hidden="true"
+                        ></i>
+
+                        Performance-focused
+
+                    </div>
+
+                    <div class="ads-trust-item">
+
+                        <i
+                            class="fas fa-bullseye"
+                            aria-hidden="true"
+                        ></i>
+
+                        Conversion-focused
+
+                    </div>
+
+                    <div class="ads-trust-item">
+
+                        <i
+                            class="fas fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
+
+                        Nigeria & Worldwide
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="ads-hero-visual">
+
+                <div class="ads-dashboard">
+
+                    <div class="dashboard-topbar">
+
+                        <div class="dashboard-dots">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                        <div class="dashboard-title">
+                            Campaign Performance
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-main">
+
+                        <div class="dashboard-highlight">
+
+                            <span>
+                                Campaign Results
+                            </span>
+
+                            <strong>
+                                Growing
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dashboard-chart">
+
+                            <div class="chart-line chart-line-one"></div>
+
+                            <div class="chart-line chart-line-two"></div>
+
+                            <div class="chart-line chart-line-three"></div>
+
+                        </div>
+
+
+                        <div class="dashboard-stats">
+
+                            <div class="dashboard-stat">
+
+                                <span>
+                                    Leads
+                                </span>
+
+                                <strong>
+                                    +128%
+                                </strong>
+
+                            </div>
+
+                            <div class="dashboard-stat">
+
+                                <span>
+                                    Cost / Lead
+                                </span>
+
+                                <strong>
+                                    -34%
+                                </strong>
+
+                            </div>
+
+                            <div class="dashboard-stat">
+
+                                <span>
+                                    Conversions
+                                </span>
+
+                                <strong>
+                                    +76%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ads-floating-card ads-floating-card-one">
+
+                    <i
+                        class="fas fa-arrow-trend-up"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Better Results
+                    </span>
+
+                </div>
+
+
+                <div class="ads-floating-card ads-floating-card-two">
+
+                    <i
+                        class="fas fa-bullseye"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Targeted Traffic
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+PART 1C
+WHY BUSINESSES WASTE MONEY ON ADS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-problem-section section" id="problem">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                The Real Problem
+            </div>
+
+            <h2 class="section-title">
+                Getting Clicks Is Not the Same as
+                <span class="gradient-text">
+                    Getting Customers
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Many businesses spend money on Facebook, Instagram or
+                Google Ads without having the right strategy behind the
+                campaign. The result is often clicks, views and impressions
+                without enough enquiries or sales.
+            </p>
+
+        </div>
+
+
+        <div class="ads-problem-grid">
+
+            <!-- PROBLEM 1 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-money-bill-trend-up"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Your Ad Budget Keeps Increasing
+                </h3>
+
+                <p>
+                    You keep adding money to campaigns but the number of
+                    serious enquiries or customers does not increase at
+                    the same rate.
+                </p>
+
+            </article>
+
+
+            <!-- PROBLEM 2 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-users-slash"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    You Are Reaching the Wrong People
+                </h3>
+
+                <p>
+                    Your ads may be getting impressions and clicks from
+                    people who are unlikely to buy, book, call or enquire
+                    about your business.
+                </p>
+
+            </article>
+
+
+            <!-- PROBLEM 3 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-chart-line"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Your Campaigns Are Not Optimized
+                </h3>
+
+                <p>
+                    Launching an advert is only the beginning. Campaigns
+                    need ongoing testing, monitoring and optimization to
+                    improve performance and control wasted spend.
+                </p>
+
+            </article>
+
+
+            <!-- PROBLEM 4 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-bullseye"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Your Targeting Is Too Broad
+                </h3>
+
+                <p>
+                    If your audience, location, interests, keywords or
+                    search intent are poorly defined, your advertising
+                    budget can disappear before reaching the right
+                    potential customers.
+                </p>
+
+            </article>
+
+
+            <!-- PROBLEM 5 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-mobile-screen-button"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Your Landing Page Loses the Lead
+                </h3>
+
+                <p>
+                    Even a well-targeted campaign can struggle if the
+                    website or landing page is slow, confusing or does
+                    not give visitors a clear reason to take action.
+                </p>
+
+            </article>
+
+
+            <!-- PROBLEM 6 -->
+
+            <article class="ads-problem-card">
+
+                <div class="ads-problem-icon">
+
+                    <i
+                        class="fas fa-eye"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    You Cannot See What Is Working
+                </h3>
+
+                <p>
+                    Without proper tracking and performance monitoring,
+                    it becomes difficult to know which campaigns,
+                    audiences, keywords and creatives are actually
+                    producing results.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- TRANSITION CTA -->
+
+        <div class="ads-problem-cta">
+
+            <div>
+
+                <span class="ads-problem-cta-label">
+                    The Solution
+                </span>
+
+                <h3>
+                    Your Ads Need a Strategy — Not Just a Bigger Budget.
+                </h3>
+
+                <p>
+                    We build and manage campaigns around your business
+                    goals, target customers and conversion opportunities.
+                </p>
+
+            </div>
+
+            <a
+                href="#services"
+                class="btn btn-primary"
+            >
+                See Our Ads Services
+                <i
+                    class="fas fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 1C
+========================================================== -->
+
+
+<!-- ==========================================================
+PART 2A
+PAID ADS SERVICES
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-services-section section" id="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                What We Do
+            </div>
+
+            <h2 class="section-title">
+                Paid Advertising Built Around
+                <span class="gradient-text">
+                    Your Business Goals
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                We plan, launch, manage and optimize advertising campaigns
+                designed to put your business in front of the right people
+                and turn attention into measurable enquiries, leads and sales.
+            </p>
+
+        </div>
+
+
+        <div class="ads-services-grid">
+
+
+            <!-- ==================================================
+            META ADS
+            ================================================== -->
+
+            <article class="ads-service-card">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+                        <i
+                            class="fab fa-meta"
+                            aria-hidden="true"
+                        ></i>
+                    </div>
+
+                    <span class="ads-service-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Meta Ads Management
+                </h3>
+
+                <p>
+                    Reach potential customers across Facebook and
+                    Instagram with campaigns built around your audience,
+                    location, interests and business objectives.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Campaign strategy and setup
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Audience research and targeting
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Ad creative direction
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Campaign monitoring and optimization
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            GOOGLE ADS
+            ================================================== -->
+
+            <article class="ads-service-card ads-service-card-featured">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+
+                        <i
+                            class="fab fa-google"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-service-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Google Ads Management
+                </h3>
+
+                <p>
+                    Capture people who are already searching for what
+                    your business offers through targeted Google Search
+                    and performance-focused advertising campaigns.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Keyword and search-intent research
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Search campaign setup
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Conversion-focused ad copy
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Bid, keyword and campaign optimization
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            LEAD GENERATION
+            ================================================== -->
+
+            <article class="ads-service-card">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+
+                        <i
+                            class="fas fa-filter-circle-dollar"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-service-number">
+                        03
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Lead Generation Campaigns
+                </h3>
+
+                <p>
+                    Build advertising funnels that make it easier for
+                    interested prospects to call, send a WhatsApp message,
+                    submit an enquiry or request more information.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Lead generation strategy
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Landing page recommendations
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Conversion tracking
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Lead quality improvement
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            RETARGETING
+            ================================================== -->
+
+            <article class="ads-service-card">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+
+                        <i
+                            class="fas fa-rotate"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-service-number">
+                        04
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Retargeting Campaigns
+                </h3>
+
+                <p>
+                    Reconnect with people who have already visited your
+                    website, interacted with your brand or shown interest
+                    but did not take the next step.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Website visitor retargeting
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Social media audience retargeting
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Custom audience campaigns
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Conversion-focused follow-up
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            CAMPAIGN OPTIMIZATION
+            ================================================== -->
+
+            <article class="ads-service-card">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+
+                        <i
+                            class="fas fa-chart-column"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-service-number">
+                        05
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Campaign Optimization
+                </h3>
+
+                <p>
+                    We monitor campaign performance and use the data to
+                    identify weak audiences, expensive keywords, poor
+                    creatives and opportunities for improvement.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Performance monitoring
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Budget allocation
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Creative and audience testing
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Cost-per-lead improvement
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            TRACKING & ANALYTICS
+            ================================================== -->
+
+            <article class="ads-service-card">
+
+                <div class="ads-service-card-top">
+
+                    <div class="ads-service-icon">
+
+                        <i
+                            class="fas fa-chart-pie"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-service-number">
+                        06
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Tracking & Analytics
+                </h3>
+
+                <p>
+                    Understand where your leads and sales are coming from
+                    with proper conversion tracking and performance
+                    measurement across your advertising campaigns.
+                </p>
+
+
+                <ul class="ads-service-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Conversion tracking
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Campaign performance reporting
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Cost and conversion analysis
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+                        Data-driven decisions
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="ads-service-link"
+                >
+                    Get Started
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <!-- ==================================================
+        SECTION CTA
+        ================================================== -->
+
+        <div class="ads-services-bottom">
+
+            <p>
+                Not sure whether Meta Ads, Google Ads or both are right
+                for your business?
+            </p>
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+                Let Us Recommend a Strategy
+                <i
+                    class="fas fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 2A
+========================================================== -->
+<!-- ==========================================================
+PART 3A
+OUR ADVERTISING PROCESS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-process-section section" id="process">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Our Process
+            </div>
+
+            <h2 class="section-title">
+                From Ad Budget to
+                <span class="gradient-text">
+                    Measurable Results
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                We don't simply launch an advert and hope it works.
+                Every campaign follows a structured process designed
+                to reduce wasted spend and improve performance over time.
+            </p>
+
+        </div>
+
+
+        <div class="ads-process-wrapper">
+
+
+            <!-- ==================================================
+            STEP 01
+            ================================================== -->
+
+            <div class="ads-process-step">
+
+                <div class="ads-process-number">
+                    01
+                </div>
+
+                <div class="ads-process-icon">
+
+                    <i
+                        class="fas fa-magnifying-glass-chart"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <div class="ads-process-content">
+
+                    <span class="ads-process-label">
+                        Step One
+                    </span>
+
+                    <h3>
+                        Strategy & Research
+                    </h3>
+
+                    <p>
+                        We first understand your business, your ideal
+                        customer, your competitors and what you want
+                        your advertising to achieve.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+            STEP 02
+            ================================================== -->
+
+            <div class="ads-process-step">
+
+                <div class="ads-process-number">
+                    02
+                </div>
+
+                <div class="ads-process-icon">
+
+                    <i
+                        class="fas fa-sliders"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <div class="ads-process-content">
+
+                    <span class="ads-process-label">
+                        Step Two
+                    </span>
+
+                    <h3>
+                        Campaign Setup
+                    </h3>
+
+                    <p>
+                        We build the campaign structure, audiences,
+                        keywords, ad messaging, tracking and targeting
+                        based on the strategy.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+            STEP 03
+            ================================================== -->
+
+            <div class="ads-process-step">
+
+                <div class="ads-process-number">
+                    03
+                </div>
+
+                <div class="ads-process-icon">
+
+                    <i
+                        class="fas fa-rocket"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <div class="ads-process-content">
+
+                    <span class="ads-process-label">
+                        Step Three
+                    </span>
+
+                    <h3>
+                        Launch & Test
+                    </h3>
+
+                    <p>
+                        Your campaigns go live with controlled testing
+                        so we can identify which audiences, messages,
+                        creatives and keywords perform best.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+            STEP 04
+            ================================================== -->
+
+            <div class="ads-process-step">
+
+                <div class="ads-process-number">
+                    04
+                </div>
+
+                <div class="ads-process-icon">
+
+                    <i
+                        class="fas fa-chart-line"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <div class="ads-process-content">
+
+                    <span class="ads-process-label">
+                        Step Four
+                    </span>
+
+                    <h3>
+                        Optimize & Scale
+                    </h3>
+
+                    <p>
+                        We monitor the data, reduce wasted spend,
+                        improve weak areas and gradually scale what
+                        is producing better results.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        PROCESS CTA
+        ================================================== -->
+
+        <div class="ads-process-cta">
+
+            <div>
+
+                <span class="ads-process-cta-label">
+                    Ready to advertise smarter?
+                </span>
+
+                <h3>
+                    Let's Build a Campaign Around Your Goals.
+                </h3>
+
+                <p>
+                    Tell us what you sell, who you want to reach and
+                    what you want your advertising to achieve.
+                </p>
+
+            </div>
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+                Start Your Campaign
+                <i
+                    class="fas fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 3A
+========================================================== -->
+<!-- ==========================================================
+PART 4A
+WHAT MAKES ADVERTISING WORK
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-success-section section" id="results">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                What Makes Ads Work
+            </div>
+
+            <h2 class="section-title">
+                Your Budget Is Only One Part of
+                <span class="gradient-text">
+                    the Equation
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Spending more money does not automatically produce more
+                customers. Successful advertising depends on the right
+                strategy, audience, message, offer and conversion experience.
+            </p>
+
+        </div>
+
+
+        <div class="ads-success-grid">
+
+
+            <!-- ==================================================
+            FACTOR 01
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-bullseye"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    01
+                </span>
+
+                <h3>
+                    The Right Audience
+                </h3>
+
+                <p>
+                    Your ads need to reach people who are genuinely
+                    likely to need or want what your business offers.
+                    Better targeting can reduce wasted impressions
+                    and improve the quality of your leads.
+                </p>
+
+            </article>
+
+
+            <!-- ==================================================
+            FACTOR 02
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-lightbulb"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    02
+                </span>
+
+                <h3>
+                    A Strong Offer
+                </h3>
+
+                <p>
+                    Even well-targeted advertising can struggle when
+                    the offer is unclear or gives people no compelling
+                    reason to take the next step.
+                </p>
+
+            </article>
+
+
+            <!-- ==================================================
+            FACTOR 03
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-pen-nib"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    03
+                </span>
+
+                <h3>
+                    The Right Message
+                </h3>
+
+                <p>
+                    Your advertising needs to communicate the value of
+                    your product or service quickly and clearly enough
+                    to make the right prospect pay attention.
+                </p>
+
+            </article>
+
+
+            <!-- ==================================================
+            FACTOR 04
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-mobile-screen-button"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    04
+                </span>
+
+                <h3>
+                    A Strong Conversion Experience
+                </h3>
+
+                <p>
+                    Getting someone to click is only the beginning.
+                    Your landing page, website, WhatsApp flow or
+                    enquiry process must make it easy for them to act.
+                </p>
+
+            </article>
+
+
+            <!-- ==================================================
+            FACTOR 05
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-chart-line"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    05
+                </span>
+
+                <h3>
+                    Continuous Optimization
+                </h3>
+
+                <p>
+                    Campaign performance changes over time. Testing
+                    different audiences, creatives, keywords and
+                    messages helps identify what deserves more budget.
+                </p>
+
+            </article>
+
+
+            <!-- ==================================================
+            FACTOR 06
+            ================================================== -->
+
+            <article class="ads-success-card">
+
+                <div class="ads-success-icon">
+
+                    <i
+                        class="fas fa-chart-pie"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <span class="ads-success-number">
+                    06
+                </span>
+
+                <h3>
+                    Accurate Tracking
+                </h3>
+
+                <p>
+                    Without reliable tracking, it becomes difficult
+                    to know which campaigns are generating enquiries,
+                    leads or sales and where your advertising budget
+                    is actually going.
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        SUCCESS MESSAGE
+        ================================================== -->
+
+        <div class="ads-success-message">
+
+            <div class="ads-success-message-icon">
+
+                <i
+                    class="fas fa-chart-line"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+            <div class="ads-success-message-content">
+
+                <h3>
+                    We Focus on the Numbers That Matter
+                </h3>
+
+                <p>
+                    Impressions and clicks can be useful indicators,
+                    but your campaign should ultimately support a
+                    real business goal — whether that means more
+                    enquiries, calls, WhatsApp conversations, bookings
+                    or sales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 4A
+========================================================== -->
+<!-- ==========================================================
+PART 5A
+META ADS VS GOOGLE ADS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-platform-section section" id="platforms">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Choose the Right Platform
+            </div>
+
+            <h2 class="section-title">
+                Meta Ads or Google Ads?
+                <span class="gradient-text">
+                    It Depends on Your Goal.
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Not every business should advertise the same way.
+                We help you choose the platform and campaign strategy
+                that makes the most sense for your customers and goals.
+            </p>
+
+        </div>
+
+
+        <div class="ads-platform-grid">
+
+
+            <!-- ==================================================
+            META ADS
+            ================================================== -->
+
+            <article class="ads-platform-card">
+
+                <div class="ads-platform-top">
+
+                    <div class="ads-platform-icon meta-icon">
+
+                        <i
+                            class="fab fa-meta"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-platform-tag">
+                        Meta Ads
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Facebook & Instagram Advertising
+                </h3>
+
+                <p>
+                    Reach potential customers while they are browsing
+                    Facebook and Instagram using targeted campaigns
+                    designed around your audience, offer and creative.
+                </p>
+
+
+                <div class="ads-platform-list-title">
+                    Good for:
+                </div>
+
+                <ul class="ads-platform-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Building awareness for your business
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Generating leads and enquiries
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Promoting products and services
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Reaching specific customer segments
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <div class="ads-platform-bottom">
+
+                    <span>
+                        Best when your audience can be reached
+                        through strong visual and social content.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================================================
+            GOOGLE ADS
+            ================================================== -->
+
+            <article class="ads-platform-card ads-platform-featured">
+
+                <div class="ads-platform-top">
+
+                    <div class="ads-platform-icon google-icon">
+
+                        <i
+                            class="fab fa-google"
+                            aria-hidden="true"
+                        ></i>
+
+                    </div>
+
+                    <span class="ads-platform-tag">
+                        Google Ads
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Search Advertising for High-Intent Customers
+                </h3>
+
+                <p>
+                    Put your business in front of people who are actively
+                    searching for products or services like yours on Google.
+                </p>
+
+
+                <div class="ads-platform-list-title">
+                    Good for:
+                </div>
+
+                <ul class="ads-platform-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Capturing people already searching
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Generating high-intent enquiries
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Driving calls and website visits
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Targeting specific search terms
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <div class="ads-platform-bottom">
+
+                    <span>
+                        Best when customers are actively searching
+                        for what your business provides.
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        COMBINATION MESSAGE
+        ================================================== -->
+
+        <div class="ads-platform-combination">
+
+            <div class="ads-platform-combination-icon">
+
+                <i
+                    class="fas fa-layer-group"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="ads-platform-combination-content">
+
+                <h3>
+                    Sometimes the Best Strategy Uses Both
+                </h3>
+
+                <p>
+                    Meta can help introduce your business to the right
+                    audience, while Google can capture people who are
+                    already searching for what you sell. The right mix
+                    depends on your market, customer journey and goals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 5A
+========================================================== -->
+<!-- ==========================================================
+PART 6A
+WHO WE HELP WITH PAID ADS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-audience-section section" id="businesses">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Built for Growing Businesses
+            </div>
+
+            <h2 class="section-title">
+                Advertising That Fits
+                <span class="gradient-text">
+                    Your Business
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Different businesses need different advertising strategies.
+                We build campaigns around your market, customers, offer
+                and business objectives.
+            </p>
+
+        </div>
+
+
+        <div class="ads-audience-grid">
+
+
+            <!-- ==================================================
+            SMALL BUSINESSES
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-store"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Small & Local Businesses
+                </h3>
+
+                <p>
+                    Reach more people in your target location and turn
+                    online attention into calls, WhatsApp conversations,
+                    enquiries and customers.
+                </p>
+
+                <span class="ads-audience-link">
+                    Local lead generation
+                </span>
+
+            </article>
+
+
+            <!-- ==================================================
+            REAL ESTATE
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-building"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Real Estate Businesses
+                </h3>
+
+                <p>
+                    Promote properties, generate qualified enquiries
+                    and connect your listings with people actively
+                    interested in buying, renting or investing.
+                </p>
+
+                <span class="ads-audience-link">
+                    Property lead generation
+                </span>
+
+            </article>
+
+
+            <!-- ==================================================
+            E-COMMERCE
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-cart-shopping"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    E-commerce & Online Stores
+                </h3>
+
+                <p>
+                    Put your products in front of potential buyers,
+                    test different offers and creatives, and improve
+                    the journey from advertisement to purchase.
+                </p>
+
+                <span class="ads-audience-link">
+                    Product advertising
+                </span>
+
+            </article>
+
+
+            <!-- ==================================================
+            PROFESSIONAL SERVICES
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-briefcase"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Professional Services
+                </h3>
+
+                <p>
+                    Generate enquiries for services such as legal,
+                    consulting, accounting, technology, construction
+                    and other professional businesses.
+                </p>
+
+                <span class="ads-audience-link">
+                    Service lead generation
+                </span>
+
+            </article>
+
+
+            <!-- ==================================================
+            HOSPITALS & HEALTHCARE
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-hospital"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Hospitals & Healthcare Businesses
+                </h3>
+
+                <p>
+                    Build awareness and reach people searching for
+                    relevant healthcare services while keeping campaign
+                    messaging clear, responsible and professional.
+                </p>
+
+                <span class="ads-audience-link">
+                    Healthcare awareness
+                </span>
+
+            </article>
+
+
+            <!-- ==================================================
+            SCHOOLS & EDUCATION
+            ================================================== -->
+
+            <article class="ads-audience-card">
+
+                <div class="ads-audience-icon">
+
+                    <i
+                        class="fas fa-graduation-cap"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+                <h3>
+                    Schools & Education
+                </h3>
+
+                <p>
+                    Promote schools, training programmes, courses and
+                    educational services to parents, students and other
+                    relevant audiences.
+                </p>
+
+                <span class="ads-audience-link">
+                    Enrolment campaigns
+                </span>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        AUDIENCE CTA
+        ================================================== -->
+
+        <div class="ads-audience-cta">
+
+            <div class="ads-audience-cta-content">
+
+                <span class="ads-audience-cta-label">
+                    Not Sure Where Your Business Fits?
+                </span>
+
+                <h3>
+                    We Can Help You Choose the Right Advertising Strategy.
+                </h3>
+
+                <p>
+                    Tell us what you sell, who you want to reach and
+                    what you want your advertising to achieve. We'll
+                    help you determine the right direction for your
+                    campaign.
+                </p>
+
+            </div>
+
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+                Discuss Your Campaign
+
+                <i
+                    class="fas fa-arrow-right"
+                    aria-hidden="true"
+                ></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 6A
+========================================================== -->
+
+<!-- ==========================================================
+PART 7A
+PRICING / CAMPAIGN PLANS
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-pricing-section section" id="pricing">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Advertising Management Plans
+            </div>
+
+            <h2 class="section-title">
+                Choose a Campaign Plan That
+                <span class="gradient-text">
+                    Fits Your Business
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Start with a plan that matches your current advertising
+                needs. Your actual ad spend is separate from our
+                management fee and goes directly toward your campaigns.
+            </p>
+
+        </div>
+
+
+        <div class="ads-pricing-grid">
+
+
+            <!-- ==================================================
+            STARTER PLAN
+            ================================================== -->
+
+            <article class="ads-pricing-card">
+
+                <div class="ads-pricing-header">
+
+                    <span class="ads-pricing-label">
+                        Starter
+                    </span>
+
+                    <h3>
+                        Campaign Launch
+                    </h3>
+
+                    <p>
+                        For businesses ready to start advertising
+                        professionally.
+                    </p>
+
+                </div>
+
+
+                <div class="ads-pricing-price">
+
+                    <span class="ads-pricing-currency">
+                        ₦
+                    </span>
+
+                    <span class="ads-pricing-amount">
+                        100,000
+                    </span>
+
+                    <span class="ads-pricing-period">
+                        / month
+                    </span>
+
+                </div>
+
+
+                <div class="ads-pricing-note">
+                    Management fee
+                </div>
+
+
+                <ul class="ads-pricing-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Campaign strategy
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Meta Ads or Google Ads
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Audience research
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Campaign setup
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Basic performance monitoring
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Monthly performance report
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-secondary ads-pricing-btn"
+                >
+                    Get Started
+
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            GROWTH PLAN
+            ================================================== -->
+
+            <article class="ads-pricing-card ads-pricing-featured">
+
+                <div class="ads-pricing-popular">
+                    Most Popular
+                </div>
+
+
+                <div class="ads-pricing-header">
+
+                    <span class="ads-pricing-label">
+                        Growth
+                    </span>
+
+                    <h3>
+                        Growth Campaigns
+                    </h3>
+
+                    <p>
+                        For businesses that want consistent lead
+                        generation and campaign optimization.
+                    </p>
+
+                </div>
+
+
+                <div class="ads-pricing-price">
+
+                    <span class="ads-pricing-currency">
+                        ₦
+                    </span>
+
+                    <span class="ads-pricing-amount">
+                        150,000
+                    </span>
+
+                    <span class="ads-pricing-period">
+                        / month
+                    </span>
+
+                </div>
+
+
+                <div class="ads-pricing-note">
+                    Management fee
+                </div>
+
+
+                <ul class="ads-pricing-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Complete campaign strategy
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Meta Ads and/or Google Ads
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Audience and keyword research
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Ad creative direction
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Conversion-focused campaign setup
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Ongoing optimization
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Performance reporting
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-primary ads-pricing-btn"
+                >
+                    Start Growing
+
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+            </article>
+
+
+            <!-- ==================================================
+            SCALE PLAN
+            ================================================== -->
+
+            <article class="ads-pricing-card">
+
+                <div class="ads-pricing-header">
+
+                    <span class="ads-pricing-label">
+                        Scale
+                    </span>
+
+                    <h3>
+                        Advanced Advertising
+                    </h3>
+
+                    <p>
+                        For established businesses ready to manage
+                        larger campaigns and multiple objectives.
+                    </p>
+
+                </div>
+
+
+                <div class="ads-pricing-price">
+
+                    <span class="ads-pricing-currency">
+                        ₦
+                    </span>
+
+                    <span class="ads-pricing-amount">
+                        250,000+
+                    </span>
+
+                    <span class="ads-pricing-period">
+                        / month
+                    </span>
+
+                </div>
+
+
+                <div class="ads-pricing-note">
+                    Custom management
+                </div>
+
+
+                <ul class="ads-pricing-list">
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Advanced advertising strategy
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Multi-platform campaigns
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Advanced audience targeting
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Conversion tracking
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Continuous campaign optimization
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Detailed performance analysis
+                        </span>
+                    </li>
+
+                    <li>
+                        <i
+                            class="fas fa-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Strategy consultation
+                        </span>
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-secondary ads-pricing-btn"
+                >
+                    Discuss Your Goals
+
+                    <i
+                        class="fas fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        IMPORTANT PRICING NOTE
+        ================================================== -->
+
+        <div class="ads-pricing-note-box">
+
+            <div class="ads-pricing-note-icon">
+
+                <i
+                    class="fas fa-circle-info"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Your Advertising Budget Is Separate
+                </h3>
+
+                <p>
+                    The prices above cover advertising management.
+                    Your actual Meta or Google advertising budget is
+                    separate and is paid toward the advertising platform.
+                    We can recommend a starting budget based on your
+                    business goals, market and campaign objectives.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================================
+END PART 7A
+========================================================== -->
+
+<!-- ==========================================================
+PART 8A
+FAQ + FINAL CTA + CONTACT
+OBARA DIGITAL
+========================================================== -->
+
+<section class="ads-faq-section section" id="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Frequently Asked Questions
+            </div>
+
+            <h2 class="section-title">
+                Questions About
+                <span class="gradient-text">
+                    Running Ads?
+                </span>
+            </h2>
+
+            <p class="section-subtitle">
+                Here are answers to some of the questions businesses
+                ask before starting a paid advertising campaign.
+            </p>
+
+        </div>
+
+
+        <div class="ads-faq-list">
+
+
+            <!-- FAQ 1 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    How much should I spend on advertising?
+                    
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        There is no single budget that works for every
+                        business. Your starting budget should depend on
+                        your offer, target audience, location, competition,
+                        campaign objective and the amount of data needed
+                        to make informed decisions.
+                    </p>
+
+                    <p>
+                        We can recommend a practical starting budget after
+                        understanding your business and advertising goals.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 2 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    Do I pay you and the advertising platform separately?
+
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        Yes. Our advertising management fee is separate
+                        from your actual advertising budget.
+                    </p>
+
+                    <p>
+                        Your advertising budget goes toward platforms such
+                        as Meta or Google, while our management fee covers
+                        strategy, campaign setup, monitoring, optimization
+                        and reporting.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 3 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    Can you run both Facebook and Google Ads?
+
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        Yes. We can manage Meta Ads, including Facebook
+                        and Instagram advertising, as well as Google Ads.
+                    </p>
+
+                    <p>
+                        Depending on your business, we can also recommend
+                        whether one platform or a combination of both
+                        makes more sense for your customer journey.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 4 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    How quickly will I start getting results?
+
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        Advertising results vary from business to
+                        business. Factors such as your offer, market,
+                        competition, budget, landing page and campaign
+                        setup can all affect performance.
+                    </p>
+
+                    <p>
+                        We do not promise a specific number of leads,
+                        sales or revenue. Instead, we monitor campaign
+                        data and make informed optimizations based on
+                        actual performance.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 5 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    Do I need a website before running ads?
+
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        Not always. Some campaigns can send customers
+                        directly to WhatsApp, phone calls, lead forms or
+                        social media.
+                    </p>
+
+                    <p>
+                        However, if your campaign depends on website
+                        conversions, your website or landing page needs
+                        to provide a clear, trustworthy and easy-to-use
+                        experience.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+            <!-- FAQ 6 -->
+
+            <details class="ads-faq-item">
+
+                <summary>
+                    Can you help if I already have an advertising account?
+
+                    <span class="ads-faq-icon">
+                        <i
+                            class="fas fa-plus"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+
+                </summary>
+
+                <div class="ads-faq-answer">
+
+                    <p>
+                        Yes. We can review your existing campaigns,
+                        identify areas that may be limiting performance
+                        and recommend improvements.
+                    </p>
+
+                    <p>
+                        Where appropriate, we can also help restructure
+                        campaigns instead of starting everything from
+                        scratch.
+                    </p>
+
+                </div>
+
+            </details>
+
+
+        </div>
+
+
+        <!-- ==================================================
+        FINAL CTA
+        ================================================== -->
+
+        <div class="ads-final-cta" id="contact">
+
+    <div class="ads-final-cta-content">
+
+        <div class="ads-final-cta-label">
+            Ready to Advertise Smarter?
+        </div>
+
+        <h2>
+            Get Your Free Ads Strategy
+        </h2>
+
+        <p>
+            Tell us about your business, your advertising goals,
+            and what you want to achieve. We'll review your needs
+            and show you the best way to approach your Meta and
+            Google Ads campaigns.
+        </p>
+
+        <div class="ads-final-cta-actions">
+
+            <a
+                href="https://wa.me/2349020319898"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                WhatsApp Me
+            </a>
+
+            <a
+                href="mailto:hello@obaradigital.online"
+                class="btn btn-secondary"
+            >
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                Email Us
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADS STRATEGY FORM -->
+
+    <div class="ads-contact-form">
+
+        <div class="ads-contact-form-header">
+
+            <span class="ads-form-label">
+                FREE ADS CONSULTATION
+            </span>
+
+            <h3>
+                Tell Us About Your Business
+            </h3>
+
+            <p>
+                Complete the form and we'll get back to you
+                within 24 hours.
+            </p>
+
+        </div>
+
+
+        <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+        >
+
+            <!-- Web3Forms Configuration -->
+
+            <input
+                type="hidden"
+                name="access_key"
+                value="cac4183c-0521-481c-a488-420806f77c4d"
+            >
+
+            <input
+                type="hidden"
+                name="subject"
+                value="New Ads Strategy Enquiry - Obara Digital"
+            >
+
+            <input
+                type="hidden"
+                name="from_name"
+                value="Obara Digital Ads Page"
+            >
+
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://www.obaradigital.online/services/running-ads.html?success=true"
+            >
+
+            <!-- Spam Protection -->
+
+            <input
+                type="checkbox"
+                name="botcheck"
+                style="display:none;"
+            >
+
+
+            <!-- Name + Business -->
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+
+                    <label for="ads-name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ads-name"
+                        name="name"
+                        placeholder="Your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="ads-form-group">
+
+                    <label for="ads-business">
+                        Business Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ads-business"
+                        name="business"
+                        placeholder="Your business name"
+                        autocomplete="organization"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- WhatsApp + Email -->
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+
+                    <label for="ads-phone">
+                        WhatsApp Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="ads-phone"
+                        name="phone"
+                        placeholder="+234..."
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="ads-form-group">
+
+                    <label for="ads-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="ads-email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Website + Platform -->
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+
+                    <label for="ads-website">
+                        Website
+                    </label>
+
+                    <input
+                        type="url"
+                        id="ads-website"
+                        name="website"
+                        placeholder="https://yourwebsite.com"
+                    >
+
+                </div>
+
+
+                <div class="ads-form-group">
+
+                    <label for="ads-platform">
+                        Advertising Platform
+                    </label>
+
+                    <select
+                        id="ads-platform"
+                        name="advertising_platform"
+                        required
+                    >
+
+                        <option value="" disabled selected>
+                            Select platform
+                        </option>
+
+                        <option value="Meta Ads">
+                            Meta Ads — Facebook & Instagram
+                        </option>
+
+                        <option value="Google Ads">
+                            Google Ads
+                        </option>
+
+                        <option value="Meta and Google Ads">
+                            Meta + Google Ads
+                        </option>
+
+                        <option value="Not sure">
+                            Not sure — I need advice
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Budget + Goal -->
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+
+                    <label for="ads-budget">
+                        Monthly Ad Budget
+                    </label>
+
+                    <select
+                        id="ads-budget"
+                        name="monthly_ad_budget"
+                        required
+                    >
+
+                        <option value="" disabled selected>
+                            Select budget
+                        </option>
+
+                        <option value="₦50,000 - ₦100,000">
+                            ₦50,000 – ₦100,000
+                        </option>
+
+                        <option value="₦100,000 - ₦250,000">
+                            ₦100,000 – ₦250,000
+                        </option>
+
+                        <option value="₦250,000 - ₦500,000">
+                            ₦250,000 – ₦500,000
+                        </option>
+
+                        <option value="₦500,000 - ₦1,000,000">
+                            ₦500,000 – ₦1,000,000
+                        </option>
+
+                        <option value="₦1,000,000+">
+                            ₦1,000,000+
+                        </option>
+
+                        <option value="Not sure">
+                            I'm not sure yet
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="ads-form-group">
+
+                    <label for="ads-goal">
+                        Main Advertising Goal
+                    </label>
+
+                    <select
+                        id="ads-goal"
+                        name="advertising_goal"
+                        required
+                    >
+
+                        <option value="" disabled selected>
+                            Select your goal
+                        </option>
+
+                        <option value="Generate leads">
+                            Generate more leads
+                        </option>
+
+                        <option value="WhatsApp enquiries">
+                            Get more WhatsApp enquiries
+                        </option>
+
+                        <option value="Generate sales">
+                            Generate more sales
+                        </option>
+
+                        <option value="Website traffic">
+                            Increase website traffic
+                        </option>
+
+                        <option value="Brand awareness">
+                            Build brand awareness
+                        </option>
+
+                        <option value="Book appointments">
+                            Book more appointments
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Business Description -->
+
+            <div class="ads-form-group">
+
+                <label for="ads-message">
+                    Tell Us About Your Business
+                </label>
+
+                <textarea
+                    id="ads-message"
+                    name="message"
+                    rows="5"
+                    placeholder="What do you sell, who are your target customers, and what are you currently struggling with?"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="ads-form-submit"
+            >
+
+                <i
+                    class="fas fa-paper-plane"
+                    aria-hidden="true"
+                ></i>
+
+                Get My Free Ads Strategy
+
+            </button>
+
+
+            <p class="ads-form-note">
+
+                <i
+                    class="fas fa-shield-halved"
+                    aria-hidden="true"
+                ></i>
+
+                Your information is kept private and will only
+                be used to contact you about your enquiry.
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+END PART 8A
+========================================================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const toggle = document.querySelector(".site-nav-toggle");
+    const menu = document.querySelector("#ads-mobile-menu");
+
+    if(!toggle || !menu){
+        return;
+    }
+
+    toggle.addEventListener("click", function(){
+
+        const isOpen = menu.classList.toggle("is-open");
+
+        toggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        toggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation" : "Open navigation"
+        );
+
+        const icon = toggle.querySelector("i");
+
+        if(icon){
+            icon.classList.toggle("fa-bars", !isOpen);
+            icon.classList.toggle("fa-xmark", isOpen);
+        }
+
+    });
+
+    menu.querySelectorAll("a").forEach(function(link){
+
+        link.addEventListener("click", function(){
+
+            menu.classList.remove("is-open");
+
+            toggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            toggle.setAttribute(
+                "aria-label",
+                "Open navigation"
+            );
+
+            const icon = toggle.querySelector("i");
+
+            if(icon){
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
