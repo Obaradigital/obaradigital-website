@@ -5472,7 +5472,681 @@ SERVICE HEADER RESPONSIVE
 }
 }
 
-    </style>
+/* ==========================================================
+   PREMIUM ADS CONTACT FORM
+========================================================== */
+
+.ads-contact-form{
+    width:100%;
+    max-width:620px;
+
+    padding:32px;
+
+    background:rgba(15,23,42,.72);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+
+/* FORM HEADER */
+
+.ads-contact-form-header{
+    margin-bottom:26px;
+}
+
+.ads-form-label{
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#38bdf8;
+
+    font-size:.72rem;
+    font-weight:800;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+.ads-contact-form-header h3{
+    margin:0 0 8px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.65rem;
+
+    line-height:1.2;
+}
+
+.ads-contact-form-header p{
+    margin:0;
+
+    color:#94a3b8;
+
+    font-size:.88rem;
+
+    line-height:1.6;
+}
+
+
+/* TWO-COLUMN FORM ROW */
+
+.ads-form-row{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+    margin-bottom:16px;
+}
+
+
+/* FORM GROUP */
+
+.ads-form-group{
+    width:100%;
+
+    margin-bottom:16px;
+}
+
+.ads-form-group label{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#e2e8f0;
+
+    font-size:.78rem;
+
+    font-weight:600;
+}
+
+
+/* INPUTS / SELECT / TEXTAREA */
+
+.ads-form-group input,
+.ads-form-group select,
+.ads-form-group textarea{
+
+    display:block;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:13px 14px;
+
+    border:1px solid rgba(148,163,184,.20);
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#0a1220;
+
+    color:#f8fafc;
+
+    font-family:inherit;
+
+    font-size:.86rem;
+
+    line-height:1.4;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.ads-form-group input::placeholder,
+.ads-form-group textarea::placeholder{
+    color:#64748b;
+}
+
+
+/* SELECT */
+
+.ads-form-group select{
+    appearance:auto;
+
+    cursor:pointer;
+}
+
+
+/* TEXTAREA */
+
+.ads-form-group textarea{
+    min-height:125px;
+
+    resize:vertical;
+}
+
+
+/* FOCUS */
+
+.ads-form-group input:focus,
+.ads-form-group select:focus,
+.ads-form-group textarea:focus{
+
+    border-color:#3b82f6;
+
+    background:#0d1728;
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.12);
+}
+
+
+/* SUBMIT BUTTON */
+
+.ads-form-submit{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:14px 20px;
+
+    margin-top:4px;
+
+    border:0;
+
+    border-radius:11px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+
+    color:#ffffff;
+
+    font-family:inherit;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.20);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+}
+
+.ads-form-submit:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+
+    box-shadow:
+        0 16px 35px rgba(37,99,235,.30);
+}
+
+
+/* PRIVACY NOTE */
+
+.ads-form-note{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    gap:7px;
+
+    margin:14px 0 0;
+
+    color:#64748b;
+
+    font-size:.7rem;
+
+    line-height:1.5;
+
+    text-align:center;
+}
+
+.ads-form-note i{
+    margin-top:2px;
+
+    color:#60a5fa;
+}
+
+
+/* ==========================================================
+   CONTACT SECTION LAYOUT
+========================================================== */
+
+.ads-final-cta{
+
+    display:grid;
+
+    grid-template-columns:minmax(0, .9fr) minmax(420px, 1.1fr);
+
+    gap:55px;
+
+    align-items:center;
+
+}
+
+
+/* LEFT CONTENT */
+
+.ads-final-cta-content{
+
+    min-width:0;
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:1000px){
+
+    .ads-final-cta{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .ads-contact-form{
+
+        max-width:none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   PREMIUM ADS CONTACT FORM
+========================================================== */
+
+.ads-contact-form{
+    width:100%;
+    max-width:620px;
+
+    padding:32px;
+
+    background:rgba(15,23,42,.72);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+
+/* FORM HEADER */
+
+.ads-contact-form-header{
+    margin-bottom:26px;
+}
+
+.ads-form-label{
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#38bdf8;
+
+    font-size:.72rem;
+    font-weight:800;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+.ads-contact-form-header h3{
+    margin:0 0 8px;
+
+    color:#ffffff;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.65rem;
+
+    line-height:1.2;
+}
+
+.ads-contact-form-header p{
+    margin:0;
+
+    color:#94a3b8;
+
+    font-size:.88rem;
+
+    line-height:1.6;
+}
+
+
+/* TWO-COLUMN FORM ROW */
+
+.ads-form-row{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+    margin-bottom:16px;
+}
+
+
+/* FORM GROUP */
+
+.ads-form-group{
+    width:100%;
+
+    margin-bottom:16px;
+}
+
+.ads-form-group label{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#e2e8f0;
+
+    font-size:.78rem;
+
+    font-weight:600;
+}
+
+
+/* INPUTS / SELECT / TEXTAREA */
+
+.ads-form-group input,
+.ads-form-group select,
+.ads-form-group textarea{
+
+    display:block;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:13px 14px;
+
+    border:1px solid rgba(148,163,184,.20);
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#0a1220;
+
+    color:#f8fafc;
+
+    font-family:inherit;
+
+    font-size:.86rem;
+
+    line-height:1.4;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.ads-form-group input::placeholder,
+.ads-form-group textarea::placeholder{
+    color:#64748b;
+}
+
+
+/* SELECT */
+
+.ads-form-group select{
+    appearance:auto;
+
+    cursor:pointer;
+}
+
+
+/* TEXTAREA */
+
+.ads-form-group textarea{
+    min-height:125px;
+
+    resize:vertical;
+}
+
+
+/* FOCUS */
+
+.ads-form-group input:focus,
+.ads-form-group select:focus,
+.ads-form-group textarea:focus{
+
+    border-color:#3b82f6;
+
+    background:#0d1728;
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.12);
+}
+
+
+/* SUBMIT BUTTON */
+
+.ads-form-submit{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:14px 20px;
+
+    margin-top:4px;
+
+    border:0;
+
+    border-radius:11px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+
+    color:#ffffff;
+
+    font-family:inherit;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.20);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+}
+
+.ads-form-submit:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+
+    box-shadow:
+        0 16px 35px rgba(37,99,235,.30);
+}
+
+
+/* PRIVACY NOTE */
+
+.ads-form-note{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    gap:7px;
+
+    margin:14px 0 0;
+
+    color:#64748b;
+
+    font-size:.7rem;
+
+    line-height:1.5;
+
+    text-align:center;
+}
+
+.ads-form-note i{
+    margin-top:2px;
+
+    color:#60a5fa;
+}
+
+
+/* ==========================================================
+   CONTACT SECTION LAYOUT
+========================================================== */
+
+.ads-final-cta{
+
+    display:grid;
+
+    grid-template-columns:minmax(0, .9fr) minmax(420px, 1.1fr);
+
+    gap:55px;
+
+    align-items:center;
+
+}
+
+
+/* LEFT CONTENT */
+
+.ads-final-cta-content{
+
+    min-width:0;
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:1000px){
+
+    .ads-final-cta{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .ads-contact-form{
+
+        max-width:none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:600px){
+
+    .ads-final-cta{
+
+        gap:30px;
+
+    }
+
+    .ads-contact-form{
+
+        padding:22px 18px;
+
+        border-radius:18px;
+
+    }
+
+    .ads-form-row{
+
+        grid-template-columns:1fr;
+
+        gap:0;
+
+        margin-bottom:0;
+
+    }
+
+    .ads-contact-form-header h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .ads-form-group input,
+    .ads-form-group select,
+    .ads-form-group textarea{
+
+        font-size:16px;
+
+    }
+
+}    </style>
 
 </head>
 
