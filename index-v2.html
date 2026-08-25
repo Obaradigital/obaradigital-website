@@ -793,11 +793,68 @@
         <button class="exit-close" id="exitClose" aria-label="Close offer">&times;</button>
         <h3 id="exitTitle">Wait! Before You Leave...</h3>
         <p>Claim your <strong>FREE Website Audit</strong> (worth ₦35,000). I'll review your site and send a video report within 24 hours.</p>
-        <form class="lead-magnet-form" style="flex-direction:column;" onsubmit="event.preventDefault(); document.getElementById('exitModal').classList.remove('active'); alert('Thanks! Your audit request has been received.');">
-            <input type="url" placeholder="https://yourwebsite.com" required style="width:100%; margin-bottom:0.75rem;">
-            <input type="email" placeholder="your@email.com" required style="width:100%; margin-bottom:0.75rem;">
-            <button type="submit" class="btn btn-primary" style="width:100%;">Claim My Free Audit</button>
-        </form>
+        <form
+    class="lead-magnet-form"
+    style="flex-direction:column;"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="access_key"
+        value="d155b317-aa68-4ba3-8480-96b6a4becbd1"
+    >
+
+    <input
+        type="hidden"
+        name="subject"
+        value="Free Website Audit Request - Obara Digital"
+    >
+
+    <input
+        type="hidden"
+        name="from_name"
+        value="Obara Digital Website"
+    >
+
+    <input
+        type="hidden"
+        name="redirect"
+        value="https://www.obaradigital.online/index-v2.html?audit=success"
+    >
+
+    <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none;"
+    >
+
+    <input
+        type="url"
+        name="website"
+        placeholder="https://yourwebsite.com"
+        required
+        style="width:100%; margin-bottom:0.75rem;"
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        style="width:100%; margin-bottom:0.75rem;"
+    >
+
+    <button
+        type="submit"
+        class="btn btn-primary"
+        style="width:100%;"
+    >
+        Claim My Free Audit
+    </button>
+
+</form>
     </div>
 </div>
 
