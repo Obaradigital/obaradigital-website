@@ -773,6 +773,28 @@
         @media (prefers-reduced-motion: reduce) {
             * { animation: none !important; transition: none !important; }
         }
+
+        /* Custom Image Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 38px;
+            width: 38px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
     </style>
 </head>
 <body>
@@ -881,10 +903,10 @@
 <!-- Header -->
 <header class="header" id="header">
     <div class="container nav-container">
-        <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
-            <i class="fas fa-code logo-icon" aria-hidden="true"></i>
-            Obara Digital
-        </a>
+       <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
+    <img src="images/favicon.jpg" alt="Obara Digital Mark" class="logo-img">
+    <span class="logo-text">OBARA <span class="gradient-text">DIGITAL</span></span>
+</a>
       <nav aria-label="Main navigation">
     <ul class="nav-links" id="desktopNav">
 
@@ -899,9 +921,9 @@
         </li>
 
         <li>
-           <a href="services/landing-pages.html">
-    Landing Pages
-</a>
+            <a href="services/landing-pages.html">
+                Landing Pages
+            </a>
         </li>
 
         <li>
