@@ -789,13 +789,42 @@
             object-fit: cover;
         }
 
-        .logo-text {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 0.5px;
-        }
-    </style>
+ .logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Brand Alignment */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-brand .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand .logo-img {
+    height: 38px;
+    width: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.footer-contact p,
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+</style>
 </head>
 <body>
 
@@ -1913,61 +1942,53 @@ PROCESS SECTION
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
-                    <i class="fas fa-code logo-icon" aria-hidden="true"></i> Obara Digital
+                <a href="https://obaradigital.online" class="logo">
+                    <img src="images/favicon.jpg" alt="Obara Digital Mark" class="logo-img">
+                    <span class="logo-text">OBARA <span class="gradient-text">DIGITAL</span></span>
                 </a>
-                <p>Premium web design, SEO, and digital marketing services for businesses in Nigeria and beyond. Building digital assets that convert.</p>
+                <p>Custom websites, high-converting landing pages, and Meta ads designed to scale your business and capture qualified leads.</p>
             </div>
-            <div>
-                <h4 class="footer-title">Quick Links</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="#packages">Pricing</a>
+                    <a href="#pricing">Pricing</a>
                     <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
-            <div>
-                <h4 class="footer-title">Services</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">SERVICES</h4>
                 <div class="footer-links">
-                    <a href="#services">Web Design</a>
-                    <a href="#services">SEO</a>
-                    <a href="#services">Digital Marketing</a>
-                    <a href="#services">E-commerce</a>
-                    <a href="#services">Landing Pages</a>
+                    <a href="services/website-design.html">Website Design</a>
+                    <a href="services/landing-pages.html">Landing Pages</a>
+                    <a href="services/running-ads.html">Running Ads</a>
                 </div>
             </div>
-            <div>
-                <h4 class="footer-title">Contact</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">CONTACT</h4>
                 <div class="footer-contact">
-                    <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> hello@obaradigital.online</div>
-                    <div class="footer-contact-item"><i class="fas fa-globe" aria-hidden="true"></i> obaradigital.online</div>
-                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nigeria</div>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> hello@obaradigital.online</p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> obaradigital.online</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nigeria</p>
                 </div>
-                <div class="contact-social" style="margin-top:1rem;">
-                    <a href="https://wa.me/2348000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <div class="footer-socials">
+                    <a href="https://wa.me/234" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Obaradigital" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Obara Digital. All rights reserved.</p>
-            <div class="footer-links" style="flex-direction:row; gap:1.5rem;">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Sitemap</a>
             </div>
         </div>
     </div>
-</footer>
-
-<!-- WhatsApp Floating Button -->
+</footer><!-- WhatsApp Floating Button -->
 <div class="whatsapp-float">
-    <a href="https://wa.me/2348000000000" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 </div>
