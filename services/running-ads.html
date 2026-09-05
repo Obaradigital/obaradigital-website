@@ -578,7 +578,7 @@ SERVICE PAGE HEADER
     margin-top:40px; padding:28px; border-radius:20px; background:linear-gradient(135deg, rgba(37,99,235,.12), rgba(56,189,248,.05));
     border:1px solid rgba(59,130,246,.2); text-align:center;
 }
-.ai-oversight-banner h4{ font-family:'Space Grotesk',sans-serif; color:#ffffff; font-size:1.2rem; margin:0 0 8px; }
+.ai-oversight-banner h3{ font-family:'Space Grotesk',sans-serif; color:#ffffff; font-size:1.2rem; margin:0 0 8px; }
 .ai-oversight-banner p{ color:#cbd5e1; font-size:.95rem; margin:0; max-width:800px; margin:0 auto; }
 
 /* AUDIENCE SECTION */
@@ -594,6 +594,35 @@ SERVICE PAGE HEADER
 /* FORM & CONTACT SECTION */
 .ads-contact-section{ position:relative; background:#0a0e17; overflow:hidden; }
 .ads-contact-container{ max-width:800px; margin:0 auto; background:linear-gradient(145deg, rgba(17,24,39,.94), rgba(15,23,42,.78)); border:1px solid rgba(148,163,184,.15); border-radius:24px; padding:40px; }
+
+/* Direct Contact Bar (Nigerian Market Focus) */
+.direct-contact-bar{
+    display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:30px;
+}
+.direct-card{
+    display:flex; align-items:center; gap:14px; padding:16px; border-radius:14px; text-decoration:none;
+    background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); transition:all .3s ease;
+}
+.direct-card:hover{ transform:translateY(-2px); border-color:#2563eb; background:rgba(37,99,235,.08); }
+.direct-card.whatsapp:hover{ border-color:#22c55e; background:rgba(34,197,94,.08); }
+.direct-icon{
+    width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+    font-size:1.2rem; color:#ffffff; background:linear-gradient(135deg, #2563eb, #38bdf8); flex-shrink:0;
+}
+.direct-card.whatsapp .direct-icon{ background:linear-gradient(135deg, #16a34a, #22c55e); }
+.direct-info strong{ display:block; color:#ffffff; font-size:.9rem; }
+.direct-info span{ display:block; color:#94a3b8; font-size:.78rem; }
+
+.contact-divider{
+    position:relative; text-align:center; margin-bottom:30px;
+}
+.contact-divider::before{
+    content:""; position:absolute; top:50%; left:0; right:0; height:1px; background:rgba(255,255,255,.08); z-index:1;
+}
+.contact-divider span{
+    position:relative; z-index:2; background:#0f172a; padding:0 16px; color:#64748b; font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.05em;
+}
+
 .ads-form{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
 .form-group{ display:flex; flex-direction:column; gap:8px; }
 .form-group.full-width{ grid-column:1 / -1; }
@@ -609,6 +638,15 @@ SERVICE PAGE HEADER
 .ads-faq-item summary{ display:flex; align-items:center; justify-content:space-between; padding:22px 26px; cursor:pointer; color:#f8fafc; font-family:'Space Grotesk',sans-serif; font-size:1rem; font-weight:700; }
 .ads-faq-answer{ padding:0 26px 22px; border-top:1px solid rgba(148,163,184,.08); color:#cbd5e1; font-size:.92rem; line-height:1.8; }
 .ads-faq-answer p{ margin-top:15px; }
+
+/* FAQ Icon Animation */
+.ads-faq-item[open] .ads-faq-icon {
+    transform: rotate(45deg);
+    color: #38bdf8;
+}
+.ads-faq-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
 .site-footer{ border-top:1px solid rgba(255,255,255,.08); padding:60px 0 30px; background:#070a10; }
 .footer-grid{ display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
@@ -635,6 +673,7 @@ SERVICE PAGE HEADER
     .ai-workflow-grid{ grid-template-columns:1fr; }
     .ads-audience-grid{ grid-template-columns:1fr; }
     .ads-form{ grid-template-columns:1fr; }
+    .direct-contact-bar{ grid-template-columns:1fr; }
     .ads-contact-container{ padding:25px 20px; }
     .footer-grid{ grid-template-columns:1fr; }
     .ads-dashboard{ transform:none; }
@@ -928,7 +967,7 @@ SERVICE PAGE HEADER
             </div>
 
             <div class="ai-oversight-banner">
-                <h4>Human Strategy Meets AI Intelligence</h4>
+                <h3>Human Strategy Meets AI Intelligence</h3>
                 <p>AI tools support our research, analysis, optimization, and signal processing—ensuring rapid execution while strategic direction remains fully overseen by human growth specialists.</p>
             </div>
         </div>
@@ -989,7 +1028,34 @@ SERVICE PAGE HEADER
             </div>
 
             <div class="ads-contact-container">
-                <form class="ads-form" id="adsAuditForm" action="https://formspree.io/f/placeholder" method="POST">
+
+                <!-- Direct Contact Options for Quick Local Engagement -->
+                <div class="direct-contact-bar">
+                    <a href="https://wa.me/2340000000000?text=Hi%20Obara%20Digital,%20I'm%20interested%20in%20a%20Paid%20Ads%20Audit" target="_blank" rel="noopener" class="direct-card whatsapp">
+                        <div class="direct-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="direct-info">
+                            <strong>Chat on WhatsApp</strong>
+                            <span>Fastest response time</span>
+                        </div>
+                    </a>
+                    <a href="tel:+2340000000000" class="direct-card phone">
+                        <div class="direct-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="direct-info">
+                            <strong>Call Us Directly</strong>
+                            <span>Speak with our strategist</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-divider">
+                    <span>Or fill out the form below</span>
+                </div>
+
+                <form class="ads-form" id="adsAuditForm" action="https://formspree.io/f/xyzab123" method="POST">
                     
                     <div class="form-group">
                         <label for="fullName">Full Name *</label>
@@ -1159,12 +1225,23 @@ SERVICE PAGE HEADER
             // Mobile Menu Toggle
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const navLinks = document.getElementById('navLinks');
+            const menuIcon = mobileMenuBtn ? mobileMenuBtn.querySelector('i') : null;
 
             if (mobileMenuBtn && navLinks) {
                 mobileMenuBtn.addEventListener('click', function () {
                     const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
                     mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
                     navLinks.classList.toggle('active');
+
+                    if (menuIcon) {
+                        if (navLinks.classList.contains('active')) {
+                            menuIcon.classList.remove('fa-bars');
+                            menuIcon.classList.add('fa-xmark');
+                        } else {
+                            menuIcon.classList.remove('fa-xmark');
+                            menuIcon.classList.add('fa-bars');
+                        }
+                    }
                 });
 
                 // Auto Close Mobile Menu when clicking any nav link
@@ -1173,6 +1250,10 @@ SERVICE PAGE HEADER
                     link.addEventListener('click', function () {
                         navLinks.classList.remove('active');
                         mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        if (menuIcon) {
+                            menuIcon.classList.remove('fa-xmark');
+                            menuIcon.classList.add('fa-bars');
+                        }
                     });
                 });
             }
