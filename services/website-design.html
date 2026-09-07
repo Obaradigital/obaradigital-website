@@ -1,3068 +1,1782 @@
-<!-- ======================================================
-PAGE HERO
-Professional Website Design Services
-====================================================== -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Development, Web Design & Digital Marketing Agency | Obara Digital</title>
+    <meta name="description" content="Obara Digital builds high-converting WordPress websites, runs SEO campaigns, and manages Meta ads for Nigerian businesses. Get more leads, sales & customers.">
+    <meta name="keywords" content="web design Nigeria, SEO Lagos, digital marketing agency, WordPress developer Nigeria, Meta ads, real estate website, hospital website">
+    <meta name="author" content="Obara Digital">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://obaradigital.online">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-<section class="service-hero" id="hero">
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="Obaradigital profile.png" type="image/png" fetchpriority="high">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://obaradigital.online">
+    <meta property="og:title" content="WordPress Development, Web Design & Digital Marketing Agency | Obara Digital">
+    <meta property="og:description" content="High-converting WordPress websites and digital marketing for Nigerian businesses.">
+    <meta property="og:image" content="https://obaradigital.online/obara-digital-web-design-nigeria.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WordPress Development, Web Design & Digital Marketing Agency | Obara Digital">
+    <meta name="twitter:description" content="High-converting WordPress websites and digital marketing for Nigerian businesses.">
+    <meta name="twitter:image" content="https://obaradigital.online/obara-digital-web-design-nigeria.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Obara Digital",
+          "url": "https://obaradigital.online",
+          "logo": "https://obaradigital.online/favicon.png",
+          "email": "hello@obaradigital.online",
+          "description": "Premium WordPress development, web design, SEO, and digital marketing agency in Nigeria.",
+          "sameAs": [],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "NG"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Obara Digital",
+          "url": "https://obaradigital.online",
+          "email": "hello@obaradigital.online",
+          "description": "WordPress web design and SEO agency serving Nigerian businesses.",
+          "areaServed": { "@type": "Country", "name": "Nigeria" },
+          "serviceType": ["WordPress Development", "Web Design", "SEO", "Digital Marketing", "Meta Advertising"]
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Obara Digital",
+          "url": "https://obaradigital.online",
+          "provider": { "@type": "Organization", "name": "Obara Digital" },
+          "areaServed": { "@type": "Country", "name": "Nigeria" },
+          "serviceType": "WordPress Development and Digital Marketing"
+        },
+        {
+          "@type": "WebSite",
+          "name": "Obara Digital",
+          "url": "https://obaradigital.online",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://obaradigital.online/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://obaradigital.online/" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #111827;
+            --bg-card: #1f2937;
+            --bg-glass: rgba(17, 24, 39, 0.85);
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --accent: #2563eb;
+            --accent-light: #3b82f6;
+            --accent-glow: rgba(37, 99, 235, 0.25);
+            --border: #374151;
+            --success: #10b981;
+            --radius: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f3f4f6;
+            --bg-card: #ffffff;
+            --bg-glass: rgba(255, 255, 255, 0.9);
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #9ca3af;
+            --accent: #2563eb;
+            --accent-light: #1d4ed8;
+            --accent-glow: rgba(37, 99, 235, 0.15);
+            --border: #e5e7eb;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        img:not([fetchpriority="high"]) { loading: lazy; decoding: async; }
+        a { color: inherit; text-decoration: none; }
+        ul, ol { list-style: none; }
+        button { border: none; background: none; cursor: pointer; font-family: inherit; }
+        input, textarea, select { font-family: inherit; outline: none; }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute; top: -40px; left: 0;
+            background: var(--accent); color: #fff;
+            padding: 8px 16px; z-index: 10000;
+            font-weight: 600; font-size: 14px;
+            transition: top 0.3s; border-radius: 0 0 8px 0;
+        }
+        .skip-link:focus { top: 0; }
+        *:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+        /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed; top: 0; left: 0; width: 0%; height: 3px;
+            background: linear-gradient(90deg, var(--accent), #60a5fa);
+            z-index: 10001; transition: width 0.1s;
+        }
+
+        /* Utilities */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 100px 0; position: relative; }
+        .section-header { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
+        .section-label {
+            display: inline-block; font-size: 12px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 3px; color: var(--accent);
+            margin-bottom: 1rem; background: var(--accent-glow);
+            padding: 6px 16px; border-radius: 50px;
+        }
+        .section-title { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+        .section-subtitle { color: var(--text-secondary); font-size: 1.125rem; line-height: 1.7; }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+            padding: 0.875rem 1.75rem; border-radius: var(--radius);
+            font-weight: 600; font-size: 0.9375rem; cursor: pointer;
+            transition: var(--transition); border: none; white-space: nowrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #fff; box-shadow: 0 4px 20px var(--accent-glow);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-glow); }
+        .btn-outline {
+            background: transparent; color: var(--text-primary);
+            border: 1.5px solid var(--border);
+        }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: rgba(37,99,235,0.05); }
+        .btn-ghost { color: var(--accent); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .btn-ghost:hover { gap: 0.75rem; }
+        .btn-whatsapp { background: #25d366; color: #fff; }
+        .btn-whatsapp:hover { background: #128c7e; }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 2.5rem;
+            transition: var(--transition);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Page Loader */
+        .page-loader {
+            position: fixed; inset: 0; background: var(--bg-primary);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 9999; transition: opacity 0.5s, visibility 0.5s;
+        }
+        .page-loader.hidden { opacity: 0; visibility: hidden; }
+        .spinner {
+            width: 48px; height: 48px;
+            border: 3px solid var(--border); border-top-color: var(--accent);
+            border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Header */
+        .header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            background: transparent; transition: var(--transition);
+        }
+        .header.scrolled {
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-container {
+            display: flex; justify-content: space-between; align-items: center;
+            height: 80px;
+        }
+        .logo { font-weight: 800; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .logo-icon { color: var(--accent); font-size: 1.25rem; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a {
+            font-size: 0.9375rem; font-weight: 500; color: var(--text-secondary);
+            transition: var(--transition);
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-controls { display: flex; align-items: center; gap: 1rem; }
+        .theme-toggle {
+            width: 40px; height: 40px; border-radius: 8px;
+            border: 1px solid var(--border); background: transparent;
+            color: var(--text-primary); cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition);
+        }
+        .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+        .mobile-toggle {
+            display: none; width: 40px; height: 40px;
+            background: none; border: none; color: var(--text-primary);
+            font-size: 1.5rem; cursor: pointer;
+        }
+
+        /* Mobile Nav */
+        .mobile-nav {
+            display: none; position: fixed; inset: 0;
+            background: var(--bg-primary); z-index: 2000;
+            flex-direction: column; justify-content: center; align-items: center;
+            gap: 2rem; opacity: 0; visibility: hidden; transition: var(--transition);
+        }
+        .mobile-nav.active { opacity: 1; visibility: visible; display: flex; }
+        .mobile-nav a { font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+        .mobile-nav-close {
+            position: absolute; top: 1.5rem; right: 1.5rem;
+            background: none; border: none; color: var(--text-primary);
+            font-size: 2rem; cursor: pointer;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 100px 0 0; font-size: 0.875rem; color: var(--text-muted);
+        }
+        .breadcrumb a { color: var(--text-secondary); }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { color: var(--text-muted); }
+
+        /* Hero */
+        .hero {
+            padding: 140px 0 80px; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 1; text-align: center; max-width: 850px; margin: 0 auto; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1.25rem; background: var(--accent-glow);
+            color: var(--accent-light); border-radius: 50px;
+            font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;
+            border: 1px solid rgba(37,99,235,0.2);
+        }
+        .hero h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.25rem; }
+        .hero > .container > .hero-content > p {
+            font-size: 1.25rem; color: var(--text-secondary);
+            margin-bottom: 2rem; line-height: 1.7;
+        }
+        .hero-actions { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .hero-trust {
+            display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+        .hero-trust span {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.9375rem; color: var(--text-secondary); font-weight: 500;
+        }
+        .hero-trust i { color: var(--success); font-size: 1rem; }
+
+        /* Featured In */
+        .featured {
+            padding: 50px 0; background: var(--bg-secondary);
+            border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+        }
+        .featured-header { text-align: center; margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
+        .featured-grid {
+            display: flex; justify-content: center; align-items: center;
+            gap: 2.5rem; flex-wrap: wrap;
+        }
+        .featured-item {
+            display: flex; align-items: center; gap: 0.5rem;
+            color: var(--text-muted); font-weight: 600; font-size: 0.9375rem;
+            opacity: 0.7; transition: var(--transition);
+        }
+        .featured-item:hover { opacity: 1; color: var(--text-primary); }
+        .featured-item i { font-size: 1.25rem; }
+
+        /* Lead Magnet */
+        .lead-magnet {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #1d4ed8 100%);
+            padding: 80px 0; position: relative; overflow: hidden;
+        }
+        .lead-magnet::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+            animation: rotate 25s linear infinite;
+        }
+        @keyframes rotate { to { transform: rotate(360deg); } }
+        .lead-magnet .container { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .lead-magnet h2 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 1rem; }
+        .lead-magnet p { color: rgba(255,255,255,0.9); font-size: 1.0625rem; line-height: 1.7; margin-bottom: 1.5rem; }
+        .lead-magnet-form { display: flex; gap: 0.75rem; }
+        .lead-magnet-form input {
+            flex: 1; padding: 0.875rem 1.25rem; border-radius: var(--radius);
+            border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.1);
+            color: #fff; font-size: 0.9375rem; backdrop-filter: blur(10px);
+        }
+        .lead-magnet-form input::placeholder { color: rgba(255,255,255,0.65); }
+        .lead-magnet-form button { padding: 0.875rem 1.5rem; background: #fff; color: #1d4ed8; border-radius: var(--radius); font-weight: 700; font-size: 0.9375rem; transition: var(--transition); }
+        .lead-magnet-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        .lead-magnet-features { display: flex; gap: 1.5rem; margin-top: 1.25rem; }
+        .lead-magnet-features span { display: flex; align-items: center; gap: 0.375rem; font-size: 0.8125rem; color: rgba(255,255,255,0.85); }
+        .lead-visual { text-align: center; }
+        .lead-visual .glass { padding: 2.5rem; border-radius: var(--radius-lg); background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.15); }
+        .lead-visual i { font-size: 3rem; color: rgba(255,255,255,0.9); margin-bottom: 1rem; }
+        .lead-visual h3 { color: #fff; font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .lead-visual p { color: rgba(255,255,255,0.75); font-size: 0.875rem; }
+
+        /* Industries */
+        .industries { padding: 60px 0; background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .industries-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem; text-align: center;
+        }
+        .industry-item {
+            display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+            padding: 1.5rem 1rem; background: var(--bg-card);
+            border: 1px solid var(--border); border-radius: var(--radius);
+            transition: var(--transition);
+        }
+        .industry-item:hover { border-color: var(--accent); transform: translateY(-3px); }
+        .industry-item i { font-size: 1.5rem; color: var(--accent); }
+        .industry-item span { font-size: 0.875rem; font-weight: 600; color: var(--text-primary); }
+
+        /* About */
+        .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+        .about-image { position: relative; }
+        .about-image img {
+            border-radius: var(--radius-lg); box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            width: 100%; height: 500px; object-fit: cover; object-position: top center;
+        }
+        .about-image::before {
+            content: ''; position: absolute; inset: -12px;
+            border: 2px solid var(--accent); border-radius: calc(var(--radius-lg) + 12px);
+            opacity: 0.3; z-index: -1;
+        }
+        .about-content h2 { margin-bottom: 1.5rem; }
+        .about-content p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+        .about-checks { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem; }
+        .about-checks span {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.9375rem; color: var(--text-primary); font-weight: 500;
+        }
+        .about-checks i { color: var(--success); }
+
+        /* Services Grid */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .service-card { padding: 2.5rem; }
+        .service-icon {
+            width: 56px; height: 56px; border-radius: var(--radius);
+            background: var(--accent-glow); color: var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; margin-bottom: 1.5rem; transition: var(--transition);
+        }
+        .service-card:hover .service-icon { background: var(--accent); color: #fff; transform: scale(1.1) rotate(-5deg); }
+        .service-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        .service-card p { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; margin-bottom: 1.25rem; }
+
+        /* Process Steps */
+        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+        .process-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 2rem 1.5rem; text-align: center;
+            position: relative; transition: var(--transition);
+        }
+        .process-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .process-number {
+            width: 48px; height: 48px; border-radius: 50%; background: var(--accent-glow);
+            color: var(--accent); font-weight: 800; font-size: 1.25rem;
+            display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;
+        }
+        .process-card h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+        .process-card p { color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; }
+
+        /* Portfolio */
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+        .portfolio-item { overflow: hidden; }
+        .browser-mockup {
+            background: var(--bg-secondary); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); overflow: hidden; transition: var(--transition);
+        }
+        .browser-mockup:hover { border-color: var(--accent); box-shadow: 0 0 40px var(--accent-glow); }
+        .browser-header {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.75rem 1rem; background: rgba(0,0,0,0.25);
+            border-bottom: 1px solid var(--border);
+        }
+        .browser-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .browser-dot:nth-child(1) { background: #ef4444; }
+        .browser-dot:nth-child(2) { background: #f59e0b; }
+        .browser-dot:nth-child(3) { background: #10b981; }
+        .browser-url {
+            flex: 1; text-align: center; font-size: 0.75rem; color: var(--text-muted);
+            background: var(--bg-primary); padding: 0.25rem 0.75rem; border-radius: 4px; margin-left: 0.5rem;
+        }
+        .browser-body { position: relative; overflow: hidden; height: 260px; }
+        .browser-body img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .browser-mockup:hover .browser-body img { transform: scale(1.05); }
+        .browser-overlay {
+            position: absolute; inset: 0; background: rgba(10,14,23,0.75);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+        .browser-mockup:hover .browser-overlay { opacity: 1; }
+        .portfolio-info { padding: 1.5rem; }
+        .portfolio-info .category {
+            display: inline-block; padding: 0.25rem 0.75rem;
+            background: var(--accent-glow); color: var(--accent-light);
+            border-radius: 50px; font-size: 0.75rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.75rem;
+        }
+        .portfolio-info h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .portfolio-info p { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1rem; }
+        .case-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
+        .case-box { background: var(--bg-secondary); padding: 0.875rem; border-radius: 8px; border: 1px solid var(--border); }
+        .case-box strong { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 0.25rem; }
+        .case-box span { font-size: 0.875rem; color: var(--text-primary); font-weight: 600; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+        .tech-tag {
+            padding: 0.25rem 0.625rem; background: var(--bg-secondary);
+            border: 1px solid var(--border); border-radius: 4px;
+            font-size: 0.75rem; font-weight: 600; color: var(--text-secondary);
+        }
+
+        /* Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .pricing-card { position: relative; padding: 2.5rem 2rem; display: flex; flex-direction: column; }
+        .pricing-card.featured { border-color: var(--accent); box-shadow: 0 0 30px var(--accent-glow); }
+        .pricing-badge {
+            position: absolute; top: 0; right: 1.5rem;
+            background: var(--accent); color: #fff;
+            padding: 0.375rem 0.875rem; border-radius: 0 0 8px 8px;
+            font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+        }
+        .pricing-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .pricing-card .price {
+            font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 1rem 0;
+        }
+        .pricing-card .price span { font-size: 0.875rem; font-weight: 500; color: var(--text-muted); }
+        .pricing-features { margin-bottom: 2rem; flex-grow: 1; }
+        .pricing-features li {
+            display: flex; align-items: center; gap: 0.625rem;
+            margin-bottom: 0.75rem; font-size: 0.9375rem; color: var(--text-secondary);
+        }
+        .pricing-features li i { color: var(--success); font-size: 0.875rem; }
+        .pricing-features li.missing { color: var(--text-muted); }
+        .pricing-features li.missing i { color: var(--text-muted); }
+
+        /* FAQ */
+        .faq-accordion { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); margin-bottom: 0.875rem; overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-item:hover { border-color: rgba(37,99,235,0.4); }
+        .faq-button {
+            width: 100%; padding: 1.25rem 1.5rem;
+            display: flex; justify-content: space-between; align-items: center;
+            background: none; border: none; color: var(--text-primary);
+            font-size: 1rem; font-weight: 600; text-align: left; cursor: pointer;
+        }
+        .faq-button i { transition: transform 0.3s ease; color: var(--accent); }
+        .faq-item.active .faq-button i { transform: rotate(180deg); }
+        .faq-content {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 1.5rem; color: var(--text-secondary); line-height: 1.7;
+        }
+        .faq-item.active .faq-content { max-height: 250px; padding: 0 1.5rem 1.25rem; }
+
+        /* Section CTA */
+        .section-cta { text-align: center; margin-top: 3rem; }
+        .section-cta h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .section-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem; }
+        .contact-info h2 { margin-bottom: 1rem; }
+        .contact-info > p { color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7; }
+        .contact-detail { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+        .contact-detail i {
+            width: 48px; height: 48px; border-radius: var(--radius);
+            background: var(--accent-glow); color: var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.125rem;
+        }
+        .contact-detail div strong { display: block; font-size: 0.9375rem; margin-bottom: 0.125rem; }
+        .contact-detail div span { font-size: 0.875rem; color: var(--text-secondary); }
+        .contact-social { display: flex; gap: 0.75rem; margin-top: 2rem; }
+        .contact-social a {
+            width: 44px; height: 44px; border-radius: var(--radius);
+            background: var(--bg-card); border: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-secondary); transition: var(--transition);
+        }
+        .contact-social a:hover { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-3px); }
+
+        /* Form */
+        .form-wrapper {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 2.5rem;
+        }
+        .form-floating { position: relative; margin-bottom: 1.25rem; }
+        .form-floating input,
+        .form-floating textarea,
+        .form-floating select {
+            width: 100%; padding: 1.25rem 1rem 0.625rem;
+            background: var(--bg-secondary); border: 1px solid var(--border);
+            border-radius: 8px; color: var(--text-primary); font-size: 0.9375rem;
+            transition: var(--transition);
+        }
+        .form-floating textarea { min-height: 120px; resize: vertical; }
+        .form-floating label {
+            position: absolute; left: 1rem; top: 0.875rem;
+            color: var(--text-muted); font-size: 0.9375rem;
+            pointer-events: none; transition: 0.2s ease all;
+        }
+        .form-floating input:focus,
+        .form-floating textarea:focus,
+        .form-floating select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+        .form-floating input:focus + label,
+        .form-floating input:not(:placeholder-shown) + label,
+        .form-floating textarea:focus + label,
+        .form-floating textarea:not(:placeholder-shown) + label,
+        .form-floating select:focus + label,
+        .form-floating select:valid + label {
+            top: 0.375rem; font-size: 0.6875rem; font-weight: 600;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-note {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.875rem; color: var(--text-muted); margin-top: 1rem;
+        }
+        .form-note i { color: var(--success); }
+
+        /* Exit Intent Modal */
+        .exit-modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(8px); z-index: 9998;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: var(--transition);
+        }
+        .exit-modal.active { opacity: 1; visibility: visible; }
+        .exit-content {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 2.5rem; max-width: 500px; width: 90%;
+            text-align: center; position: relative;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+        }
+        .exit-close {
+            position: absolute; top: 1rem; right: 1rem;
+            background: none; border: none; color: var(--text-muted);
+            font-size: 1.25rem; cursor: pointer;
+        }
+        .exit-content h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .exit-content p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+        /* Sticky Desktop CTA */
+        .sticky-cta-desktop { position: fixed; bottom: 2rem; right: 2rem; z-index: 997; }
+        .sticky-cta-desktop .btn { box-shadow: 0 8px 30px rgba(37,99,235,0.4); padding: 1rem 2rem; font-size: 1rem; }
+
+        /* Sticky Mobile Bar */
+        .sticky-mobile {
+            display: none; position: fixed; bottom: 0; left: 0; right: 0;
+            background: var(--bg-card); border-top: 1px solid var(--border);
+            padding: 0.75rem 1rem; z-index: 996;
+            justify-content: space-around; align-items: center; gap: 0.5rem;
+        }
+        .sticky-mobile a {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 0.25rem; font-size: 0.6875rem; font-weight: 600;
+            color: var(--text-secondary); padding: 0.25rem 0.75rem;
+        }
+        .sticky-mobile a i { font-size: 1.125rem; }
+        .sticky-mobile a:first-child { color: #25d366; }
+        .sticky-mobile a:nth-child(2) { color: var(--accent); }
+        .sticky-mobile a:nth-child(3) { color: var(--text-primary); }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary); border-top: 1px solid var(--border);
+            padding: 80px 0 40px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem; margin-bottom: 4rem;
+        }
+        .footer-brand p { color: var(--text-secondary); margin-top: 1rem; line-height: 1.7; font-size: 0.9375rem; max-width: 300px; }
+        .footer-title { font-size: 0.9375rem; font-weight: 700; margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-links { display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a { color: var(--text-secondary); font-size: 0.9375rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--accent); padding-left: 4px; }
+        .footer-contact-item { display: flex; align-items: center; gap: 0.75rem; color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 0.75rem; }
+        .footer-contact-item i { color: var(--accent); width: 20px; }
+        .footer-bottom {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 2rem; border-top: 1px solid var(--border);
+            color: var(--text-muted); font-size: 0.875rem; flex-wrap: wrap; gap: 1rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 998; }
+        .whatsapp-btn {
+            width: 56px; height: 56px; border-radius: 50%;
+            background: #25d366; color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.75rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            transition: var(--transition);
+        }
+        .whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed; bottom: 2rem; left: 2rem; z-index: 997;
+            width: 44px; height: 44px; border-radius: var(--radius);
+            background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text-primary); opacity: 0; visibility: hidden;
+            transition: var(--transition); display: flex; align-items: center; justify-content: center;
+        }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .about-image { max-width: 500px; margin: 0 auto; }
+            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .lead-magnet .container { grid-template-columns: 1fr; text-align: center; }
+            .lead-magnet-form { justify-content: center; }
+            .sticky-cta-desktop { display: none; }
+        }
+        @media (max-width: 768px) {
+            .section { padding: 80px 0; }
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .hero h1 { font-size: 2rem; }
+            .hero-actions { flex-direction: column; align-items: center; }
+            .hero-trust { gap: 0.75rem; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-brand { display: flex; flex-direction: column; align-items: center; }
+            .footer-brand p { max-width: 100%; }
+            .footer-bottom { justify-content: center; text-align: center; }
+            .about-checks { grid-template-columns: 1fr; }
+            .case-meta { grid-template-columns: 1fr; }
+            .whatsapp-float { bottom: 5rem; right: 1.5rem; }
+            .sticky-mobile { display: flex; }
+            .lead-magnet-form { flex-direction: column; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="spinner"></div>
+</div>
+
+<!-- Exit Intent Modal -->
+<div class="exit-modal" id="exitModal" role="dialog" aria-modal="true" aria-labelledby="exitTitle" aria-hidden="true">
+    <div class="exit-content">
+        <button class="exit-close" id="exitClose" aria-label="Close offer">&times;</button>
+        <h3 id="exitTitle">Wait! Before You Leave...</h3>
+        <p>Claim your <strong>FREE Website Audit</strong> (worth ₦15,000). I'll review your site and send a video report within 24 hours.</p>
+        <form class="lead-magnet-form" style="flex-direction:column;" onsubmit="event.preventDefault(); document.getElementById('exitModal').classList.remove('active'); alert('Thanks! Your audit request has been received.');">
+            <input type="url" placeholder="https://yourwebsite.com" required style="width:100%; margin-bottom:0.75rem;">
+            <input type="email" placeholder="your@email.com" required style="width:100%; margin-bottom:0.75rem;">
+            <button type="submit" class="btn btn-primary" style="width:100%;">Claim My Free Audit</button>
+        </form>
+    </div>
+</div>
+
+<!-- Sticky Desktop CTA -->
+<div class="sticky-cta-desktop" aria-hidden="true">
+    <a href="#contact" class="btn btn-primary">
+        <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Strategy Call
+    </a>
+</div>
+
+<!-- Sticky Mobile Bar -->
+<div class="sticky-mobile" aria-label="Quick contact bar">
+    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+    </a>
+    <a href="tel:+2349020319898">
+        <i class="fas fa-phone" aria-hidden="true"></i> Call
+    </a>
+    <a href="#contact">
+        <i class="fas fa-file-invoice-dollar" aria-hidden="true"></i> Get Quote
+    </a>
+</div>
+
+<!-- Header Navigation -->
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
+            <i class="fas fa-code logo-icon" aria-hidden="true"></i>
+            Obara Digital
+        </a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links" id="desktopNav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#packages">Pricing</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn btn-primary">Book Strategy Call</a></li>
+            </ul>
+        </nav>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">
+        <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+    <a href="#packages" class="mobile-nav-link">Pricing</a>
+    <a href="#process" class="mobile-nav-link">Process</a>
+    <a href="#faq" class="mobile-nav-link">FAQ</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top:1rem;">Book Strategy Call</a>
+</div>
+
+<main id="main-content">
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb container" aria-label="Breadcrumb">
+    <a href="https://obaradigital.online">Home</a>
+    <span aria-hidden="true"> / </span>
+    <span aria-current="page">WordPress Development & Digital Marketing Agency</span>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
     <div class="container">
-
-        <div class="service-hero-grid">
-
-            <!-- LEFT -->
-
-            <div class="hero-content">
-
-                <span class="hero-badge">
-                    Trusted by Businesses Across Nigeria & Worldwide
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <i class="fas fa-circle" style="font-size:8px;color:var(--success);" aria-hidden="true"></i>
+                Available for new projects
+            </div>
+            <h1>
+                We Build Digital Experiences That
+                <span class="gradient-text">
+                    Turn Visitors Into Customers
                 </span>
-
-                <h1>
-                    Professional Website Design Services
-                    <span>That Turn Visitors Into Customers</span>
-                </h1>
-
-                <p class="hero-description">
-
-                    We design fast, modern, SEO-optimized websites that help
-                    businesses generate more enquiries, build credibility,
-                    and increase sales.
-
-                    Whether you're a startup, corporate company,
-                    hospital, law firm, school, real estate company,
-                    or eCommerce brand, we build websites designed for growth.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#contact" class="btn btn-primary">
-
-                        Get Free Consultation
-
-                    </a>
-
-                    <a href="#portfolio" class="btn btn-outline">
-
-                        View Our Work
-
-                    </a>
-
-                </div>
-
-                <ul class="hero-highlights">
-
-                    <li>
-
-                        <i class="fas fa-check-circle"></i>
-
-                        Mobile Responsive
-
-                    </li>
-
-                    <li>
-
-                        <i class="fas fa-check-circle"></i>
-
-                        SEO Optimized
-
-                    </li>
-
-                    <li>
-
-                        <i class="fas fa-check-circle"></i>
-
-                        Lightning Fast
-
-                    </li>
-
-                    <li>
-
-                        <i class="fas fa-check-circle"></i>
-
-                        Google Ready
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- RIGHT -->
-
-            <div class="hero-visual">
-
-                <div class="hero-window">
-
-                    <div class="window-top">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-                    <div class="browser-content">
-
-                        <div class="browser-header"></div>
-
-                        <div class="browser-banner"></div>
-
-                        <div class="browser-grid">
-
-                            <div></div>
-
-                            <div></div>
-
-                            <div></div>
-
-                            <div></div>
-
-                            <div></div>
-
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="floating-card card-1">
-
-                    ⚡ Fast Loading
-
-                </div>
-
-                <div class="floating-card card-2">
-
-                    📈 SEO Optimized
-
-                </div>
-
-                <div class="floating-card card-3">
-
-                    💼 Built For Business
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-TRUST BAR
-====================================================== -->
-
-<section class="trust-bar">
-
-    <div class="container">
-
-        <div class="trust-items">
-
-            <div class="trust-item">
-
-                <i class="fas fa-laptop-code"></i>
-
-                <span>Custom Website Design</span>
-
-            </div>
-
-            <div class="trust-item">
-
-                <i class="fas fa-mobile-screen-button"></i>
-
-                <span>100% Mobile Friendly</span>
-
-            </div>
-
-            <div class="trust-item">
-
-                <i class="fas fa-gauge-high"></i>
-
-                <span>Fast Performance</span>
-
-            </div>
-
-            <div class="trust-item">
-
-                <i class="fas fa-magnifying-glass-chart"></i>
-
-                <span>SEO Optimized</span>
-
-            </div>
-
-            <div class="trust-item">
-
-                <i class="fas fa-shield-halved"></i>
-
-                <span>Secure & Reliable</span>
-
-            </div>
-
-            <div class="trust-item">
-
-                <i class="fas fa-headset"></i>
-
-                <span>Ongoing Support</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ======================================================
-PART 2A
-WHY YOUR BUSINESS NEEDS A PROFESSIONAL WEBSITE
-====================================================== -->
-
-<section class="business-needs-section" id="why-website">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-label">
-                Why Your Business Needs a Professional Website
-            </span>
-
-            <h2>
-                Your Website Should Be Your Best Salesperson—Working 24/7
-            </h2>
-
-            <p class="section-description">
-                Your website is often the first impression potential customers have of your business.
-                A professionally designed website builds trust, showcases your expertise,
-                generates qualified leads, and helps you grow your business in Nigeria and worldwide.
+            </h1>
+            <p>
+                High-converting WordPress websites, focused landing pages, and
+                research-driven advertising for businesses ready
+                to attract more leads and grow.
             </p>
-
-        </div>
-
-        <div class="benefits-grid">
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-
-                <h3>Build Trust & Credibility</h3>
-
-                <p>
-                    A modern website gives customers confidence in your business
-                    and makes your brand appear professional, reliable, and established.
-                </p>
-
-            </article>
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-
-                <h3>Generate More Leads</h3>
-
-                <p>
-                    Convert visitors into enquiries with strategic layouts,
-                    persuasive content, and high-converting calls to action.
-                </p>
-
-            </article>
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-magnifying-glass"></i>
-                </div>
-
-                <h3>Rank Higher on Google</h3>
-
-                <p>
-                    SEO-friendly websites help your business appear in search results,
-                    making it easier for potential customers to find you online.
-                </p>
-
-            </article>
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-mobile-screen-button"></i>
-                </div>
-
-                <h3>Look Great on Every Device</h3>
-
-                <p>
-                    Every website is fully responsive, delivering an excellent experience
-                    on desktops, tablets, and smartphones.
-                </p>
-
-            </article>
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-
-                <h3>Fast Loading Performance</h3>
-
-                <p>
-                    Speed matters. Fast websites improve user experience,
-                    reduce bounce rates, and increase conversions.
-                </p>
-
-            </article>
-
-            <article class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-
-                <h3>Reach Customers Everywhere</h3>
-
-                <p>
-                    Whether your audience is in Abuja, Lagos, Port Harcourt,
-                    or anywhere in the world, your website works around the clock
-                    to attract new business.
-                </p>
-
-            </article>
-
-        </div>
-
-        <div class="website-impact-box">
-
-            <div class="impact-content">
-
-                <h3>
-                    A Professional Website Is an Investment—Not an Expense
-                </h3>
-
-                <p>
-                    Your website should do more than look good.
-                    It should attract visitors, build trust, generate enquiries,
-                    and help your business grow. At Obara Digital, we design websites
-                    that combine premium design, SEO best practices, and conversion-focused
-                    strategy to deliver measurable business results.
-                </p>
-
+            <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">
-
-                    Let's Build Your Website
-
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i> Get Free Consultation
                 </a>
-
+                <a href="#portfolio" class="btn btn-outline">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i> View Portfolio
+                </a>
             </div>
-
+            <div class="hero-trust" role="list">
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Conversion Focused</span>
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Built for Growth</span>
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Mobile First</span>
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Fast Loading</span>
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Secure SSL</span>
+            </div>
         </div>
-
     </div>
-
 </section>
-<!-- ======================================================
-START PART 3A
-OUR WEBSITE DESIGN SERVICES
-====================================================== -->
 
-<section class="services-section" id="services">
-
+<!-- Lead Magnet -->
+<section class="lead-magnet" id="audit">
     <div class="container">
+        <div>
+            <h2>Get a Free Website Audit</h2>
+            <p>Enter your website URL and email. I'll send you a detailed video review showing exactly what's hurting your rankings and how to fix it — completely free.</p>
+            <form class="lead-magnet-form" onsubmit="event.preventDefault(); alert('Thanks! Your audit request has been received. I will review your site and send the report within 24 hours.');">
+                <input type="url" placeholder="https://yourwebsite.com" required aria-label="Website URL">
+                <input type="email" placeholder="your@email.com" required aria-label="Email address">
+                <button type="submit">Send My Audit</button>
+            </form>
+            <div class="lead-magnet-features">
+                <span><i class="fas fa-check" aria-hidden="true"></i> SEO Analysis</span>
+                <span><i class="fas fa-check" aria-hidden="true"></i> Speed Check</span>
+                <span><i class="fas fa-check" aria-hidden="true"></i> Mobile Review</span>
+            </div>
+        </div>
+        <div class="lead-visual">
+            <div class="glass">
+                <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                <h3>Free Website Audit</h3>
+                <p>Valued at ₦15,000 — Yours Free</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <div class="section-header">
+<!-- Tools & Platforms Section -->
+<section class="featured" id="featured">
+    <div class="container">
+        <div class="featured-header">Tools & Platforms We Work With</div>
+        <div class="featured-grid">
+            <div class="featured-item"><i class="fab fa-wordpress" aria-hidden="true"></i> WordPress</div>
+            <div class="featured-item"><i class="fab fa-meta" aria-hidden="true"></i> Meta Ads</div>
+            <div class="featured-item"><i class="fab fa-google" aria-hidden="true"></i> Google Ads</div>
+            <div class="featured-item"><i class="fas fa-chart-bar" aria-hidden="true"></i> Google Analytics</div>
+            <div class="featured-item"><i class="fab fa-hubspot" aria-hidden="true"></i> HubSpot</div>
+            <div class="featured-item"><i class="fas fa-search" aria-hidden="true"></i> Search Console</div>
+        </div>
+    </div>
+</section>
 
-            <span class="section-label">
-                Our Website Design Services
-            </span>
+<!-- Industries We Serve -->
+<section class="industries" id="industries">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">Industries</div>
+            <h2 class="section-title">Businesses We <span class="gradient-text">Serve</span></h2>
+        </div>
+        <div class="industries-grid reveal">
+            <div class="industry-item"><i class="fas fa-building" aria-hidden="true"></i><span>Real Estate</span></div>
+            <div class="industry-item"><i class="fas fa-hospital" aria-hidden="true"></i><span>Healthcare</span></div>
+            <div class="industry-item"><i class="fas fa-broom" aria-hidden="true"></i><span>Cleaning Companies</span></div>
+            <div class="industry-item"><i class="fas fa-balance-scale" aria-hidden="true"></i><span>Law Firms</span></div>
+            <div class="industry-item"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Schools</span></div>
+            <div class="industry-item"><i class="fas fa-hard-hat" aria-hidden="true"></i><span>Construction</span></div>
+            <div class="industry-item"><i class="fas fa-utensils" aria-hidden="true"></i><span>Restaurants</span></div>
+            <div class="industry-item"><i class="fas fa-hotel" aria-hidden="true"></i><span>Hotels</span></div>
+            <div class="industry-item"><i class="fas fa-rocket" aria-hidden="true"></i><span>Startups</span></div>
+        </div>
+    </div>
+</section>
 
-            <h2>
-                Professional Website Design Services for Businesses in Nigeria & Worldwide
-            </h2>
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <img src="Obaradigital profile.png" alt="Obara Anthony, Founder of Obara Digital" loading="eager" fetchpriority="high" decoding="async">
+            </div>
+            <div class="about-content reveal">
+                <div class="section-label">About</div>
+                <h2 class="section-title">Helping Nigerian Businesses <span class="gradient-text">Win Online</span></h2>
+                <p>
+                    I'm Obara Anthony, founder of Obara Digital. I help
+                    businesses build a stronger digital presence through
+                    high-converting WordPress websites, focused landing pages, and
+                    strategic digital advertising.
+                </p>
+                <p>
+                    Every website and landing page I build is designed around
+                    your brand, your audience, and your business goals — not
+                    simply to look good, but to give your marketing something
+                    strong to work with.
+                </p>
+                <p>
+                    Whether you need a custom WordPress business website, a
+                    campaign landing page, or a better way to turn advertising
+                    traffic into customers, I build the digital foundation
+                    around what your business actually needs.
+                </p>
+                <div class="about-checks">
+                    <span><i class="fas fa-check" aria-hidden="true"></i> WordPress Development</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> SEO Optimized</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> Mobile Responsive</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> Fast Loading</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> Conversion Focused</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> Transparent Pricing</span>
+                </div>
+                <a href="#contact" class="btn btn-primary" style="margin-top:2rem;">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Let's Build Your Website
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <p class="section-description">
-                We design modern, fast, secure and SEO-optimized websites that help businesses
-                attract customers, build credibility and increase revenue.
-                Every project is custom-built to achieve your business goals.
+<!-- Services Section -->
+<section class="section" id="services" style="background:var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">Services</div>
+            <h2 class="section-title">What We <span class="gradient-text">Do Best</span></h2>
+            <p class="section-subtitle">
+                We build custom WordPress websites that turn strangers into leads, landing 
+                pages that turn clicks into customers, and run ads that 
+                put your business in front of people who are ready to buy.
             </p>
-
         </div>
 
-        <div class="services-grid">
-
-            <div class="service-card">
-                <i class="fas fa-briefcase"></i>
-                <h3>Business Website Design</h3>
-                <p>Professional websites for small businesses, startups and growing companies that want more enquiries and sales.</p>
+        <div class="grid-3">
+            <!-- WORDPRESS DEVELOPMENT -->
+            <div class="card service-card card-hover reveal">
+                <div class="service-icon" aria-hidden="true">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+                <h3>WordPress Development</h3>
+                <p>
+                    Custom, responsive WordPress websites built specifically around your brand, audience, and commercial goals — scalable, easy to update, and conversion-optimized.
+                </p>
+                <a href="#packages" class="btn-ghost">
+                    Explore WordPress Packages
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
 
-            <div class="service-card">
-                <i class="fas fa-building"></i>
-                <h3>Corporate Website Design</h3>
-                <p>Premium corporate websites that build trust and strengthen your company's online presence.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-cart-shopping"></i>
-                <h3>E-commerce Website Development</h3>
-                <p>Sell products online with secure, high-converting eCommerce websites built for growth.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-house"></i>
-                <h3>Real Estate Websites</h3>
-                <p>Beautiful property listing websites with enquiry forms, maps and lead generation features.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-scale-balanced"></i>
-                <h3>Law Firm Websites</h3>
-                <p>Professional legal websites that showcase your expertise and generate quality client enquiries.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-hospital"></i>
-                <h3>Hospital & Medical Websites</h3>
-                <p>Healthcare websites designed for hospitals, clinics and medical professionals.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-school"></i>
-                <h3>School Websites</h3>
-                <p>Modern education websites with admission information, news, events and online resources.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-hotel"></i>
-                <h3>Hotel Website Design</h3>
-                <p>Luxury hotel websites with booking enquiry features and beautiful galleries.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-chart-line"></i>
+            <!-- LANDING PAGES -->
+            <div class="card service-card card-hover reveal">
+                <div class="service-icon" aria-hidden="true">
+                    <i class="fas fa-bullseye"></i>
+                </div>
                 <h3>Landing Pages</h3>
-                <p>High-converting landing pages designed for Google Ads, Meta Ads and marketing campaigns.</p>
+                <p>
+                    Focused, conversion-driven landing pages built for promotional campaigns, lead generation, bookings, and direct product sales.
+                </p>
+                <a href="#contact" class="btn-ghost">
+                    Explore Landing Pages
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
 
-            <div class="service-card">
-                <i class="fas fa-arrows-rotate"></i>
-                <h3>Website Redesign</h3>
-                <p>Transform outdated websites into fast, modern and conversion-focused business assets.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-screwdriver-wrench"></i>
-                <h3>Website Maintenance</h3>
-                <p>Keep your website secure, updated and performing at its best with ongoing support.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-code"></i>
-                <h3>Custom Web Applications</h3>
-                <p>Need something unique? We develop custom web solutions tailored to your business.</p>
-            </div>
-
-        </div>
-
-        <div class="services-cta">
-
-            <h3>
-                Not Sure Which Website Is Right for Your Business?
-            </h3>
-
-            <p>
-                Let's discuss your goals and recommend the best website solution for your business.
-            </p>
-
-            <a href="#contact" class="btn btn-primary">
-                Get a Free Consultation
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================================
-END PART 3A
-====================================================== -->
-<!-- ======================================================
-START PART 4A
-WHY CHOOSE OBARA DIGITAL
-====================================================== -->
-
-<section class="why-obara-section" id="why-obara">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-label">
-                Why Choose Obara Digital
-            </span>
-
-            <h2>
-                More Than a Website — We Build Digital Assets That Grow Your Business
-            </h2>
-
-            <p class="section-description">
-                A professional website should do more than look beautiful. It should build trust,
-                rank on Google, generate qualified leads, and help your business grow. At Obara
-                Digital, every website is designed with your business goals in mind.
-            </p>
-
-        </div>
-
-        <div class="why-obara-grid">
-
-            <div class="why-card">
-
-                <div class="why-icon">
+            <!-- RUNNING ADS -->
+            <div class="card service-card card-hover reveal">
+                <div class="service-icon" aria-hidden="true">
                     <i class="fas fa-chart-line"></i>
                 </div>
-
-                <h3>Results-Focused Strategy</h3>
-
+                <h3>Running Ads</h3>
                 <p>
-                    Every page is designed to increase enquiries, conversions, and business growth
-                    instead of simply looking attractive.
+                    Research-driven Meta and Google advertising campaigns designed to bring targeted traffic, qualified inquiries, and sales directly to your business.
                 </p>
-
+                <a href="#contact" class="btn-ghost">
+                    Explore Running Ads
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-magnifying-glass-chart"></i>
-                </div>
-
-                <h3>SEO Built In</h3>
-
-                <p>
-                    We build websites that follow modern SEO best practices so your business has
-                    a better opportunity to appear in Google search results.
-                </p>
-
-            </div>
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-mobile-screen-button"></i>
-                </div>
-
-                <h3>Responsive on Every Device</h3>
-
-                <p>
-                    Every website automatically adapts to desktops, tablets, and smartphones for
-                    the best user experience.
-                </p>
-
-            </div>
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-
-                <h3>Fast Performance</h3>
-
-                <p>
-                    Optimized code, image compression, and modern development practices help your
-                    website load quickly.
-                </p>
-
-            </div>
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-lock"></i>
-                </div>
-
-                <h3>Secure & Reliable</h3>
-
-                <p>
-                    SSL security, clean development, and best practices help protect your website
-                    and visitors.
-                </p>
-
-            </div>
-
-            <div class="why-card">
-
-                <div class="why-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-
-                <h3>Ongoing Support</h3>
-
-                <p>
-                    We continue supporting your website after launch with updates, guidance,
-                    maintenance, and technical assistance.
-                </p>
-
-            </div>
-
         </div>
 
-        <div class="stats-row">
-
-            <div class="stat-box">
-
-                <h3>100%</h3>
-
-                <span>Mobile Responsive</span>
-
-            </div>
-
-            <div class="stat-box">
-
-                <h3>SEO</h3>
-
-                <span>Ready Structure</span>
-
-            </div>
-
-            <div class="stat-box">
-
-                <h3>Fast</h3>
-
-                <span>Performance Optimized</span>
-
-            </div>
-
-            <div class="stat-box">
-
-                <h3>24/7</h3>
-
-                <span>Lead Generation</span>
-
-            </div>
-
-        </div>
-
-        <div class="why-obara-cta">
-
-            <h3>
-                Ready to Build a Website That Helps Your Business Grow?
-            </h3>
-
-            <p>
-                Let's create a modern, SEO-friendly, high-converting website that positions your
-                business for long-term success in Nigeria and worldwide.
-            </p>
-
+        <div class="section-cta reveal">
+            <h3>Every great website starts with a conversation.</h3>
+            <p>Let's talk about your project and map out a plan that fits your budget and goals.</p>
             <a href="#contact" class="btn btn-primary">
-
-                Request a Free Consultation
-
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Start Your Project
             </a>
-
         </div>
-
     </div>
-
 </section>
 
-<!-- ======================================================
-END PART 4A
-====================================================== -->
-<!-- ======================================================
-START PART 5A
-OUR WEBSITE DESIGN PROCESS
-====================================================== -->
-
-<section class="process-section" id="process">
-
+<!-- Portfolio / Case Studies Section -->
+<section class="section" id="portfolio">
     <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-label">
-                Our Process
-            </span>
-
-            <h2>
-                Our Proven Website Design Process
-            </h2>
-
-            <p class="section-description">
-                Building a successful website requires more than great design.
-                Our structured process ensures every project is strategically planned,
-                professionally designed, technically optimized, and built to generate results.
-            </p>
-
+        <div class="section-header reveal">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Real Projects, <span class="gradient-text">Real Results</span></h2>
+            <p class="section-subtitle">See the transformation from problem to solution for businesses I've worked with.</p>
         </div>
+        <div class="portfolio-grid">
+            <!-- Case Study 1 -->
+            <div class="portfolio-item reveal">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dot"></div>
+                        <div class="browser-dot"></div>
+                        <div class="browser-dot"></div>
+                        <div class="browser-url">premierproperties.42web.io</div>
+                    </div>
+                    <div class="browser-body">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop" alt="Premier Properties real estate website screenshot" loading="lazy" decoding="async">
+                        <div class="browser-overlay">
+                            <a href="https://premierproperties.42web.io/?i=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Visit Live Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="category">Real Estate</span>
+                    <h3>Premier Properties</h3>
+                    <p>Modern WordPress real estate website designed to generate property inquiries and showcase luxury listings.</p>
+                    <div class="case-meta">
+                        <div class="case-box">
+                            <strong>Problem</strong>
+                            <span>No online presence to showcase listings</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Solution</strong>
+                            <span>Responsive property gallery + inquiry forms</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Result</strong>
+                            <span>Live inquiry system generating leads</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Status</strong>
+                            <span style="color:var(--success);">Live & Delivered</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">SEO</span>
+                    </div>
+                    <a href="https://premierproperties.42web.io/?i=1" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Visit Website
+                    </a>
+                </div>
+            </div>
 
-        <div class="process-timeline">
+            <!-- Case Study 2 -->
+            <div class="portfolio-item reveal">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dot"></div>
+                        <div class="browser-dot"></div>
+                        <div class="browser-dot"></div>
+                        <div class="browser-url">obara.free.nf</div>
+                    </div>
+                    <div class="browser-body">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=500&fit=crop" alt="A.O Capital Cleaning Solution website screenshot" loading="lazy" decoding="async">
+                        <div class="browser-overlay">
+                            <a href="https://obara.free.nf/?i=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Visit Live Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="category">Facility Management</span>
+                    <h3>A.O Capital Cleaning Solution</h3>
+                    <p>Professional business website for cleaning, facility management, fumigation, laundry and maintenance services.</p>
+                    <div class="case-meta">
+                        <div class="case-box">
+                            <strong>Problem</strong>
+                            <span>Needed credibility to win corporate contracts</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Solution</strong>
+                            <span>Professional service pages + contact system</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Result</strong>
+                            <span>Established online credibility for bidding</span>
+                        </div>
+                        <div class="case-box">
+                            <strong>Status</strong>
+                            <span style="color:var(--success);">Live & Delivered</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">SEO</span>
+                    </div>
+                    <a href="https://obara.free.nf/?i=1" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%;">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Visit Website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta reveal">
+            <h3>Have a project in mind?</h3>
+            <p>Let's add your business to this list of successful launches.</p>
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-rocket" aria-hidden="true"></i> Let's Build Your Website
+            </a>
+        </div>
+    </div>
+</section>
 
-            <div class="process-item">
+<!-- Pricing Section -->
+<section class="section" id="packages" style="background:var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">Pricing</div>
+            <h2 class="section-title">Website <span class="gradient-text">Packages</span></h2>
+            <p class="section-subtitle">Transparent pricing with no hidden fees. Choose the package that fits your business goals.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="card pricing-card reveal">
+                <h3>Starter</h3>
+                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">Perfect for personal brands and small businesses just getting started online.</p>
+                <div class="price">Starting from <span>₦150,000</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> 3-5 Pages</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Basic SEO Setup</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
+                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> WordPress CMS / Blog</li>
+                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Payment Integration</li>
+                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Booking System</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
+            </div>
 
+            <div class="card pricing-card featured reveal">
+                <div class="pricing-badge">Most Popular</div>
+                <h3>Business</h3>
+                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">Best for growing businesses, hospitals, and real estate companies that need more.</p>
+                <div class="price">Starting from <span>₦350,000</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> 7-10 Pages</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Advanced SEO Setup</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
+                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Payment Integration</li>
+                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Booking System</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width:100%;">Request a Quote</a>
+            </div>
+
+            <div class="card pricing-card reveal">
+                <h3>Growth</h3>
+                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">For businesses ready to scale with e-commerce and advanced features.</p>
+                <div class="price">Starting from <span>₦500,000</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> 10-15 Pages</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Premium SEO Setup</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Booking System</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
+            </div>
+
+            <div class="card pricing-card reveal">
+                <h3>Enterprise</h3>
+                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">For large organizations needing custom features and unlimited scalability.</p>
+                <div class="price">Request a Quote</div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited Pages</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Custom Features</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Full SEO Package</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Priority Support</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Booking System</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
+            </div>
+        </div>
+        <div class="section-cta reveal">
+            <h3>Not sure which package fits?</h3>
+            <p>Let's talk through your needs and I'll recommend the right solution.</p>
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-comments" aria-hidden="true"></i> Get Free Consultation
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="section" id="process">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">Process</div>
+            <h2 class="section-title">How We <span class="gradient-text">Work Together</span></h2>
+            <p class="section-subtitle">A simple, transparent process from start to finish.</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-card reveal">
                 <div class="process-number">01</div>
-
-                <div class="process-content">
-
-                    <h3>Discovery & Consultation</h3>
-
-                    <p>
-                        We begin by understanding your business, target audience,
-                        competitors, goals, and project requirements.
-                    </p>
-
-                </div>
-
+                <h3>Discovery</h3>
+                <p>We discuss your goals, target audience, brand identity, and technical requirements.</p>
             </div>
-
-            <div class="process-item">
-
+            <div class="process-card reveal">
                 <div class="process-number">02</div>
-
-                <div class="process-content">
-
-                    <h3>Planning & Strategy</h3>
-
-                    <p>
-                        We create the website structure, user journey,
-                        content strategy, and SEO foundation before development begins.
-                    </p>
-
-                </div>
-
+                <h3>Strategy & Design</h3>
+                <p>We map out site architecture, layout structure, conversion flows, and content direction.</p>
             </div>
-
-            <div class="process-item">
-
+            <div class="process-card reveal">
                 <div class="process-number">03</div>
-
-                <div class="process-content">
-
-                    <h3>UI / UX Design</h3>
-
-                    <p>
-                        Every page is carefully designed to provide a premium user experience
-                        while guiding visitors toward taking action.
-                    </p>
-
-                </div>
-
+                <h3>Development</h3>
+                <p>We build your responsive website or landing page with fast load speeds and secure setup.</p>
             </div>
-
-            <div class="process-item">
-
+            <div class="process-card reveal">
                 <div class="process-number">04</div>
-
-                <div class="process-content">
-
-                    <h3>Website Development</h3>
-
-                    <p>
-                        We transform the approved design into a fast,
-                        responsive, secure, and scalable website.
-                    </p>
-
-                </div>
-
+                <h3>Launch & Growth</h3>
+                <p>After testing and approval, we go live and set up your ongoing marketing and ads campaign.</p>
             </div>
-
-            <div class="process-item">
-
-                <div class="process-number">05</div>
-
-                <div class="process-content">
-
-                    <h3>SEO Optimization</h3>
-
-                    <p>
-                        We optimize your website structure, speed, metadata,
-                        schema, and technical SEO to improve visibility on Google.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="process-item">
-
-                <div class="process-number">06</div>
-
-                <div class="process-content">
-
-                    <h3>Testing & Quality Assurance</h3>
-
-                    <p>
-                        Every page is tested across different browsers,
-                        screen sizes, and devices before launch.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="process-item">
-
-                <div class="process-number">07</div>
-
-                <div class="process-content">
-
-                    <h3>Website Launch</h3>
-
-                    <p>
-                        Once approved, your website is deployed with
-                        SSL security, analytics, and performance monitoring.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="process-item">
-
-                <div class="process-number">08</div>
-
-                <div class="process-content">
-
-                    <h3>Ongoing Support</h3>
-
-                    <p>
-                        We continue supporting your website with updates,
-                        maintenance, technical assistance, and future improvements.
-                    </p>
-
-                </div>
-
-            </div>
-
         </div>
+    </div>
+</section>
 
-        <div class="process-cta">
-
-            <h3>
-                Ready to Start Your Website Project?
-            </h3>
-
-            <p>
-                Let's discuss your business goals and create a website that
-                attracts customers, builds trust, and grows your business.
-            </p>
-
+<!-- FAQ Section -->
+<section class="section" id="faq" style="background:var(--bg-secondary);">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+            <p class="section-subtitle">Everything you need to know before we start working together.</p>
+        </div>
+        <div class="faq-accordion" itemscope itemtype="https://schema.org/FAQPage">
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">How long does it take to build a website?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Most WordPress business websites take 2-4 weeks from discovery to launch. E-commerce and larger projects may take 4-6 weeks depending on complexity.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Do you require full payment upfront?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">No. I typically work with a 50% deposit to start, and the remaining 50% upon completion and approval before the site goes live.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Will my website show up on Google?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Yes. Every website I build includes basic SEO setup. For advanced ranking, I recommend ongoing search optimization packages.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Can I update the website myself?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Absolutely. WordPress makes content management simple. I also provide a short training video so you can make updates confidently.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Do you offer website maintenance?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Yes. I offer monthly maintenance packages that include backups, security updates, content changes, and performance monitoring.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">What do I need to provide to get started?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Your logo, brand colors, content (or I can help write it), photos, and a clear idea of what you want your website to achieve.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Do you work with international clients?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Yes. While I am based in Nigeria, I work with clients globally via video calls, email, and messaging tools.</div>
+                </div>
+            </div>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-button" onclick="toggleFaq(this)" aria-expanded="false">
+                    <span itemprop="name">Can you help with digital marketing and ads?</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">Yes. I run Meta (Facebook/Instagram) and Google ad campaigns designed to bring qualified leads directly to your business.</div>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta reveal">
+            <h3>Still have questions?</h3>
+            <p>I'm happy to answer anything before you make a decision.</p>
             <a href="#contact" class="btn btn-primary">
-
-                Book Your Free Consultation
-
+                <i class="fas fa-phone" aria-hidden="true"></i> Book a Strategy Call
             </a>
-
         </div>
-
     </div>
-
 </section>
 
-<!-- ======================================================
-END PART 5A
-====================================================== -->
-<!-- ======================================================
-START PART 6A
-EVERYTHING INCLUDED + FINAL CTA + FAQ
-====================================================== -->
-
-<section class="features-section" id="features">
-
+<!-- Contact Section -->
+<section class="section" id="contact">
     <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-label">
-                Everything Included
-            </span>
-
-            <h2>
-                Every Website We Build Includes Everything Your Business Needs to Succeed Online
-            </h2>
-
-            <p class="section-description">
-                Unlike many website design companies, we don't just build attractive websites. Every project is designed to help your business attract visitors, generate enquiries, rank on Google, and convert more customers.
-            </p>
-
-        </div>
-
-        <div class="features-grid">
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>100% Mobile Responsive Design</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>SEO-Friendly Website Structure</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Fast Loading Speed</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>SSL Security Certificate</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>WhatsApp Integration</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Professional Contact Forms</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Google Maps Integration</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Google Analytics Setup</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Technical SEO Foundation</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Schema Markup</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Blog Functionality</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Content Management System</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Social Media Integration</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Lead Generation Strategy</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Performance Optimization</span></div>
-
-            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Ongoing Technical Support</span></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="faq-section" id="faq">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <span class="section-label">
-
-                Frequently Asked Questions
-
-            </span>
-
-            <h2>
-
-                Questions Business Owners Ask Before Hiring a Website Designer
-
-            </h2>
-
-        </div>
-
-        <div class="faq-container">
-
-            <details open>
-
-                <summary>How much does a professional website cost in Nigeria?</summary>
-
-                <p>
-                    Every project is different. Pricing depends on the number of pages, features, integrations, functionality, and business goals. Contact Obara Digital for a custom quotation.
-                </p>
-
-            </details>
-
-            <details>
-
-                <summary>How long does it take to build a website?</summary>
-
-                <p>
-                    Most business websites are completed within a few weeks depending on project size, content readiness, and required functionality.
-                </p>
-
-            </details>
-
-            <details>
-
-                <summary>Will my website appear on Google?</summary>
-
-                <p>
-                    Yes. Every website is built with SEO best practices, clean code, and technical optimization to help search engines understand your content.
-                </p>
-
-            </details>
-
-            <details>
-
-                <summary>Can you redesign my current website?</summary>
-
-                <p>
-                    Absolutely. We redesign outdated websites to improve speed, appearance, SEO, and conversion rates.
-                </p>
-
-            </details>
-
-            <details>
-
-                <summary>Can you build an eCommerce website?</summary>
-
-                <p>
-                    Yes. We build secure online stores with payment gateways, inventory management, and mobile-friendly shopping experiences.
-                </p>
-
-            </details>
-
-        </div>
-
-        <div class="final-cta">
-
-            <h2>
-
-                Ready to Grow Your Business With a Professional Website?
-
-            </h2>
-
-            <p>
-
-                Let's build a modern, high-converting website that attracts customers, builds trust, and helps your business grow in Nigeria and worldwide.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="btn btn-primary">
-
-                    Request Your Free Quote
-
-                </a>
-
-                <a href="tel:+234XXXXXXXXXX" class="btn btn-secondary">
-
-                    Call Us Today
-
-                </a>
-
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <div class="section-label">Contact</div>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Great Together</span></h2>
+                <p>Ready to take your business online? Fill out the form or reach out directly. I typically respond within 24 hours.</p>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <span>hello@obaradigital.online</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <span>Nigeria (Available Worldwide)</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <div>
+                        <strong>Response Time</strong>
+                        <span>Usually within 24 hours</span>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="mailto:hello@obaradigital.online" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
             </div>
 
+            <div class="form-wrapper reveal">
+                <form onsubmit="handleFormSubmit(event)">
+                    <input type="hidden" name="access_key" value="d155b317-aa68-4ba3-8480-96b6a4becbd1">
+                    <input type="hidden" name="subject" value="New Website Enquiry - Obara Digital">
+                    <input type="hidden" name="from_name" value="Obara Digital Website">
+                    <input type="checkbox" name="botcheck" style="display:none;">
+
+                    <div class="form-row">
+                        <div class="form-floating">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" id="business" placeholder=" ">
+                            <label for="business">Business Name</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-floating">
+                            <input type="tel" id="phone" placeholder=" " required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-floating">
+                            <input type="url" id="website" placeholder=" ">
+                            <label for="website">Current Website (if any)</label>
+                        </div>
+                        <div class="form-floating">
+                            <select id="budget" required>
+                                <option value="" disabled selected></option>
+                                <option>Below ₦100,000</option>
+                                <option>₦100,000 - ₦300,000</option>
+                                <option>₦300,000 - ₦500,000</option>
+                                <option>₦500,000 - ₦1,000,000</option>
+                                <option>Above ₦1,000,000</option>
+                            </select>
+                            <label for="budget">Budget Range</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-floating">
+                            <select id="projectType" required>
+                                <option value="" disabled selected></option>
+                                <option>WordPress Development</option>
+                                <option>SEO Services</option>
+                                <option>Digital Marketing / Ads</option>
+                                <option>E-commerce Website</option>
+                                <option>Landing Page</option>
+                                <option>Website Redesign</option>
+                                <option>Website Maintenance</option>
+                                <option>Other</option>
+                            </select>
+                            <label for="projectType">Project Type</label>
+                        </div>
+                        <div class="form-floating">
+                            <select id="timeline">
+                                <option value="" disabled selected></option>
+                                <option>ASAP</option>
+                                <option>Within 2 weeks</option>
+                                <option>Within 1 month</option>
+                                <option>Flexible</option>
+                            </select>
+                            <label for="timeline">Timeline</label>
+                        </div>
+                    </div>
+
+                    <div class="form-floating">
+                        <textarea id="message" placeholder=" " required></textarea>
+                        <label for="message">Tell us about your project</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit" style="width:100%;">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                    </button>
+                    <div class="form-note">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i> Response within 24 hours
+                    </div>
+                </form>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-<!-- ======================================================
-END PART 6A
-====================================================== -->
-
-<style>
-/* ==========================================================
-OBARA DIGITAL SERVICE PAGE FOUNDATION
-MATCHES INDEX-V2 HOMEPAGE
-========================================================== */
-
-*,
-*::before,
-*::after{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    padding:0;
-    background:#0a0e17;
-    color:#f9fafb;
-    font-family:'Inter',sans-serif;
-    line-height:1.6;
-    overflow-x:hidden;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-button,
-a{
-    font-family:inherit;
-}
-
-a{
-    color:inherit;
-}
-
-.container{
-    width:min(1200px, calc(100% - 40px));
-    margin:0 auto;
-}
-
-/* BUTTONS */
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    min-height:52px;
-    padding:14px 26px;
-    border-radius:12px;
-    font-weight:700;
-    text-decoration:none;
-    border:1px solid transparent;
-    cursor:pointer;
-    transition:all .3s ease;
-}
-
-.btn-primary{
-    color:#fff;
-    background:linear-gradient(135deg,#2563eb,#3b82f6);
-    box-shadow:0 12px 30px rgba(37,99,235,.25);
-}
-
-.btn-primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 16px 35px rgba(37,99,235,.35);
-}
-
-.btn-secondary{
-    color:#f9fafb;
-    background:rgba(255,255,255,.04);
-    border-color:rgba(255,255,255,.16);
-}
-
-.btn-secondary:hover{
-    background:rgba(255,255,255,.08);
-    border-color:#2563eb;
-}
-
-.btn-outline{
-    color:#fff;
-    background:transparent;
-    border:2px solid rgba(255,255,255,.18);
-}
-
-.btn-outline:hover{
-    color:#fff;
-    background:#2563eb;
-    border-color:#2563eb;
-}
-/*==========================================================
-PART 1
-SERVICE HERO
-OBARA DIGITAL
-==========================================================*/
-
-.service-hero{
-    position:relative;
-    padding:140px 0 100px;
-    overflow:hidden;
-    background:
-        radial-gradient(circle at top right,
-        rgba(37,99,235,.15),
-        transparent 35%),
-        linear-gradient(180deg,#0a0e17 0%,#111827 100%);
-}
-
-.service-hero-grid{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    align-items:center;
-    gap:70px;
-}
-
-.hero-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 22px;
-    border-radius:100px;
-    margin-bottom:28px;
-    color:#38bdf8;
-    background:rgba(37,99,235,.12);
-    border:1px solid rgba(37,99,235,.25);
-    font-weight:600;
-    font-size:.95rem;
-}
-
-.hero-content h1{
-    font-size:clamp(2.7rem,5vw,4.6rem);
-    line-height:1.08;
-    font-weight:800;
-    color:#fff;
-    margin-bottom:28px;
-}
-
-.hero-content h1 span{
-    display:block;
-    color:#38bdf8;
-}
-
-.hero-description{
-    max-width:650px;
-    color:#cbd5e1;
-    font-size:1.15rem;
-    line-height:1.9;
-    margin-bottom:40px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-    margin-bottom:45px;
-}
-
-.hero-buttons .btn{
-    min-width:220px;
-    justify-content:center;
-}
-
-.btn-outline{
-    color:#fff;
-    border:2px solid rgba(255,255,255,.18);
-    background:transparent;
-}
-
-.btn-outline:hover{
-    background:#2563eb;
-    border-color:#2563eb;
-}
-
-.hero-highlights{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-
-.hero-highlights li{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:#dbe4ee;
-    font-weight:500;
-}
-
-.hero-highlights i{
-    color:#38bdf8;
-}
-
-/*=========================
-RIGHT SIDE
-=========================*/
-
-.hero-visual{
-    position:relative;
-}
-
-.hero-window{
-    border-radius:24px;
-    overflow:hidden;
-    border:1px solid rgba(255,255,255,.08);
-    background:#111827;
-    box-shadow:0 30px 70px rgba(0,0,0,.35);
-}
-
-.window-top{
-    display:flex;
-    gap:10px;
-    padding:18px 22px;
-    background:#1f2937;
-}
-
-.window-top span{
-    width:12px;
-    height:12px;
-    border-radius:50%;
-}
-
-.window-top span:nth-child(1){
-    background:#ef4444;
-}
-
-.window-top span:nth-child(2){
-    background:#facc15;
-}
-
-.window-top span:nth-child(3){
-    background:#22c55e;
-}
-
-.browser-content{
-    padding:35px;
-}
-
-.browser-header{
-    height:55px;
-    border-radius:14px;
-    background:linear-gradient(90deg,#2563eb,#38bdf8);
-    margin-bottom:22px;
-}
-
-.browser-banner{
-    height:180px;
-    border-radius:16px;
-    margin-bottom:22px;
-    background:
-        radial-gradient(
-            circle at 20% 30%,
-            rgba(59,130,246,.35),
-            transparent 28%
-        ),
-        linear-gradient(
-            135deg,
-            #172554,
-            #1e3a8a 45%,
-            #0f172a
-        );
-    border:1px solid rgba(255,255,255,.08);
-    position:relative;
-    overflow:hidden;
-}
-
-.browser-banner::after{
-    content:"";
-    position:absolute;
-    left:28px;
-    right:28px;
-    bottom:28px;
-    height:12px;
-    border-radius:20px;
-    background:rgba(255,255,255,.18);
-    box-shadow:
-        0 -28px 0 rgba(255,255,255,.10),
-        0 -56px 0 rgba(255,255,255,.07);
-}
-.browser-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.browser-grid div{
-    height:110px;
-    border-radius:14px;
-    background:#233248;
-}
-
-.floating-card{
-    position:absolute;
-    padding:16px 22px;
-    border-radius:18px;
-    background:rgba(15,23,42,.92);
-    border:1px solid rgba(255,255,255,.08);
-    color:#fff;
-    font-weight:600;
-    backdrop-filter:blur(18px);
-    box-shadow:0 18px 45px rgba(0,0,0,.35);
-}
-
-.card-1{
-    top:-25px;
-    right:-20px;
-}
-
-.card-2{
-    bottom:100px;
-    left:-50px;
-}
-
-.card-3{
-    bottom:-30px;
-    right:40px;
-}
-
-/*=========================
-TRUST BAR
-=========================*/
-
-.trust-bar{
-    background:#111827;
-    border-top:1px solid rgba(255,255,255,.05);
-    border-bottom:1px solid rgba(255,255,255,.05);
-    padding:28px 0;
-}
-
-.trust-items{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:22px;
-}
-
-.trust-item{
-    text-align:center;
-}
-
-.trust-item i{
-    display:block;
-    font-size:1.8rem;
-    margin-bottom:12px;
-    color:#38bdf8;
-}
-
-.trust-item span{
-    color:#fff;
-    font-weight:600;
-    font-size:.95rem;
-}
-
-/*=========================
-RESPONSIVE
-=========================*/
-
-@media(max-width:1100px){
-
-    .service-hero-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero-content{
-        text-align:center;
-    }
-
-    .hero-description{
-        margin-inline:auto;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-    }
-
-    .hero-highlights{
-        justify-content:center;
-    }
-
-    .hero-visual{
-        max-width:720px;
-        margin:auto;
-    }
-
-    .trust-items{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-}
-
-@media(max-width:768px){
-
-    .service-hero{
-        padding:110px 0 80px;
-    }
-
-    .hero-highlights{
-        grid-template-columns:1fr;
-    }
-
-    .hero-buttons .btn{
-        width:100%;
-        min-width:100%;
-    }
-
-    .floating-card{
-        display:none;
-    }
-
-    .trust-items{
-        grid-template-columns:repeat(2,1fr);
-        gap:25px;
-    }
-
-}
-
-@media(max-width:520px){
-
-    .trust-items{
-        grid-template-columns:1fr;
-    }
-
-}
-/*==========================================================
-PART 2B
-WHY YOUR BUSINESS NEEDS A PROFESSIONAL WEBSITE
-==========================================================*/
-
-.business-needs-section{
-    padding:120px 0;
-    background:linear-gradient(180deg,#0a0e17 0%,#111827 100%);
-    position:relative;
-    overflow:hidden;
-}
-}
-
-.business-needs-section::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-        radial-gradient(circle at top right,
-        rgba(37,99,235,.10),
-        transparent 35%);
-    pointer-events:none;
-}
-
-.section-header{
-    text-align:center;
-    max-width:820px;
-    margin:0 auto 70px;
-}
-
-.section-label{
-    display:inline-block;
-    padding:10px 20px;
-    border-radius:100px;
-    background:rgba(37,99,235,.12);
-    border:1px solid rgba(37,99,235,.20);
-    color:#38bdf8;
-    font-size:.9rem;
-    font-weight:600;
-    margin-bottom:20px;
-}
-
-.section-header h2{
-    font-size:clamp(2rem,4vw,3.2rem);
-    color:#fff;
-    margin-bottom:25px;
-    line-height:1.2;
-}
-
-.section-description{
-    color:#e5e7eb;
-    line-height:1.85;
-    font-size:1.08rem;
-    max-width:780px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.benefit-card p{
-    color:#e5e7eb;
-    line-height:1.8;
-}
-.benefit-card{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:22px;
-    padding:35px;
-    transition:.35s ease;
-    backdrop-filter:blur(16px);
-}
-
-.benefit-card:hover{
-    transform:translateY(-10px);
-    border-color:#2563eb;
-    box-shadow:0 25px 50px rgba(37,99,235,.20);
-}
-
-.benefit-icon{
-    width:70px;
-    height:70px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-    color:#fff;
-    font-size:1.7rem;
-    margin-bottom:25px;
-}
-
-.benefit-card h3{
-    color:#fff;
-    margin-bottom:18px;
-    font-size:1.35rem;
-}
-
-.benefit-card p{
-    color:#cbd5e1;
-    line-height:1.8;
-}
-
-.website-impact-box{
-    margin-top:70px;
-    border-radius:28px;
-    padding:60px;
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.14),
-        rgba(56,189,248,.08));
-    border:1px solid rgba(37,99,235,.18);
-}
-
-.website-impact-box h3{
-    color:#fff;
-    font-size:2rem;
-    margin-bottom:20px;
-}
-
-.website-impact-box p{
-    max-width:760px;
-    margin:0 auto 35px;
-    color:#dbe4ee;
-    line-height:1.9;
-}
-
-.website-impact-box .btn{
-    min-width:260px;
-}
-    /* ==========================================================
-   BENEFITS GRID — DESKTOP
-   3 CARDS PER ROW
-========================================================== */
-
-.benefits-grid{
-    display:grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-    gap:24px;
-    width:100%;
-    align-items:stretch;
-}
-
-@media(max-width:1100px){
-
-    .benefits-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    .business-needs-section{
-
-        padding:90px 0;
-
-    }
-
-    .benefits-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .website-impact-box{
-
-        padding:40px 25px;
-
-    }
-
-    .website-impact-box .btn{
-
-        width:100%;
-
-    }
-
-}
-/*==========================================================
-START PART 3B
-OUR WEBSITE DESIGN SERVICES
-==========================================================*/
-
-.services-section{
-    padding:120px 0;
-    background:#07111f;
-}
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    margin-top:60px;
-}
-
-.service-card{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:22px;
-    padding:35px;
-    transition:.35s ease;
-    position:relative;
-    overflow:hidden;
-}
-
-.service-card::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        180deg,
-        rgba(37,99,235,.08),
-        transparent);
-    opacity:0;
-    transition:.35s;
-}
-
-.service-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#2563eb;
-
-    box-shadow:0 25px 60px rgba(37,99,235,.20);
-
-}
-
-.service-card:hover::before{
-
-    opacity:1;
-
-}
-
-.service-card i{
-
-    font-size:2.3rem;
-
-    color:#38bdf8;
-
-    margin-bottom:25px;
-
-}
-
-.service-card h3{
-
-    color:#fff;
-
-    margin-bottom:18px;
-
-    font-size:1.4rem;
-
-}
-
-.service-card p{
-
-    color:#cbd5e1;
-
-    line-height:1.8;
-
-}
-
-.services-cta{
-
-    margin-top:80px;
-
-    text-align:center;
-
-    padding:60px;
-
-    border-radius:24px;
-
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.14),
-        rgba(56,189,248,.08));
-
-    border:1px solid rgba(37,99,235,.18);
-
-}
-
-.services-cta h3{
-
-    color:#fff;
-
-    font-size:2rem;
-
-    margin-bottom:18px;
-
-}
-
-.services-cta p{
-
-    color:#dbe4ee;
-
-    max-width:700px;
-
-    margin:0 auto 35px;
-
-    line-height:1.9;
-
-}
-
-.services-cta .btn{
-
-    min-width:260px;
-
-}
-
-@media(max-width:1100px){
-
-.services-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.services-section{
-
-padding:90px 0;
-
-}
-
-.services-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.services-cta{
-
-padding:40px 25px;
-
-}
-
-.services-cta .btn{
-
-width:100%;
-
-}
-
-}
-
-/*==========================================================
-END PART 3B
-==========================================================*/
-/*==========================================================
-START PART 4B
-WHY CHOOSE OBARA DIGITAL
-==========================================================*/
-
-.why-obara-section{
-    padding:120px 0;
-    background:linear-gradient(180deg,#08111f,#0c182b);
-    position:relative;
-    overflow:hidden;
-}
-
-.why-obara-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    margin-top:60px;
-}
-
-.why-card{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:22px;
-    padding:35px;
-    transition:.35s ease;
-    backdrop-filter:blur(15px);
-}
-
-.why-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#2563eb;
-
-    box-shadow:0 25px 60px rgba(37,99,235,.18);
-
-}
-
-.why-icon{
-
-    width:72px;
-
-    height:72px;
-
-    border-radius:18px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin-bottom:25px;
-
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-
-    color:#fff;
-
-    font-size:1.8rem;
-
-}
-
-.why-card h3{
-
-    color:#fff;
-
-    margin-bottom:18px;
-
-    font-size:1.35rem;
-
-}
-
-.why-card p{
-
-    color:#cbd5e1;
-
-    line-height:1.85;
-
-}
-
-.stats-row{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:25px;
-
-    margin-top:80px;
-
-}
-
-.stat-box{
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:22px;
-
-    padding:35px;
-
-    text-align:center;
-
-}
-
-.stat-box h3{
-
-    color:#38bdf8;
-
-    font-size:2.6rem;
-
-    margin-bottom:12px;
-
-    font-weight:800;
-
-}
-
-.stat-box span{
-
-    color:#dbe4ee;
-
-    font-weight:600;
-
-}
-
-.why-obara-cta{
-
-    margin-top:80px;
-
-    text-align:center;
-
-    padding:60px;
-
-    border-radius:28px;
-
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.15),
-        rgba(56,189,248,.08)
-    );
-
-    border:1px solid rgba(37,99,235,.18);
-
-}
-
-.why-obara-cta h3{
-
-    color:#fff;
-
-    font-size:2.1rem;
-
-    margin-bottom:20px;
-
-}
-
-.why-obara-cta p{
-
-    color:#dbe4ee;
-
-    line-height:1.9;
-
-    max-width:760px;
-
-    margin:0 auto 35px;
-
-}
-
-.why-obara-cta .btn{
-
-    min-width:280px;
-
-}
-
-@media(max-width:1100px){
-
-    .why-obara-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .stats-row{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    .why-obara-section{
-
-        padding:90px 0;
-
-    }
-
-    .why-obara-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .stats-row{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .why-obara-cta{
-
-        padding:40px 25px;
-
-    }
-
-    .why-obara-cta .btn{
-
-        width:100%;
-
-    }
-
-}
-
-/*==========================================================
-END PART 4B
-==========================================================*/
-/*==========================================================
-START PART 5B
-OUR WEBSITE DESIGN PROCESS
-==========================================================*/
-
-.process-section{
-    padding:120px 0;
-    background:#08111f;
-    position:relative;
-}
-
-.process-timeline{
-    position:relative;
-    max-width:900px;
-    margin:70px auto;
-}
-
-.process-timeline::before{
-    content:"";
-    position:absolute;
-    left:35px;
-    top:0;
-    bottom:0;
-    width:3px;
-    background:linear-gradient(
-        to bottom,
-        #2563eb,
-        #38bdf8
-    );
-}
-
-.process-item{
-    display:flex;
-    align-items:flex-start;
-    gap:30px;
-    margin-bottom:45px;
-    position:relative;
-}
-
-.process-number{
-    width:70px;
-    height:70px;
-    min-width:70px;
-    border-radius:50%;
-    background:linear-gradient(
-        135deg,
-        #2563eb,
-        #38bdf8
-    );
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:1.3rem;
-    font-weight:700;
-    z-index:2;
-    box-shadow:0 12px 30px rgba(37,99,235,.30);
-}
-
-.process-content{
-    flex:1;
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:30px;
-    transition:.35s ease;
-}
-
-.process-content:hover{
-    transform:translateY(-6px);
-    border-color:#2563eb;
-    box-shadow:0 20px 45px rgba(37,99,235,.18);
-}
-
-.process-content h3{
-    color:#fff;
-    font-size:1.4rem;
-    margin-bottom:15px;
-}
-
-.process-content p{
-    color:#cbd5e1;
-    line-height:1.9;
-}
-
-.process-cta{
-    margin-top:70px;
-    padding:55px;
-    text-align:center;
-    border-radius:25px;
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.15),
-        rgba(56,189,248,.08)
-    );
-    border:1px solid rgba(37,99,235,.18);
-}
-
-.process-cta h3{
-    color:#fff;
-    font-size:2rem;
-    margin-bottom:18px;
-}
-
-.process-cta p{
-    max-width:720px;
-    margin:0 auto 30px;
-    color:#dbe4ee;
-    line-height:1.8;
-}
-
-.process-cta .btn{
-    min-width:260px;
-}
-
-@media(max-width:768px){
-
-    .process-section{
-        padding:90px 0;
-    }
-
-    .process-timeline::before{
-        left:24px;
-    }
-
-    .process-number{
-        width:50px;
-        height:50px;
-        min-width:50px;
-        font-size:1rem;
-    }
-
-    .process-item{
-        gap:18px;
-    }
-
-    .process-content{
-        padding:22px;
-    }
-
-    .process-content h3{
-        font-size:1.2rem;
-    }
-
-    .process-cta{
-        padding:35px 25px;
-    }
-
-    .process-cta .btn{
-        width:100%;
-    }
-
-}
-
-/*==========================================================
-END PART 5B
-==========================================================*/
-/*==========================================================
-START PART 6B
-EVERYTHING INCLUDED + FAQ + FINAL CTA
-==========================================================*/
-
-.features-section{
-
-    padding:120px 0;
-
-    background:linear-gradient(180deg,#0a0e17,#111827);
-
-}
-
-.features-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:22px;
-
-    margin-top:60px;
-
-}
-
-.feature-item{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:18px;
-
-    padding:24px 28px;
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:18px;
-
-    transition:.35s ease;
-
-}
-
-.feature-item:hover{
-
-    transform:translateY(-6px);
-
-    border-color:#2563eb;
-
-    box-shadow:0 20px 40px rgba(37,99,235,.18);
-
-}
-
-.feature-item i{
-
-    color:#38bdf8;
-
-    font-size:1.4rem;
-
-    flex-shrink:0;
-
-}
-
-.feature-item span{
-
-    color:#fff;
-
-    font-weight:600;
-
-    line-height:1.6;
-
-}
-
-/*================ FAQ ================*/
-
-.faq-section{
-
-    padding:120px 0;
-
-    background:#0a0e17;
-
-}
-
-.faq-container{
-
-    max-width:900px;
-
-    margin:60px auto;
-
-}
-
-.faq-container details{
-
-    margin-bottom:18px;
-
-    border-radius:16px;
-
-    overflow:hidden;
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.08);
-
-}
-
-.faq-container summary{
-
-    cursor:pointer;
-
-    padding:22px 28px;
-
-    color:#fff;
-
-    font-weight:700;
-
-    list-style:none;
-
-    position:relative;
-
-}
-
-.faq-container summary::-webkit-details-marker{
-
-    display:none;
-
-}
-
-.faq-container summary::after{
-
-    content:"+";
-
-    position:absolute;
-
-    right:28px;
-
-    font-size:1.4rem;
-
-    color:#38bdf8;
-
-}
-
-.faq-container details[open] summary::after{
-
-    content:"−";
-
-}
-
-.faq-container p{
-
-    padding:0 28px 25px;
-
-    color:#cbd5e1;
-
-    line-height:1.9;
-
-}
-
-/*================ FINAL CTA ================*/
-
-.final-cta{
-
-    margin-top:80px;
-
-    padding:70px;
-
-    border-radius:28px;
-
-    text-align:center;
-
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.18),
-        rgba(56,189,248,.08)
-    );
-
-    border:1px solid rgba(37,99,235,.18);
-
-}
-
-.final-cta h2{
-
-    color:#fff;
-
-    font-size:clamp(2rem,4vw,3rem);
-
-    margin-bottom:20px;
-
-}
-
-.final-cta p{
-
-    max-width:760px;
-
-    margin:0 auto 35px;
-
-    color:#dbe4ee;
-
-    line-height:1.9;
-
-}
-
-.final-cta .hero-buttons{
-
-    justify-content:center;
-
-}
-
-.final-cta .btn{
-
-    min-width:250px;
-
-}
-
-/*================ MOBILE ================*/
-
-@media(max-width:900px){
-
-.features-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.features-section{
-
-padding:90px 0;
-
-}
-
-.faq-section{
-
-padding:90px 0;
-
-}
-
-.final-cta{
-
-padding:40px 25px;
-
-}
-
-.final-cta .hero-buttons{
-
-flex-direction:column;
-
-}
-
-.final-cta .btn{
-
-width:100%;
-
-}
-
-}
-
-/*==========================================================*
-*END PART 6B*
-*==========================================================*/
-
-</style>
-
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
+                    <i class="fas fa-code logo-icon" aria-hidden="true"></i> Obara Digital
+                </a>
+                <p>Premium WordPress development, SEO, and digital marketing services for businesses in Nigeria and beyond. Building digital assets that convert.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#packages">Pricing</a>
+                    <a href="#process">Process</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Services</h4>
+                <div class="footer-links">
+                    <a href="#services">WordPress Development</a>
+                    <a href="#services">SEO</a>
+                    <a href="#services">Digital Marketing</a>
+                    <a href="#services">E-commerce</a>
+                    <a href="#services">Landing Pages</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> hello@obaradigital.online</div>
+                    <div class="footer-contact-item"><i class="fas fa-globe" aria-hidden="true"></i> obaradigital.online</div>
+                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nigeria</div>
+                </div>
+                <div class="contact-social" style="margin-top:1rem;">
+                    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Obara Digital. All rights reserved.</p>
+            <div class="footer-links" style="flex-direction:row; gap:1.5rem;">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+</div>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- JavaScript -->
 <script>
+    // Page Loader
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loader = document.getElementById('pageLoader');
+            if(loader) loader.classList.add('hidden');
+        }, 400);
+    });
 
-/*==========================================================*
-*PART 1*
-*SERVICE HERO*
-*OBARA DIGITAL*
-*==========================================================*/
+    // Scroll Progress Bar
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (scrollTop / scrollHeight) * 100;
+        const progress = document.getElementById('scrollProgress');
+        if(progress) progress.style.width = scrolled + '%';
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
-    /*=========================================
-      HERO REVEAL ANIMATION
-    =========================================*/
+    // Navbar Scroll Effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if(header) header.classList.toggle('scrolled', window.scrollY > 50);
+    });
 
-    const heroContent = document.querySelector(".hero-content");
-    const heroVisual = document.querySelector(".hero-visual");
-
-    if (heroContent) {
-        heroContent.style.opacity = "0";
-        heroContent.style.transform = "translateY(40px)";
-        heroContent.style.transition = "all .8s ease";
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isLight = html.getAttribute('data-theme') === 'light';
+            if (isLight) {
+                html.removeAttribute('data-theme');
+                if(themeIcon) themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                if(themeIcon) themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+    
+    if (localStorage.getItem('theme') === 'light') {
+        html.setAttribute('data-theme', 'light');
+        if(themeIcon) themeIcon.className = 'fas fa-sun';
     }
 
-    if (heroVisual) {
-        heroVisual.style.opacity = "0";
-        heroVisual.style.transform = "translateY(40px)";
-        heroVisual.style.transition = "all .9s ease .2s";
-    }
+    // Mobile Navigation
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-    setTimeout(() => {
-
-        if (heroContent) {
-            heroContent.style.opacity = "1";
-            heroContent.style.transform = "translateY(0)";
+    function openMobileNav() {
+        if(mobileNav) {
+            mobileNav.classList.add('active');
+            mobileNav.setAttribute('aria-hidden', 'false');
         }
-
-        if (heroVisual) {
-            heroVisual.style.opacity = "1";
-            heroVisual.style.transform = "translateY(0)";
+        if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileNav() {
+        if(mobileNav) {
+            mobileNav.classList.remove('active');
+            mobileNav.setAttribute('aria-hidden', 'true');
         }
-
-    }, 200);
-
-    /*=========================================
-      FLOATING CARDS
-    =========================================*/
-
-    const floatingCards = document.querySelectorAll(".floating-card");
-
-    floatingCards.forEach((card, index) => {
-
-        card.animate(
-
-            [
-                {
-                    transform: "translateY(0px)"
-                },
-                {
-                    transform: "translateY(-12px)"
-                },
-                {
-                    transform: "translateY(0px)"
-                }
-            ],
-
-            {
-                duration: 3500 + (index * 500),
-                iterations: Infinity,
-                easing: "ease-in-out"
-            }
-
-        );
-
-    });
-
-    /*=========================================
-      TRUST ITEMS FADE IN
-    =========================================*/
-
-    const trustItems = document.querySelectorAll(".trust-item");
-
-    const trustObserver = new IntersectionObserver((entries) => {
-
-        entries.forEach((entry) => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-
-            }
-
-        });
-
-    }, {
-        threshold: 0.2
-    });
-
-    trustItems.forEach((item, index) => {
-
-        item.style.opacity = "0";
-        item.style.transform = "translateY(25px)";
-        item.style.transition = `all .6s ease ${index * 0.08}s`;
-
-        trustObserver.observe(item);
-
-    });
-
-    /*=========================================
-      SMOOTH SCROLL BUTTONS
-    =========================================*/
-
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-        link.addEventListener("click", function (e) {
-
-            const target = document.querySelector(this.getAttribute("href"));
-
-            if (!target) return;
-
-            e.preventDefault();
-
-            target.scrollIntoView({
-
-                behavior: "smooth",
-                block: "start"
-
-            });
-
-        });
-
-    });
-
-});
-/*==========================================================
-START PART 2C
-WHY YOUR BUSINESS NEEDS A PROFESSIONAL WEBSITE
-==========================================================*/
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const cards = document.querySelectorAll(".benefit-card");
-    const impactBox = document.querySelector(".website-impact-box");
-
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("show");
-
-            }
-
-        });
-
-    }, {
-
-        threshold: 0.15
-
-    });
-
-    cards.forEach((card, index) => {
-
-        card.style.opacity = "0";
-        card.style.transform = "translateY(40px)";
-        card.style.transition = `all .6s ease ${index * 0.08}s`;
-
-        observer.observe(card);
-
-    });
-
-    if (impactBox) {
-
-        impactBox.style.opacity = "0";
-        impactBox.style.transform = "translateY(40px)";
-        impactBox.style.transition = "all .8s ease";
-
-        observer.observe(impactBox);
-
+        if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
     }
 
-});
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileNav);
+    if(mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileNav));
 
-document.addEventListener("scroll", () => {
-
-    document.querySelectorAll(".show").forEach(item => {
-
-        item.style.opacity = "1";
-        item.style.transform = "translateY(0)";
-
-    });
-
-});
-
-/*==========================================================
-END PART 2C
-==========================================================*/
-/*==========================================================
-START PART 3C
-OUR WEBSITE DESIGN SERVICES
-==========================================================*/
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const serviceCards = document.querySelectorAll(".service-card");
-    const servicesCTA = document.querySelector(".services-cta");
-
-    const serviceObserver = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("service-visible");
-
+    // Smooth Scroll for Anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(targetId);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-
         });
-
-    }, {
-
-        threshold:0.15
-
     });
 
-    serviceCards.forEach((card,index)=>{
-
-        card.style.opacity="0";
-        card.style.transform="translateY(40px)";
-        card.style.transition=`all .6s ease ${index * .08}s`;
-
-        serviceObserver.observe(card);
-
+    // Back to Top Visibility
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if(backToTop) backToTop.classList.toggle('visible', window.scrollY > 600);
     });
 
-    if(servicesCTA){
-
-        servicesCTA.style.opacity="0";
-        servicesCTA.style.transform="translateY(40px)";
-        servicesCTA.style.transition="all .8s ease";
-
-        serviceObserver.observe(servicesCTA);
-
-    }
-
-});
-
-document.addEventListener("scroll",()=>{
-
-    document.querySelectorAll(".service-visible").forEach(item=>{
-
-        item.style.opacity="1";
-        item.style.transform="translateY(0)";
-
-    });
-
-});
-
-/*==========================================================
-END PART 3C
-==========================================================*/
-/*==========================================================
-START PART 4C
-WHY CHOOSE OBARA DIGITAL
-==========================================================*/
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const whyCards = document.querySelectorAll(".why-card");
-    const statBoxes = document.querySelectorAll(".stat-box");
-    const whyCTA = document.querySelector(".why-obara-cta");
-
-    const observer = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("why-visible");
-
-            }
-
+    // FAQ Accordion with ARIA
+    function toggleFaq(button) {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            faq.classList.remove('active');
+            const btn = faq.querySelector('.faq-button');
+            if(btn) btn.setAttribute('aria-expanded', 'false');
         });
-
-    }, {
-
-        threshold:0.15
-
-    });
-
-    whyCards.forEach((card,index)=>{
-
-        card.style.opacity="0";
-        card.style.transform="translateY(40px)";
-        card.style.transition=`all .6s ease ${index * .08}s`;
-
-        observer.observe(card);
-
-    });
-
-    statBoxes.forEach((box,index)=>{
-
-        box.style.opacity="0";
-        box.style.transform="translateY(40px)";
-        box.style.transition=`all .6s ease ${index * .1}s`;
-
-        observer.observe(box);
-
-    });
-
-    if(whyCTA){
-
-        whyCTA.style.opacity="0";
-        whyCTA.style.transform="translateY(40px)";
-        whyCTA.style.transition="all .8s ease";
-
-        observer.observe(whyCTA);
-
-    }
-
-});
-
-/*==========================================
-Reveal Elements
-==========================================*/
-
-document.addEventListener("scroll",()=>{
-
-    document.querySelectorAll(".why-visible").forEach(item=>{
-
-        item.style.opacity="1";
-        item.style.transform="translateY(0)";
-
-    });
-
-});
-
-/*==========================================
-Animate Statistics
-==========================================*/
-
-const statsObserver = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(!entry.isIntersecting) return;
-
-        const title = entry.target.querySelector("h3");
-
-        if(!title) return;
-
-        if(title.dataset.done) return;
-
-        title.dataset.done = true;
-
-        const finalValue = title.innerText.trim();
-
-        if(finalValue === "100%"){
-
-            let value = 0;
-
-            const timer = setInterval(()=>{
-
-                value += 5;
-
-                title.innerText = value + "%";
-
-                if(value >= 100){
-
-                    clearInterval(timer);
-
-                    title.innerText = "100%";
-
-                }
-
-            },40);
-
+        
+        if (!isActive) {
+            item.classList.add('active');
+            button.setAttribute('aria-expanded', 'true');
         }
-
-        if(finalValue === "24/7"){
-
-            title.innerText = "24/7";
-
-        }
-
-    });
-
-},{threshold:.4});
-
-document.querySelectorAll(".stat-box").forEach(box=>{
-
-    statsObserver.observe(box);
-
-});
-
-/*==========================================================
-END PART 4C
-==========================================================*/
-/*==========================================================
-START PART 5C
-OUR WEBSITE DESIGN PROCESS
-==========================================================*/
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const processItems = document.querySelectorAll(".process-item");
-    const processCTA = document.querySelector(".process-cta");
-
-    const processObserver = new IntersectionObserver((entries) => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("process-visible");
-
-            }
-
-        });
-
-    }, {
-
-        threshold:0.15
-
-    });
-
-    processItems.forEach((item,index)=>{
-
-        item.style.opacity="0";
-        item.style.transform="translateY(50px)";
-        item.style.transition=`all .7s ease ${index * .1}s`;
-
-        processObserver.observe(item);
-
-    });
-
-    if(processCTA){
-
-        processCTA.style.opacity="0";
-        processCTA.style.transform="translateY(40px)";
-        processCTA.style.transition="all .8s ease";
-
-        processObserver.observe(processCTA);
-
     }
 
-});
-
-document.addEventListener("scroll",()=>{
-
-    document.querySelectorAll(".process-visible").forEach(item=>{
-
-        item.style.opacity="1";
-        item.style.transform="translateY(0)";
-
-    });
-
-});
-
-/*==========================================================
-END PART 5C
-==========================================================*/
-/*==========================================================
-START PART 6C
-EVERYTHING INCLUDED + FAQ + FINAL CTA
-==========================================================*/
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const featureItems = document.querySelectorAll(".feature-item");
-    const faqItems = document.querySelectorAll(".faq-container details");
-    const finalCTA = document.querySelector(".final-cta");
-
-    const featureObserver = new IntersectionObserver((entries) => {
-
+    // Scroll Reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-
             if (entry.isIntersecting) {
-
-                entry.target.classList.add("feature-visible");
-
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
             }
-
         });
+    }, { threshold: 0.1 });
+    revealElements.forEach(el => revealObserver.observe(el));
 
-    }, {
-
-        threshold:0.15
-
+    // Exit Intent Modal
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY <= 0 && !exitShown) {
+            const modal = document.getElementById('exitModal');
+            if(modal) modal.classList.add('active');
+            exitShown = true;
+        }
     });
-
-    featureItems.forEach((item,index)=>{
-
-        item.style.opacity="0";
-        item.style.transform="translateY(40px)";
-        item.style.transition=`all .6s ease ${index * .05}s`;
-
-        featureObserver.observe(item);
-
-    });
-
-    faqItems.forEach((item,index)=>{
-
-        item.style.opacity="0";
-        item.style.transform="translateY(40px)";
-        item.style.transition=`all .6s ease ${index * .08}s`;
-
-        featureObserver.observe(item);
-
-    });
-
-    if(finalCTA){
-
-        finalCTA.style.opacity="0";
-        finalCTA.style.transform="translateY(40px)";
-        finalCTA.style.transition="all .8s ease";
-
-        featureObserver.observe(finalCTA);
-
+    const exitClose = document.getElementById('exitClose');
+    if(exitClose) {
+        exitClose.addEventListener('click', () => {
+            const modal = document.getElementById('exitModal');
+            if(modal) modal.classList.remove('active');
+        });
     }
 
-});
+    // Form Submit Handler
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const submitBtn = form.querySelector('.form-submit');
+        const originalHTML = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+            submitBtn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Message Sent!';
+            submitBtn.style.background = 'var(--success)';
+            form.reset();
+            setTimeout(() => {
+                submitBtn.innerHTML = originalHTML;
+                submitBtn.style.background = '';
+                submitBtn.disabled = false;
+            }, 3000);
+        }, 1500);
+    }
 
-document.addEventListener("scroll",()=>{
-
-    document.querySelectorAll(".feature-visible").forEach(item=>{
-
-        item.style.opacity="1";
-        item.style.transform="translateY(0)";
-
-    });
-
-});
-
-/*==========================================================
-Smooth FAQ Experience
-==========================================================*/
-
-document.querySelectorAll(".faq-container details").forEach(item=>{
-
-    item.addEventListener("toggle",function(){
-
-        if(this.open){
-
-            document.querySelectorAll(".faq-container details").forEach(other=>{
-
-                if(other!==this){
-
-                    other.removeAttribute("open");
-
-                }
-
-            });
-
-        }
-
-    });
-
-});
-
-/*==========================================================
-Final CTA Button Animation
-==========================================================*/
-
-const finalButtons=document.querySelectorAll(".final-cta .btn");
-
-finalButtons.forEach(btn=>{
-
-    btn.addEventListener("mouseenter",()=>{
-
-        btn.style.transform="translateY(-4px)";
-
-    });
-
-    btn.addEventListener("mouseleave",()=>{
-
-        btn.style.transform="translateY(0)";
-
-    });
-
-});
-
-/*==========================================================
-END PART 6C
-==========================================================*/
-
+    // Inject Service Schema
+    const services = [
+        { name: "WordPress Development", description: "Custom WordPress website design and development." },
+        { name: "SEO Services", description: "Search engine optimization to improve Google rankings." },
+        { name: "Digital Marketing", description: "Meta and Google advertising campaigns." },
+        { name: "E-commerce Development", description: "Online store development with payment integration." }
+    ];
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": services.map((s, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "item": {
+                "@type": "Service",
+                "serviceType": s.name,
+                "description": s.description,
+                "provider": { "@type": "Organization", "name": "Obara Digital" },
+                "areaServed": { "@type": "Country", "name": "Nigeria" }
+            }
+        }))
+    };
+    const serviceScript = document.createElement('script');
+    serviceScript.type = 'application/ld+json';
+    serviceScript.textContent = JSON.stringify(serviceSchema);
+    document.head.appendChild(serviceScript);
 </script>
 
 </body>
