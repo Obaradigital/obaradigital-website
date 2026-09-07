@@ -2837,63 +2837,70 @@
                     <div class="ads-final-cta-points">
                         <span><i class="fa-solid fa-check"></i> Free Account Audit</span>
                         <span><i class="fa-solid fa-check"></i> Strategic Roadmap</span>
-                        <span><i class="fa-solid fa-check"></i> Clear Performance Goals</span>
+                        <span><i class="fa-solid fa-check"></i> Clear ROI Projections</span>
                     </div>
                 </div>
 
-                <div class="ads-contact-form">
-                    <div class="ads-contact-form-header">
-                        <span class="ads-form-label">Instant Booking</span>
-                        <h3>Request Free Consult</h3>
-                        <p>We reply within 24 hours with a custom plan.</p>
-                    </div>
+                <div class="ads-final-cta-action">
+                    <form class="ads-contact-form" action="#" method="POST">
+                        <div class="ads-contact-form-header">
+                            <span class="ads-form-label">Get In Touch</span>
+                            <h3>Request Ad Strategy</h3>
+                            <p>Tell us about your business goals and current advertising spend.</p>
+                        </div>
 
-                    <form action="#" method="POST">
                         <div class="ads-form-row">
                             <div class="ads-form-group">
                                 <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                                <input type="text" id="fullName" name="fullName" placeholder="e.g. Chife Anthony" required>
                             </div>
                             <div class="ads-form-group">
-                                <label for="emailAddress">Email Address</label>
-                                <input type="email" id="emailAddress" name="emailAddress" placeholder="john@example.com" required>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="e.g. anthony@example.com" required>
                             </div>
                         </div>
 
                         <div class="ads-form-row">
                             <div class="ads-form-group">
-                                <label for="phoneNumber">Phone / WhatsApp</label>
-                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+234 800 000 0000" required>
+                                <label for="phone">Phone Number / WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g. +234 800 000 0000" required>
                             </div>
                             <div class="ads-form-group">
-                                <label for="targetPlatform">Primary Channel</label>
-                                <select id="targetPlatform" name="targetPlatform">
-                                    <option value="meta">Meta Ads (FB & IG)</option>
-                                    <option value="google">Google Search Ads</option>
-                                    <option value="both">Both Platforms</option>
-                                </select>
+                                <label for="businessName">Business / Company Name</label>
+                                <input type="text" id="businessName" name="businessName" placeholder="e.g. Obara Digital" required>
                             </div>
                         </div>
 
                         <div class="ads-form-group">
-                            <label for="message">Project Brief / Campaign Goals</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your product or current ad performance..."></textarea>
+                            <label for="adBudget">Estimated Monthly Ad Spend</label>
+                            <select id="adBudget" name="adBudget" required>
+                                <option value="" disabled selected>Select Budget Range</option>
+                                <option value="150k-300k">₦150,000 - ₦300,000 / month</option>
+                                <option value="300k-1m">₦300,000 - ₦1,000,000 / month</option>
+                                <option value="1m-3m">₦1,000,000 - ₦3,000,000 / month</option>
+                                <option value="3m+">₦3,000,000+ / month</option>
+                            </select>
                         </div>
 
-                        <div class="ads-final-cta-action">
-                            <button type="submit" class="btn btn-primary ads-form-submit">
-                                <span>Submit Campaign Request</span>
+                        <div class="ads-form-group">
+                            <label for="message">Tell Us About Your Project & Campaign Goals</label>
+                            <textarea id="message" name="message" placeholder="Describe your target audience, current challenges, or specific targets..." required></textarea>
+                        </div>
+
+                        <div class="ads-form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span>Submit Consultation Request</span>
                                 <i class="fa-solid fa-paper-plane"></i>
                             </button>
-                            <small>No pressure or obligation. Your details are secure.</small>
                         </div>
                     </form>
+                    <small>We respond within 24 business hours. No spam guaranteed.</small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NAVIGATION TOGGLE SCRIPT -->
+    <!-- JAVASCRIPT FOR MOBILE NAVIGATION -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const navToggle = document.getElementById('navToggle');
@@ -2902,9 +2909,30 @@
             if (navToggle && navLinks) {
                 navToggle.addEventListener('click', function() {
                     navLinks.classList.toggle('is-open');
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        if (navLinks.classList.contains('is-open')) {
+                            icon.className = 'fa-solid fa-xmark';
+                        } else {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    }
+                });
+
+                // Close nav menu when clicking outside or on a link
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('is-open');
+                        const icon = navToggle.querySelector('i');
+                        if (icon) {
+                            icon.className = 'fa-solid fa-bars';
+                        }
+                    });
                 });
             }
         });
     </script>
 </body>
+
 </html>
