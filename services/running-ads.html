@@ -1876,8 +1876,8 @@
         position:relative;
         z-index:1;
         display:grid;
-        grid-template-columns:minmax(0,1.5fr) minmax(280px,.7fr);
-        align-items:center;
+        grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+        align-items:start;
         gap:55px;
         margin-top:80px;
         padding:55px 50px;
@@ -2138,7 +2138,7 @@
 
     @media(max-width:950px){
         .ads-final-cta{ grid-template-columns:1fr; gap:35px; padding:45px 40px; }
-        .ads-final-cta-action{ max-width:360px; }
+        .ads-final-cta-action{ max-width:none; }
     }
 
     @media(max-width:900px){
@@ -2237,6 +2237,70 @@
             text-align:center;
         }
     }
+
+.ads-investment-note{
+    margin-top:28px;
+    padding:20px 22px;
+    background:rgba(15,23,42,.62);
+    border:1px solid rgba(59,130,246,.20);
+    border-radius:16px;
+}
+
+.ads-investment-note-title{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    margin-bottom:10px;
+    color:#ffffff;
+    font-weight:700;
+}
+
+.ads-investment-note-title i{
+    color:#60a5fa;
+}
+
+.ads-investment-note p{
+    margin:0 0 7px;
+    color:#ffffff;
+}
+
+.ads-investment-note small{
+    display:block;
+    color:rgba(255,255,255,.62);
+    line-height:1.6;
+}
+
+.ads-whatsapp-cta{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-top:26px;
+    flex-wrap:wrap;
+}
+
+.ads-whatsapp-cta > span{
+    color:rgba(255,255,255,.70);
+    font-size:.95rem;
+}
+
+.ads-whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+}
+
+.ads-form-budget-note{
+    margin:15px 0 18px;
+    padding:12px 14px;
+    border-radius:10px;
+    background:rgba(37,99,235,.08);
+    border:1px solid rgba(59,130,246,.16);
+    color:rgba(255,255,255,.68);
+    font-size:.82rem;
+    line-height:1.5;
+}
+
     </style>
 </head>
 
@@ -2828,76 +2892,192 @@
             </div>
 
             <!-- FINAL CTA WITH CONTACT FORM -->
-            <div class="ads-final-cta" id="contact">
-                <div class="ads-final-cta-content">
-                    <span class="ads-final-cta-label">Start Scaling Today</span>
-                    <h2>Ready To Turn Your Ad Budget Into <span class="gradient-text">Predictable Revenue?</span></h2>
-                    <p>Fill out the strategy form to request your campaign review and launch schedule.</p>
+           <div class="ads-final-cta" id="contact">
 
-                    <div class="ads-final-cta-points">
-                        <span><i class="fa-solid fa-check"></i> Free Account Audit</span>
-                        <span><i class="fa-solid fa-check"></i> Strategic Roadmap</span>
-                        <span><i class="fa-solid fa-check"></i> Clear ROI Projections</span>
-                    </div>
-                </div>
+    <div class="ads-final-cta-content">
 
-                <div class="ads-final-cta-action">
-                    <form class="ads-contact-form" action="#" method="POST">
-                        <div class="ads-contact-form-header">
-                            <span class="ads-form-label">Get In Touch</span>
-                            <h3>Request Ad Strategy</h3>
-                            <p>Tell us about your business goals and current advertising spend.</p>
-                        </div>
+        <span class="ads-final-cta-label">START SCALING TODAY</span>
 
-                        <div class="ads-form-row">
-                            <div class="ads-form-group">
-                                <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" name="fullName" placeholder="e.g. Chife Anthony" required>
-                            </div>
-                            <div class="ads-form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="e.g. anthony@example.com" required>
-                            </div>
-                        </div>
+        <h2>
+            Ready To Turn Your Ad Budget Into
+            <span class="gradient-text">Predictable Revenue?</span>
+        </h2>
 
-                        <div class="ads-form-row">
-                            <div class="ads-form-group">
-                                <label for="phone">Phone Number / WhatsApp</label>
-                                <input type="tel" id="phone" name="phone" placeholder="e.g. +234 800 000 0000" required>
-                            </div>
-                            <div class="ads-form-group">
-                                <label for="businessName">Business / Company Name</label>
-                                <input type="text" id="businessName" name="businessName" placeholder="e.g. Obara Digital" required>
-                            </div>
-                        </div>
+        <p>
+            Tell us about your business, campaign goals and current advertising
+            spend so we can assess the right strategy for your next stage of growth.
+        </p>
 
-                        <div class="ads-form-group">
-                            <label for="adBudget">Estimated Monthly Ad Spend</label>
-                            <select id="adBudget" name="adBudget" required>
-                                <option value="" disabled selected>Select Budget Range</option>
-                                <option value="150k-300k">₦150,000 - ₦300,000 / month</option>
-                                <option value="300k-1m">₦300,000 - ₦1,000,000 / month</option>
-                                <option value="1m-3m">₦1,000,000 - ₦3,000,000 / month</option>
-                                <option value="3m+">₦3,000,000+ / month</option>
-                            </select>
-                        </div>
-
-                        <div class="ads-form-group">
-                            <label for="message">Tell Us About Your Project & Campaign Goals</label>
-                            <textarea id="message" name="message" placeholder="Describe your target audience, current challenges, or specific targets..." required></textarea>
-                        </div>
-
-                        <div class="ads-form-submit">
-                            <button type="submit" class="btn btn-primary">
-                                <span>Submit Consultation Request</span>
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <small>We respond within 24 business hours. No spam guaranteed.</small>
-                </div>
+        <div class="ads-investment-note">
+            <div class="ads-investment-note-title">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                <span>Investment Note</span>
             </div>
+
+            <p>
+                Our Starter Management Plan is
+                <strong>₦150,000/month</strong>.
+            </p>
+
+            <small>
+                Management fees are separate from your direct advertising
+                campaign spend.
+            </small>
         </div>
+
+        <div class="ads-whatsapp-cta">
+            <span>Prefer to talk directly?</span>
+
+            <a
+                href="https://wa.me/2349020319898"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary ads-whatsapp-btn"
+            >
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span>WhatsApp Me</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="ads-final-cta-action">
+
+        <form class="ads-contact-form" action="#" method="POST">
+
+            <span class="ads-form-label">REQUEST YOUR STRATEGY</span>
+
+            <h3>Tell Us About Your Campaign</h3>
+
+            <p>
+                Share a few details and we will review your goals, budget
+                and campaign needs.
+            </p>
+
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+                    <label for="ads-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="ads-name"
+                        name="name"
+                        placeholder="Your full name"
+                        required
+                    >
+                </div>
+
+                <div class="ads-form-group">
+                    <label for="ads-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="ads-email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="ads-form-row">
+
+                <div class="ads-form-group">
+                    <label for="ads-phone">Phone Number / WhatsApp</label>
+                    <input
+                        type="tel"
+                        id="ads-phone"
+                        name="phone"
+                        placeholder="+234..."
+                        required
+                    >
+                </div>
+
+                <div class="ads-form-group">
+                    <label for="ads-company">Business / Company Name</label>
+                    <input
+                        type="text"
+                        id="ads-company"
+                        name="company"
+                        placeholder="Your business name"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="ads-form-group">
+
+                <label for="ads-budget">
+                    Estimated Monthly Ad Spend
+                </label>
+
+                <select id="ads-budget" name="budget" required>
+
+                    <option value="" disabled selected>
+                        Select your estimated budget
+                    </option>
+
+                    <option value="150000-300000">
+                        ₦150,000 - ₦300,000 / month
+                    </option>
+
+                    <option value="300000-1000000">
+                        ₦300,000 - ₦1,000,000 / month
+                    </option>
+
+                    <option value="1000000-3000000">
+                        ₦1,000,000 - ₦3,000,000 / month
+                    </option>
+
+                    <option value="3000000-plus">
+                        ₦3,000,000+ / month
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="ads-form-group">
+
+                <label for="ads-message">
+                    Tell Us About Your Project &amp; Campaign Goals
+                </label>
+
+                <textarea
+                    id="ads-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your business, your goals and what you want your campaigns to achieve..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <p class="ads-form-budget-note">
+                Your advertising budget is separate from our management fee.
+            </p>
+
+
+            <button type="submit" class="btn btn-primary ads-form-submit">
+                <span>Request Strategy Call</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+
+        </form>
+
+        <small>
+            We respond within 24 business hours. No spam guaranteed.
+        </small>
+
+    </div>
+
+</div>
     </section>
 
     <!-- JAVASCRIPT FOR MOBILE NAVIGATION -->
