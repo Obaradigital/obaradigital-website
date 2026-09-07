@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordPress Development, Web Design & Digital Marketing Agency | Obara Digital</title>
-    <meta name="description" content="Obara Digital builds high-converting WordPress websites, runs SEO campaigns, and manages Meta ads for Nigerian businesses. Get more leads, sales & customers.">
+    <title>Web Design, SEO & Google Ads Agency in Nigeria | Obara Digital</title>
+    <meta name="description" content="Obara Digital builds high-converting websites, runs SEO campaigns, and manages Meta ads for Nigerian businesses. Get more leads, sales & customers.">
     <meta name="keywords" content="web design Nigeria, SEO Lagos, digital marketing agency, WordPress developer Nigeria, Meta ads, real estate website, hospital website">
     <meta name="author" content="Obara Digital">
     <meta name="robots" content="index, follow">
@@ -18,14 +18,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://obaradigital.online">
-    <meta property="og:title" content="WordPress Development, Web Design & Digital Marketing Agency | Obara Digital">
-    <meta property="og:description" content="High-converting WordPress websites and digital marketing for Nigerian businesses.">
+    <meta property="og:title" content="Web Design, SEO & Google Ads Agency in Nigeria | Obara Digital">
+    <meta property="og:description" content="High-converting websites and digital marketing for Nigerian businesses.">
     <meta property="og:image" content="https://obaradigital.online/obara-digital-web-design-nigeria.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="WordPress Development, Web Design & Digital Marketing Agency | Obara Digital">
-    <meta name="twitter:description" content="High-converting WordPress websites and digital marketing for Nigerian businesses.">
+    <meta name="twitter:title" content="Web Design, SEO & Google Ads Agency in Nigeria | Obara Digital">
+    <meta name="twitter:description" content="High-converting websites and digital marketing for Nigerian businesses.">
     <meta name="twitter:image" content="https://obaradigital.online/obara-digital-web-design-nigeria.png">
 
     <!-- Fonts -->
@@ -33,10 +33,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Icons (Note: Subset to only used icons in production to save ~70KB) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Schema.org -->
+    <!-- Schema.org: Organization, LocalBusiness, ProfessionalService, Website, Breadcrumb -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,7 +47,7 @@
           "url": "https://obaradigital.online",
           "logo": "https://obaradigital.online/favicon.png",
           "email": "hello@obaradigital.online",
-          "description": "Premium WordPress development, web design, SEO, and digital marketing agency in Nigeria.",
+          "description": "Premium web design, SEO, and digital marketing agency in Nigeria.",
           "sameAs": [],
           "address": {
             "@type": "PostalAddress",
@@ -59,9 +59,9 @@
           "name": "Obara Digital",
           "url": "https://obaradigital.online",
           "email": "hello@obaradigital.online",
-          "description": "WordPress web design and SEO agency serving Nigerian businesses.",
+          "description": "Web design and SEO agency serving Nigerian businesses.",
           "areaServed": { "@type": "Country", "name": "Nigeria" },
-          "serviceType": ["WordPress Development", "Web Design", "SEO", "Digital Marketing", "Meta Advertising"]
+          "serviceType": ["Web Design", "SEO", "Digital Marketing", "Meta Advertising"]
         },
         {
           "@type": "ProfessionalService",
@@ -69,7 +69,7 @@
           "url": "https://obaradigital.online",
           "provider": { "@type": "Organization", "name": "Obara Digital" },
           "areaServed": { "@type": "Country", "name": "Nigeria" },
-          "serviceType": "WordPress Development and Digital Marketing"
+          "serviceType": "Web Design and Digital Marketing"
         },
         {
           "@type": "WebSite",
@@ -247,7 +247,7 @@
         }
         .logo { font-weight: 800; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
         .logo-icon { color: var(--accent); font-size: 1.25rem; }
-        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links { display: flex; gap: 2.5rem; align-items: center; }
         .nav-links a {
             font-size: 0.9375rem; font-weight: 500; color: var(--text-secondary);
             transition: var(--transition);
@@ -324,7 +324,20 @@
         }
         .hero-trust i { color: var(--success); font-size: 1rem; }
 
-        /* Featured In */
+        /* Stats / Animated Counters */
+        .stats-bar {
+            display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+            padding-top: 2rem; border-top: 1px solid var(--border);
+        }
+        .stat-item { text-align: center; }
+        .stat-number {
+            font-size: 2.5rem; font-weight: 800; color: var(--text-primary);
+            line-height: 1; font-variant-numeric: tabular-nums;
+        }
+        .stat-number span { color: var(--accent); }
+        .stat-label { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem; font-weight: 500; }
+
+        /* Featured In / Certifications */
         .featured {
             padding: 50px 0; background: var(--bg-secondary);
             border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
@@ -424,23 +437,45 @@
         .service-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
         .service-card p { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; margin-bottom: 1.25rem; }
 
-        /* Process Steps */
-        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
-        .process-card {
-            background: var(--bg-card); border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 2rem 1.5rem; text-align: center;
-            position: relative; transition: var(--transition);
+        /* Why Choose */
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .why-card { text-align: center; padding: 2.5rem 1.5rem; }
+        .why-icon {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--accent-glow); color: var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; margin: 0 auto 1.25rem; transition: var(--transition);
         }
-        .process-card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .process-number {
-            width: 48px; height: 48px; border-radius: 50%; background: var(--accent-glow);
-            color: var(--accent); font-weight: 800; font-size: 1.25rem;
-            display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;
-        }
-        .process-card h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
-        .process-card p { color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; }
+        .why-card:hover .why-icon { background: var(--accent); color: #fff; transform: scale(1.1); }
+        .why-card h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+        .why-card p { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.6; }
 
-        /* Portfolio */
+        /* Process Timeline */
+        .process-timeline { display: flex; justify-content: space-between; position: relative; }
+        .process-timeline::before {
+            content: ''; position: absolute; top: 32px; left: 5%; right: 5%;
+            height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+        .process-step {
+            display: flex; flex-direction: column; align-items: center;
+            text-align: center; flex: 1; position: relative; z-index: 1; max-width: 150px;
+        }
+        .process-step .step-icon {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--bg-card); border: 2px solid var(--accent);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.25rem; color: var(--accent); margin-bottom: 1rem;
+            box-shadow: 0 0 20px var(--accent-glow); transition: var(--transition);
+        }
+        .process-step:hover .step-icon { background: var(--accent); color: #fff; transform: scale(1.1); }
+        .process-step h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+        .process-step p { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; }
+        .process-arrow {
+            position: absolute; top: 24px; right: -20px;
+            color: var(--accent); font-size: 0.875rem; opacity: 0.6;
+        }
+
+        /* Portfolio Case Studies */
         .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
         .portfolio-item { overflow: hidden; }
         .browser-mockup {
@@ -514,6 +549,13 @@
         .pricing-features li.missing { color: var(--text-muted); }
         .pricing-features li.missing i { color: var(--text-muted); }
 
+        /* SEO Services */
+        .seo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .seo-card { display: flex; align-items: flex-start; gap: 1rem; padding: 1.75rem; }
+        .seo-card i { font-size: 1.5rem; color: var(--accent); margin-top: 0.25rem; }
+        .seo-card h4 { font-size: 1.0625rem; margin-bottom: 0.375rem; }
+        .seo-card p { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.6; }
+
         /* FAQ */
         .faq-accordion { max-width: 800px; margin: 0 auto; }
         .faq-item {
@@ -538,7 +580,9 @@
         .faq-item.active .faq-content { max-height: 250px; padding: 0 1.5rem 1.25rem; }
 
         /* Section CTA */
-        .section-cta { text-align: center; margin-top: 3rem; }
+        .section-cta {
+            text-align: center; margin-top: 3rem;
+        }
         .section-cta h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
         .section-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; }
 
@@ -546,7 +590,9 @@
         .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem; }
         .contact-info h2 { margin-bottom: 1rem; }
         .contact-info > p { color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7; }
-        .contact-detail { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+        .contact-detail {
+            display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;
+        }
         .contact-detail i {
             width: 48px; height: 48px; border-radius: var(--radius);
             background: var(--accent-glow); color: var(--accent);
@@ -626,8 +672,13 @@
         .exit-content p { color: var(--text-secondary); margin-bottom: 1.5rem; }
 
         /* Sticky Desktop CTA */
-        .sticky-cta-desktop { position: fixed; bottom: 2rem; right: 2rem; z-index: 997; }
-        .sticky-cta-desktop .btn { box-shadow: 0 8px 30px rgba(37,99,235,0.4); padding: 1rem 2rem; font-size: 1rem; }
+        .sticky-cta-desktop {
+            position: fixed; bottom: 2rem; right: 2rem; z-index: 997;
+        }
+        .sticky-cta-desktop .btn {
+            box-shadow: 0 8px 30px rgba(37,99,235,0.4);
+            padding: 1rem 2rem; font-size: 1rem;
+        }
 
         /* Sticky Mobile Bar */
         .sticky-mobile {
@@ -669,7 +720,9 @@
         }
 
         /* WhatsApp Float */
-        .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 998; }
+        .whatsapp-float {
+            position: fixed; bottom: 2rem; right: 2rem; z-index: 998;
+        }
         .whatsapp-btn {
             width: 56px; height: 56px; border-radius: 50%;
             background: #25d366; color: #fff;
@@ -679,23 +732,16 @@
         }
         .whatsapp-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
 
-        /* Back to top button */
-        .back-to-top {
-            position: fixed; bottom: 2rem; left: 2rem; z-index: 997;
-            width: 44px; height: 44px; border-radius: var(--radius);
-            background: var(--bg-card); border: 1px solid var(--border);
-            color: var(--text-primary); opacity: 0; visibility: hidden;
-            transition: var(--transition); display: flex; align-items: center; justify-content: center;
-        }
-        .back-to-top.visible { opacity: 1; visibility: visible; }
-        .back-to-top:hover { border-color: var(--accent); color: var(--accent); }
-
         /* Responsive */
         @media (max-width: 1024px) {
             .about-grid { grid-template-columns: 1fr; gap: 3rem; }
             .about-image { max-width: 500px; margin: 0 auto; }
             .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            .process-timeline { flex-wrap: wrap; gap: 2rem; }
+            .process-timeline::before { display: none; }
+            .process-step { max-width: 100%; width: calc(50% - 1rem); }
+            .process-arrow { display: none; }
             .lead-magnet .container { grid-template-columns: 1fr; text-align: center; }
             .lead-magnet-form { justify-content: center; }
             .sticky-cta-desktop { display: none; }
@@ -707,9 +753,12 @@
             .hero h1 { font-size: 2rem; }
             .hero-actions { flex-direction: column; align-items: center; }
             .hero-trust { gap: 0.75rem; }
+            .stats-bar { gap: 2rem; }
             .grid-3 { grid-template-columns: 1fr; }
             .portfolio-grid { grid-template-columns: 1fr; }
             .pricing-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .process-step { width: 100%; }
             .form-row { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; text-align: center; }
             .footer-brand { display: flex; flex-direction: column; align-items: center; }
@@ -724,7 +773,58 @@
         @media (prefers-reduced-motion: reduce) {
             * { animation: none !important; transition: none !important; }
         }
-    </style>
+
+        /* Custom Image Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 38px;
+            width: 38px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+ .logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Brand Alignment */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-brand .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand .logo-img {
+    height: 38px;
+    width: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.footer-contact p,
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+</style>
 </head>
 <body>
 
@@ -743,12 +843,69 @@
     <div class="exit-content">
         <button class="exit-close" id="exitClose" aria-label="Close offer">&times;</button>
         <h3 id="exitTitle">Wait! Before You Leave...</h3>
-        <p>Claim your <strong>FREE Website Audit</strong> (worth ₦15,000). I'll review your site and send a video report within 24 hours.</p>
-        <form class="lead-magnet-form" style="flex-direction:column;" onsubmit="event.preventDefault(); document.getElementById('exitModal').classList.remove('active'); alert('Thanks! Your audit request has been received.');">
-            <input type="url" placeholder="https://yourwebsite.com" required style="width:100%; margin-bottom:0.75rem;">
-            <input type="email" placeholder="your@email.com" required style="width:100%; margin-bottom:0.75rem;">
-            <button type="submit" class="btn btn-primary" style="width:100%;">Claim My Free Audit</button>
-        </form>
+        <p>Claim your <strong>FREE Website Audit</strong> (worth ₦35,000). I'll review your site and send a video report within 24 hours.</p>
+        <form
+    class="lead-magnet-form"
+    style="flex-direction:column;"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="access_key"
+        value="d155b317-aa68-4ba3-8480-96b6a4becbd1"
+    >
+
+    <input
+        type="hidden"
+        name="subject"
+        value="Free Website Audit Request - Obara Digital"
+    >
+
+    <input
+        type="hidden"
+        name="from_name"
+        value="Obara Digital Website"
+    >
+
+    <input
+        type="hidden"
+        name="redirect"
+        value="https://www.obaradigital.online/index-v2.html?audit=success"
+    >
+
+    <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none;"
+    >
+
+    <input
+        type="url"
+        name="website"
+        placeholder="https://yourwebsite.com"
+        required
+        style="width:100%; margin-bottom:0.75rem;"
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="your@email.com"
+        required
+        style="width:100%; margin-bottom:0.75rem;"
+    >
+
+    <button
+        type="submit"
+        class="btn btn-primary"
+        style="width:100%;"
+    >
+        Claim My Free Audit
+    </button>
+
+</form>
     </div>
 </div>
 
@@ -761,7 +918,7 @@
 
 <!-- Sticky Mobile Bar -->
 <div class="sticky-mobile" aria-label="Quick contact bar">
-    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener">
+    <a href="https://wa.me/09020319898" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
     </a>
     <a href="tel:+2349020319898">
@@ -772,24 +929,58 @@
     </a>
 </div>
 
-<!-- Header Navigation -->
+<!-- Header -->
 <header class="header" id="header">
     <div class="container nav-container">
-        <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
-            <i class="fas fa-code logo-icon" aria-hidden="true"></i>
-            Obara Digital
-        </a>
-        <nav aria-label="Main navigation">
-            <ul class="nav-links" id="desktopNav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#packages">Pricing</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact" class="btn btn-primary">Book Strategy Call</a></li>
-            </ul>
-        </nav>
+       <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
+    <img src="images/favicon.jpg" alt="Obara Digital Mark" class="logo-img">
+    <span class="logo-text">OBARA <span class="gradient-text">DIGITAL</span></span>
+</a>
+      <nav aria-label="Main navigation">
+    <ul class="nav-links" id="desktopNav">
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="services/website-design.html">
+                Website Design
+            </a>
+        </li>
+
+        <li>
+            <a href="services/landing-pages.html">
+                Landing Pages
+            </a>
+        </li>
+
+        <li>
+            <a href="services/running-ads.html">
+                Running Ads
+            </a>
+        </li>
+
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <li>
+            <a href="#process">Process</a>
+        </li>
+
+        <li>
+            <a href="#faq">FAQ</a>
+        </li>
+
+        <li>
+            <a href="#contact" class="btn btn-primary">
+                Book Strategy Call
+            </a>
+        </li>
+
+    </ul>
+</nav>
         <div class="nav-controls">
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                 <i class="fas fa-moon" aria-hidden="true"></i>
@@ -821,7 +1012,7 @@
 <nav class="breadcrumb container" aria-label="Breadcrumb">
     <a href="https://obaradigital.online">Home</a>
     <span aria-hidden="true"> / </span>
-    <span aria-current="page">WordPress Development & Digital Marketing Agency</span>
+    <span aria-current="page">Premium Web Design & Digital Marketing Agency</span>
 </nav>
 
 <!-- Hero Section -->
@@ -832,17 +1023,18 @@
                 <i class="fas fa-circle" style="font-size:8px;color:var(--success);" aria-hidden="true"></i>
                 Available for new projects
             </div>
-            <h1>
-                We Build Digital Experiences That
-                <span class="gradient-text">
-                    Turn Visitors Into Customers
-                </span>
-            </h1>
-            <p>
-                High-converting WordPress websites, focused landing pages, and
-                research-driven advertising for businesses ready
-                to attract more leads and grow.
-            </p>
+           <h1>
+    We Build Digital Experiences That
+    <span class="gradient-text">
+        Turn Visitors Into Customers
+    </span>
+</h1>
+
+<p>
+    High-converting websites, landing pages, and
+    research-driven advertising for businesses ready
+    to attract more leads and grow.
+</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">
                     <i class="fas fa-calendar-check" aria-hidden="true"></i> Get Free Consultation
@@ -857,11 +1049,11 @@
                 <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Mobile First</span>
                 <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Fast Loading</span>
                 <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Secure SSL</span>
+                <span role="listitem"><i class="fas fa-check-circle" aria-hidden="true"></i> Conversion Focused</span>
             </div>
-        </div>
+                    </div>
     </div>
 </section>
-
 <!-- Lead Magnet -->
 <section class="lead-magnet" id="audit">
     <div class="container">
@@ -872,15 +1064,15 @@
                 <input type="url" placeholder="https://yourwebsite.com" required aria-label="Website URL">
                 <input type="email" placeholder="your@email.com" required aria-label="Email address">
                 <button type="submit">Send My Audit</button>
-            </form>
-            <div class="lead-magnet-features">
-                <span><i class="fas fa-check" aria-hidden="true"></i> SEO Analysis</span>
+            </form>></i> SEO Analysis</span>
                 <span><i class="fas fa-check" aria-hidden="true"></i> Speed Check</span>
                 <span><i class="fas fa-check" aria-hidden="true"></i> Mobile Review</span>
             </div>
         </div>
         <div class="lead-visual">
             <div class="glass">
+            <div class="lead-magnet-features">
+                <span><i class="fas fa-check" aria-hidden="true"
                 <i class="fas fa-clipboard-check" aria-hidden="true"></i>
                 <h3>Free Website Audit</h3>
                 <p>Valued at ₦15,000 — Yours Free</p>
@@ -889,7 +1081,7 @@
     </div>
 </section>
 
-<!-- Tools & Platforms Section -->
+<!-- Featured In / Certifications -->
 <section class="featured" id="featured">
     <div class="container">
         <div class="featured-header">Tools & Platforms We Work With</div>
@@ -912,15 +1104,42 @@
             <h2 class="section-title">Businesses We <span class="gradient-text">Serve</span></h2>
         </div>
         <div class="industries-grid reveal">
-            <div class="industry-item"><i class="fas fa-building" aria-hidden="true"></i><span>Real Estate</span></div>
-            <div class="industry-item"><i class="fas fa-hospital" aria-hidden="true"></i><span>Healthcare</span></div>
-            <div class="industry-item"><i class="fas fa-broom" aria-hidden="true"></i><span>Cleaning Companies</span></div>
-            <div class="industry-item"><i class="fas fa-balance-scale" aria-hidden="true"></i><span>Law Firms</span></div>
-            <div class="industry-item"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Schools</span></div>
-            <div class="industry-item"><i class="fas fa-hard-hat" aria-hidden="true"></i><span>Construction</span></div>
-            <div class="industry-item"><i class="fas fa-utensils" aria-hidden="true"></i><span>Restaurants</span></div>
-            <div class="industry-item"><i class="fas fa-hotel" aria-hidden="true"></i><span>Hotels</span></div>
-            <div class="industry-item"><i class="fas fa-rocket" aria-hidden="true"></i><span>Startups</span></div>
+            <div class="industry-item">
+                <i class="fas fa-building" aria-hidden="true"></i>
+                <span>Real Estate</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-hospital" aria-hidden="true"></i>
+                <span>Healthcare</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-broom" aria-hidden="true"></i>
+                <span>Cleaning Companies</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                <span>Law Firms</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                <span>Schools</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-hard-hat" aria-hidden="true"></i>
+                <span>Construction</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-utensils" aria-hidden="true"></i>
+                <span>Restaurants</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-hotel" aria-hidden="true"></i>
+                <span>Hotels</span>
+            </div>
+            <div class="industry-item">
+                <i class="fas fa-rocket" aria-hidden="true"></i>
+                <span>Startups</span>
+            </div>
         </div>
     </div>
 </section>
@@ -936,25 +1155,25 @@
                 <div class="section-label">About</div>
                 <h2 class="section-title">Helping Nigerian Businesses <span class="gradient-text">Win Online</span></h2>
                 <p>
-                    I'm Obara Anthony, founder of Obara Digital. I help
-                    businesses build a stronger digital presence through
-                    high-converting WordPress websites, focused landing pages, and
-                    strategic digital advertising.
-                </p>
+    I'm Obara Anthony, founder of Obara Digital. I help
+    businesses build a stronger digital presence through
+    high-converting websites, focused landing pages, and
+    strategic digital advertising.
+</p>
+               <p>
+    Every website and landing page I build is designed around
+    your brand, your audience, and your business goals — not
+    simply to look good, but to give your marketing something
+    strong to work with.
+</p>
                 <p>
-                    Every website and landing page I build is designed around
-                    your brand, your audience, and your business goals — not
-                    simply to look good, but to give your marketing something
-                    strong to work with.
-                </p>
-                <p>
-                    Whether you need a custom WordPress business website, a
-                    campaign landing page, or a better way to turn advertising
-                    traffic into customers, I build the digital foundation
-                    around what your business actually needs.
-                </p>
+    Whether you need a professional business website, a
+    campaign landing page, or a better way to turn advertising
+    traffic into customers, I build the digital foundation
+    around what your business actually needs.
+</p>
                 <div class="about-checks">
-                    <span><i class="fas fa-check" aria-hidden="true"></i> WordPress Development</span>
+                    <span><i class="fas fa-check" aria-hidden="true"></i> Professional Development</span>
                     <span><i class="fas fa-check" aria-hidden="true"></i> SEO Optimized</span>
                     <span><i class="fas fa-check" aria-hidden="true"></i> Mobile Responsive</span>
                     <span><i class="fas fa-check" aria-hidden="true"></i> Fast Loading</span>
@@ -975,60 +1194,94 @@
         <div class="section-header reveal">
             <div class="section-label">Services</div>
             <h2 class="section-title">What We <span class="gradient-text">Do Best</span></h2>
-            <p class="section-subtitle">
-                We build custom WordPress websites that turn strangers into leads, landing 
-                pages that turn clicks into customers, and run ads that 
-                put your business in front of people who are ready to buy.
-            </p>
+            <p class="section-subtitle"<p class="section-subtitle">
+  We build websites that turn strangers into leads, landing 
+  pages that turn clicks into customers, and run ads that 
+  put your business in front of people who are ready to buy 
+  — not just browse.
+</p>
         </div>
 
-        <div class="grid-3">
-            <!-- WORDPRESS DEVELOPMENT -->
-            <div class="card service-card card-hover reveal">
-                <div class="service-icon" aria-hidden="true">
-                    <i class="fab fa-wordpress"></i>
-                </div>
-                <h3>WordPress Development</h3>
-                <p>
-                    Custom, responsive WordPress websites built specifically around your brand, audience, and commercial goals — scalable, easy to update, and conversion-optimized.
-                </p>
-                <a href="#packages" class="btn-ghost">
-                    Explore WordPress Packages
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
+<div class="grid-3">
 
-            <!-- LANDING PAGES -->
-            <div class="card service-card card-hover reveal">
-                <div class="service-icon" aria-hidden="true">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <h3>Landing Pages</h3>
-                <p>
-                    Focused, conversion-driven landing pages built for promotional campaigns, lead generation, bookings, and direct product sales.
-                </p>
-                <a href="#contact" class="btn-ghost">
-                    Explore Landing Pages
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
+    <!-- WEBSITE DESIGN -->
 
-            <!-- RUNNING ADS -->
-            <div class="card service-card card-hover reveal">
-                <div class="service-icon" aria-hidden="true">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Running Ads</h3>
-                <p>
-                    Research-driven Meta and Google advertising campaigns designed to bring targeted traffic, qualified inquiries, and sales directly to your business.
-                </p>
-                <a href="#contact" class="btn-ghost">
-                    Explore Running Ads
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
+    <div class="card service-card card-hover reveal">
+
+        <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-laptop-code"></i>
         </div>
 
+        <h3>
+            Website Design
+        </h3>
+
+        <p>
+            Premium, responsive websites built around your
+            brand, audience and business goals — designed to
+            turn visitors into enquiries and customers.
+        </p>
+
+        <a href="#packages" class="btn-ghost">
+            Explore Website Design
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+    </div>
+
+
+    <!-- LANDING PAGES -->
+
+    <div class="card service-card card-hover reveal">
+
+        <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-bullseye"></i>
+        </div>
+
+        <h3>
+            Landing Pages
+        </h3>
+
+        <p>
+            Focused, conversion-driven landing pages built
+            for campaigns, lead generation, bookings and
+            sales.
+        </p>
+
+        <a href="#contact" class="btn-ghost">
+            Explore Landing Pages
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+    </div>
+
+
+    <!-- RUNNING ADS -->
+
+    <div class="card service-card card-hover reveal">
+
+        <div class="service-icon" aria-hidden="true">
+            <i class="fas fa-chart-line"></i>
+        </div>
+
+        <h3>
+            Running Ads
+        </h3>
+
+        <p>
+            Research-driven Meta and Google advertising
+            designed to help businesses attract qualified
+            leads, enquiries and customers.
+        </p>
+
+        <a href="running-ads.html" class="btn-ghost">
+            Explore Running Ads
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+    </div>
+
+   </div>
         <div class="section-cta reveal">
             <h3>Every great website starts with a conversation.</h3>
             <p>Let's talk about your project and map out a plan that fits your budget and goals.</p>
@@ -1038,6 +1291,190 @@
         </div>
     </div>
 </section>
+
+<!-- ==========================================================
+PROCESS SECTION
+========================================================== -->
+
+<section class="section" id="process" style="background:var(--bg-secondary);">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Process
+            </div>
+
+            <h2 class="section-title">
+                From Strategy to
+                <span class="gradient-text">Results</span>
+            </h2>
+
+            <p class="section-subtitle">
+                A clear, strategic process that turns your business
+                goals into websites, landing pages, and advertising
+                campaigns built for growth.
+            </p>
+
+        </div>
+
+
+        <div class="process-timeline reveal">
+
+
+            <!-- STEP 01 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <h4>Discovery</h4>
+
+                <p>
+                    We learn about your business, audience, offer,
+                    and goals so we know exactly what we're building toward.
+                </p>
+
+                <i class="fas fa-chevron-right process-arrow"
+                   aria-hidden="true"></i>
+
+            </div>
+
+
+            <!-- STEP 02 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-map"></i>
+                </div>
+
+                <h4>Strategy</h4>
+
+                <p>
+                    We research your market, competitors, audience,
+                    and campaign goals to create the right strategy.
+                </p>
+
+                <i class="fas fa-chevron-right process-arrow"
+                   aria-hidden="true"></i>
+
+            </div>
+
+
+            <!-- STEP 03 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+
+                <h4>Design</h4>
+
+                <p>
+                    We design your website or landing page around
+                    your brand, audience, message, and conversion goals.
+                </p>
+
+                <i class="fas fa-chevron-right process-arrow"
+                   aria-hidden="true"></i>
+
+            </div>
+
+
+            <!-- STEP 04 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h4>Build</h4>
+
+                <p>
+                    We build the digital experience with responsive
+                    layouts, strong user experience, and conversion in mind.
+                </p>
+
+                <i class="fas fa-chevron-right process-arrow"
+                   aria-hidden="true"></i>
+
+            </div>
+
+
+            <!-- STEP 05 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-vial"></i>
+                </div>
+
+                <h4>Launch</h4>
+
+                <p>
+                    We test everything, launch your website, landing page,
+                    or advertising campaign, and make sure it is ready.
+                </p>
+
+                <i class="fas fa-chevron-right process-arrow"
+                   aria-hidden="true"></i>
+
+            </div>
+
+
+            <!-- STEP 06 -->
+
+            <div class="process-step">
+
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <h4>Optimize</h4>
+
+                <p>
+                    We monitor performance, identify opportunities,
+                    and make improvements based on the data.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="section-cta reveal">
+
+            <h3>
+                Ready to turn your idea into results?
+            </h3>
+
+            <p>
+                Let's talk about your business, goals, and the right
+                digital strategy for you.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+
+                <i class="fas fa-calendar-check"
+                   aria-hidden="true"></i>
+
+                Start Your Project
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 
 <!-- Portfolio / Case Studies Section -->
 <section class="section" id="portfolio">
@@ -1069,7 +1506,7 @@
                 <div class="portfolio-info">
                     <span class="category">Real Estate</span>
                     <h3>Premier Properties</h3>
-                    <p>Modern WordPress real estate website designed to generate property inquiries and showcase luxury listings.</p>
+                    <p>Modern real estate website designed to generate property inquiries and showcase luxury properties.</p>
                     <div class="case-meta">
                         <div class="case-box">
                             <strong>Problem</strong>
@@ -1089,9 +1526,9 @@
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-tag">WordPress</span>
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">Responsive</span>
                         <span class="tech-tag">SEO</span>
                     </div>
@@ -1122,7 +1559,7 @@
                 <div class="portfolio-info">
                     <span class="category">Facility Management</span>
                     <h3>A.O Capital Cleaning Solution</h3>
-                    <p>Professional business website for cleaning, facility management, fumigation, laundry and maintenance services.</p>
+                    <p>Professional company website for cleaning, facility management, fumigation, laundry and maintenance services.</p>
                     <div class="case-meta">
                         <div class="case-box">
                             <strong>Problem</strong>
@@ -1142,9 +1579,9 @@
                         </div>
                     </div>
                     <div class="tech-stack">
-                        <span class="tech-tag">WordPress</span>
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">Responsive</span>
                         <span class="tech-tag">SEO</span>
                     </div>
@@ -1164,135 +1601,6 @@
     </div>
 </section>
 
-<!-- Pricing Section -->
-<section class="section" id="packages" style="background:var(--bg-secondary);">
-    <div class="container">
-        <div class="section-header reveal">
-            <div class="section-label">Pricing</div>
-            <h2 class="section-title">Website <span class="gradient-text">Packages</span></h2>
-            <p class="section-subtitle">Transparent pricing with no hidden fees. Choose the package that fits your business goals.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="card pricing-card reveal">
-                <h3>Starter</h3>
-                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">Perfect for personal brands and small businesses just getting started online.</p>
-                <div class="price">Starting from <span>₦150,000</span></div>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> 3-5 Pages</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Basic SEO Setup</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
-                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> WordPress CMS / Blog</li>
-                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Payment Integration</li>
-                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Booking System</li>
-                </ul>
-                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
-            </div>
-
-            <div class="card pricing-card featured reveal">
-                <div class="pricing-badge">Most Popular</div>
-                <h3>Business</h3>
-                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">Best for growing businesses, hospitals, and real estate companies that need more.</p>
-                <div class="price">Starting from <span>₦350,000</span></div>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> 7-10 Pages</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Advanced SEO Setup</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
-                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Payment Integration</li>
-                    <li class="missing"><i class="fas fa-minus" aria-hidden="true"></i> Booking System</li>
-                </ul>
-                <a href="#contact" class="btn btn-primary" style="width:100%;">Request a Quote</a>
-            </div>
-
-            <div class="card pricing-card reveal">
-                <h3>Growth</h3>
-                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">For businesses ready to scale with e-commerce and advanced features.</p>
-                <div class="price">Starting from <span>₦500,000</span></div>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> 10-15 Pages</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Contact Form</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Premium SEO Setup</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Hosting Support</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Booking System</li>
-                </ul>
-                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
-            </div>
-
-            <div class="card pricing-card reveal">
-                <h3>Enterprise</h3>
-                <p style="color:var(--text-muted); font-size:0.9375rem; margin-bottom:1rem;">For large organizations needing custom features and unlimited scalability.</p>
-                <div class="price">Request a Quote</div>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Unlimited Pages</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Custom Features</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Full SEO Package</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Speed Optimization</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> SSL Certificate</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Priority Support</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> WordPress CMS / Blog</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Payment Integration</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Booking System</li>
-                </ul>
-                <a href="#contact" class="btn btn-outline" style="width:100%;">Request a Quote</a>
-            </div>
-        </div>
-        <div class="section-cta reveal">
-            <h3>Not sure which package fits?</h3>
-            <p>Let's talk through your needs and I'll recommend the right solution.</p>
-            <a href="#contact" class="btn btn-primary">
-                <i class="fas fa-comments" aria-hidden="true"></i> Get Free Consultation
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Process Section -->
-<section class="section" id="process">
-    <div class="container">
-        <div class="section-header reveal">
-            <div class="section-label">Process</div>
-            <h2 class="section-title">How We <span class="gradient-text">Work Together</span></h2>
-            <p class="section-subtitle">A simple, transparent process from start to finish.</p>
-        </div>
-        <div class="process-grid">
-            <div class="process-card reveal">
-                <div class="process-number">01</div>
-                <h3>Discovery</h3>
-                <p>We discuss your goals, target audience, brand identity, and technical requirements.</p>
-            </div>
-            <div class="process-card reveal">
-                <div class="process-number">02</div>
-                <h3>Strategy & Design</h3>
-                <p>We map out site architecture, layout structure, conversion flows, and content direction.</p>
-            </div>
-            <div class="process-card reveal">
-                <div class="process-number">03</div>
-                <h3>Development</h3>
-                <p>We build your responsive website or landing page with fast load speeds and secure setup.</p>
-            </div>
-            <div class="process-card reveal">
-                <div class="process-number">04</div>
-                <h3>Launch & Growth</h3>
-                <p>After testing and approval, we go live and set up your ongoing marketing and ads campaign.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- FAQ Section -->
 <section class="section" id="faq" style="background:var(--bg-secondary);">
     <div class="container">
@@ -1308,7 +1616,7 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Most WordPress business websites take 2-4 weeks from discovery to launch. E-commerce and larger projects may take 4-6 weeks depending on complexity.</div>
+                    <div itemprop="text">Most business websites take 2-4 weeks from discovery to launch. E-commerce and larger projects may take 4-6 weeks depending on complexity.</div>
                 </div>
             </div>
             <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -1326,7 +1634,7 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Yes. Every website I build includes basic SEO setup. For advanced ranking, I recommend ongoing search optimization packages.</div>
+                    <div itemprop="text">Yes. Every website I build includes basic SEO setup. For advanced ranking, I recommend one of my monthly SEO packages.</div>
                 </div>
             </div>
             <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -1335,7 +1643,7 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Absolutely. WordPress makes content management simple. I also provide a short training video so you can make updates confidently.</div>
+                    <div itemprop="text">Absolutely. I build sites with easy-to-use content management. I also provide a short training video so you can make updates confidently.</div>
                 </div>
             </div>
             <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -1362,7 +1670,7 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Yes. While I am based in Nigeria, I work with clients globally via video calls, email, and messaging tools.</div>
+                    <div itemprop="text">Yes. While I am based in Nigeria, I work with clients globally via video calls, email, and project management tools.</div>
                 </div>
             </div>
             <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -1371,7 +1679,7 @@
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="faq-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <div itemprop="text">Yes. I run Meta (Facebook/Instagram) and Google ad campaigns designed to bring qualified leads directly to your business.</div>
+                    <div itemprop="text">Yes. I run Facebook, Instagram, and Google ad campaigns designed to bring qualified leads to your new website.</div>
                 </div>
             </div>
         </div>
@@ -1384,7 +1692,6 @@
         </div>
     </div>
 </section>
-
 <!-- Contact Section -->
 <section class="section" id="contact">
     <div class="container">
@@ -1392,7 +1699,7 @@
             <div class="contact-info reveal">
                 <div class="section-label">Contact</div>
                 <h2 class="section-title">Let's Build Something <span class="gradient-text">Great Together</span></h2>
-                <p>Ready to take your business online? Fill out the form or reach out directly. I typically respond within 24 hours.</p>
+                <p>Ready to take your business online? Fill out the form or reach out directly. I typically respond within a few hours.</p>
                 
                 <div class="contact-detail">
                     <i class="fas fa-envelope" aria-hidden="true"></i>
@@ -1417,7 +1724,7 @@
                 </div>
 
                 <div class="contact-social">
-                    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/2348000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -1425,158 +1732,261 @@
                 </div>
             </div>
 
-            <div class="form-wrapper reveal">
-                <form onsubmit="handleFormSubmit(event)">
-                    <input type="hidden" name="access_key" value="d155b317-aa68-4ba3-8480-96b6a4becbd1">
-                    <input type="hidden" name="subject" value="New Website Enquiry - Obara Digital">
-                    <input type="hidden" name="from_name" value="Obara Digital Website">
-                    <input type="checkbox" name="botcheck" style="display:none;">
+          <form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="obara-contact-form"
+>
 
-                    <div class="form-row">
-                        <div class="form-floating">
-                            <input type="text" id="name" placeholder=" " required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="text" id="business" placeholder=" ">
-                            <label for="business">Business Name</label>
-                        </div>
-                    </div>
+    <input
+        type="hidden"
+        name="access_key"
+        value="d155b317-aa68-4ba3-8480-96b6a4becbd1"
+    >
 
-                    <div class="form-row">
-                        <div class="form-floating">
-                            <input type="tel" id="phone" placeholder=" " required>
-                            <label for="phone">Phone Number</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="email" id="email" placeholder=" " required>
-                            <label for="email">Email Address</label>
-                        </div>
-                    </div>
+    <input
+        type="hidden"
+        name="subject"
+        value="New Website Enquiry - Obara Digital"
+    >
 
-                    <div class="form-row">
-                        <div class="form-floating">
-                            <input type="url" id="website" placeholder=" ">
-                            <label for="website">Current Website (if any)</label>
-                        </div>
-                        <div class="form-floating">
-                            <select id="budget" required>
-                                <option value="" disabled selected></option>
-                                <option>Below ₦100,000</option>
-                                <option>₦100,000 - ₦300,000</option>
-                                <option>₦300,000 - ₦500,000</option>
-                                <option>₦500,000 - ₦1,000,000</option>
-                                <option>Above ₦1,000,000</option>
-                            </select>
-                            <label for="budget">Budget Range</label>
-                        </div>
-                    </div>
+    <input
+        type="hidden"
+        name="from_name"
+        value="Obara Digital Website"
+    >
 
-                    <div class="form-row">
-                        <div class="form-floating">
-                            <select id="projectType" required>
-                                <option value="" disabled selected></option>
-                                <option>WordPress Development</option>
-                                <option>SEO Services</option>
-                                <option>Digital Marketing / Ads</option>
-                                <option>E-commerce Website</option>
-                                <option>Landing Page</option>
-                                <option>Website Redesign</option>
-                                <option>Website Maintenance</option>
-                                <option>Other</option>
-                            </select>
-                            <label for="projectType">Project Type</label>
-                        </div>
-                        <div class="form-floating">
-                            <select id="timeline">
-                                <option value="" disabled selected></option>
-                                <option>ASAP</option>
-                                <option>Within 2 weeks</option>
-                                <option>Within 1 month</option>
-                                <option>Flexible</option>
-                            </select>
-                            <label for="timeline">Timeline</label>
-                        </div>
-                    </div>
+    <input
+        type="checkbox"
+        name="botcheck"
+        style="display:none;"
+    >
 
-                    <div class="form-floating">
-                        <textarea id="message" placeholder=" " required></textarea>
-                        <label for="message">Tell us about your project</label>
-                    </div>
+    <div class="form-row">
 
-                    <button type="submit" class="btn btn-primary form-submit" style="width:100%;">
-                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
-                    </button>
-                    <div class="form-note">
-                        <i class="fas fa-check-circle" aria-hidden="true"></i> Response within 24 hours
-                    </div>
-                </form>
-            </div>
+        <div class="form-floating">
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                required
+            >
+            <label for="name">Your Name</label>
+        </div>
+
+        <div class="form-floating">
+            <input
+                type="text"
+                id="business"
+                name="business"
+                placeholder=" "
+            >
+            <label for="business">Business Name</label>
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-floating">
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder=" "
+                required
+            >
+            <label for="phone">Phone Number</label>
+        </div>
+
+        <div class="form-floating">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                required
+            >
+            <label for="email">Email Address</label>
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-floating">
+            <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder=" "
+            >
+            <label for="website">Current Website (if any)</label>
+        </div>
+
+        <div class="form-floating">
+
+            <select
+                id="budget"
+                name="budget"
+                required
+            >
+                <option value="" disabled selected></option>
+                <option>Below ₦100,000</option>
+                <option>₦100,000 - ₦300,000</option>
+                <option>₦300,000 - ₦500,000</option>
+                <option>₦500,000 - ₦1,000,000</option>
+                <option>Above ₦1,000,000</option>
+            </select>
+
+            <label for="budget">Budget Range</label>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-floating">
+
+            <select
+                id="projectType"
+                name="project_type"
+                required
+            >
+                <option value="" disabled selected></option>
+                <option>Website Design</option>
+                <option>Running Ads</option>
+                <option>Landing Page</option>
+                <option>Website Redesign</option>
+                <option>Other</option>
+            </select>
+
+            <label for="projectType">What do you need?</label>
+
+        </div>
+
+
+        <div class="form-floating">
+
+            <select
+                id="timeline"
+                name="timeline"
+            >
+                <option value="" disabled selected></option>
+                <option>ASAP</option>
+                <option>Within 2 weeks</option>
+                <option>Within 1 month</option>
+                <option>Flexible</option>
+            </select>
+
+            <label for="timeline">Timeline</label>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-floating">
+
+        <textarea
+            id="message"
+            name="message"
+            placeholder=" "
+            required
+        ></textarea>
+
+        <label for="message">
+            Tell us about your project
+        </label>
+
+    </div>
+
+
+    <button
+        type="submit"
+        class="btn btn-primary form-submit"
+        style="width:100%;"
+    >
+        <i
+            class="fas fa-paper-plane"
+            aria-hidden="true"
+        ></i>
+
+        Send Message
+    </button>
+
+
+    <div class="form-note">
+
+        <i
+            class="fas fa-check-circle"
+            aria-hidden="true"
+        ></i>
+
+        Response within 24 hours
+
+    </div>
+
+</form>
         </div>
     </div>
 </section>
-
-</main>
 
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="https://obaradigital.online" class="logo" aria-label="Obara Digital Home">
-                    <i class="fas fa-code logo-icon" aria-hidden="true"></i> Obara Digital
+                <a href="https://obaradigital.online" class="logo">
+                    <img src="images/favicon.jpg" alt="Obara Digital Mark" class="logo-img">
+                    <span class="logo-text">OBARA <span class="gradient-text">DIGITAL</span></span>
                 </a>
-                <p>Premium WordPress development, SEO, and digital marketing services for businesses in Nigeria and beyond. Building digital assets that convert.</p>
+                <p>Custom websites, high-converting landing pages, and Meta ads designed to scale your business and capture qualified leads.</p>
             </div>
-            <div>
-                <h4 class="footer-title">Quick Links</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="#packages">Pricing</a>
-                    <a href="#process">Process</a>
-                    <a href="#faq">FAQ</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#blog">Blog</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
-            <div>
-                <h4 class="footer-title">Services</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">SERVICES</h4>
                 <div class="footer-links">
-                    <a href="#services">WordPress Development</a>
-                    <a href="#services">SEO</a>
-                    <a href="#services">Digital Marketing</a>
-                    <a href="#services">E-commerce</a>
-                    <a href="#services">Landing Pages</a>
+                    <a href="services/website-design.html">Website Design</a>
+                    <a href="services/landing-pages.html">Landing Pages</a>
+                    <a href="services/running-ads.html">Running Ads</a>
                 </div>
             </div>
-            <div>
-                <h4 class="footer-title">Contact</h4>
+
+            <div class="footer-col">
+                <h4 class="footer-title">CONTACT</h4>
                 <div class="footer-contact">
-                    <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i> hello@obaradigital.online</div>
-                    <div class="footer-contact-item"><i class="fas fa-globe" aria-hidden="true"></i> obaradigital.online</div>
-                    <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nigeria</div>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> hello@obaradigital.online</p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> obaradigital.online</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nigeria</p>
                 </div>
-                <div class="contact-social" style="margin-top:1rem;">
-                    <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <div class="footer-socials">
+                    <a href="https://wa.me/234" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Obaradigital" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Obara Digital. All rights reserved.</p>
-            <div class="footer-links" style="flex-direction:row; gap:1.5rem;">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Sitemap</a>
             </div>
         </div>
     </div>
-</footer>
-
-<!-- WhatsApp Floating Button -->
+</footer><!-- WhatsApp Floating Button -->
 <div class="whatsapp-float">
     <a href="https://wa.me/2349020319898" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
@@ -1593,8 +2003,7 @@
     // Page Loader
     window.addEventListener('load', () => {
         setTimeout(() => {
-            const loader = document.getElementById('pageLoader');
-            if(loader) loader.classList.add('hidden');
+            document.getElementById('pageLoader').classList.add('hidden');
         }, 400);
     });
 
@@ -1603,39 +2012,36 @@
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (scrollTop / scrollHeight) * 100;
-        const progress = document.getElementById('scrollProgress');
-        if(progress) progress.style.width = scrolled + '%';
+        document.getElementById('scrollProgress').style.width = scrolled + '%';
     });
 
     // Navbar Scroll Effect
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
-        if(header) header.classList.toggle('scrolled', window.scrollY > 50);
+        header.classList.toggle('scrolled', window.scrollY > 50);
     });
 
     // Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
-    const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+    const themeIcon = themeToggle.querySelector('i');
     
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const isLight = html.getAttribute('data-theme') === 'light';
-            if (isLight) {
-                html.removeAttribute('data-theme');
-                if(themeIcon) themeIcon.className = 'fas fa-moon';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.setAttribute('data-theme', 'light');
-                if(themeIcon) themeIcon.className = 'fas fa-sun';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    }
+    themeToggle.addEventListener('click', () => {
+        const isLight = html.getAttribute('data-theme') === 'light';
+        if (isLight) {
+            html.removeAttribute('data-theme');
+            themeIcon.className = 'fas fa-moon';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            html.setAttribute('data-theme', 'light');
+            themeIcon.className = 'fas fa-sun';
+            localStorage.setItem('theme', 'light');
+        }
+    });
     
     if (localStorage.getItem('theme') === 'light') {
         html.setAttribute('data-theme', 'light');
-        if(themeIcon) themeIcon.className = 'fas fa-sun';
+        themeIcon.className = 'fas fa-sun';
     }
 
     // Mobile Navigation
@@ -1645,43 +2051,36 @@
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
     function openMobileNav() {
-        if(mobileNav) {
-            mobileNav.classList.add('active');
-            mobileNav.setAttribute('aria-hidden', 'false');
-        }
-        if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        mobileNav.classList.add('active');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
     }
     
     function closeMobileNav() {
-        if(mobileNav) {
-            mobileNav.classList.remove('active');
-            mobileNav.setAttribute('aria-hidden', 'true');
-        }
-        if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('active');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
     }
 
-    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileNav);
-    if(mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
+    mobileMenuBtn.addEventListener('click', openMobileNav);
+    mobileNavClose.addEventListener('click', closeMobileNav);
     mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileNav));
 
     // Smooth Scroll for Anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if (targetId.length > 1) {
-                e.preventDefault();
-                const target = document.querySelector(targetId);
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
 
     // Back to Top Visibility
     const backToTop = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
-        if(backToTop) backToTop.classList.toggle('visible', window.scrollY > 600);
+        backToTop.classList.toggle('visible', window.scrollY > 600);
     });
 
     // FAQ Accordion with ARIA
@@ -1689,17 +2088,44 @@
         const item = button.parentElement;
         const isActive = item.classList.contains('active');
         
+        // Close all
         document.querySelectorAll('.faq-item').forEach(faq => {
             faq.classList.remove('active');
-            const btn = faq.querySelector('.faq-button');
-            if(btn) btn.setAttribute('aria-expanded', 'false');
+            faq.querySelector('.faq-button').setAttribute('aria-expanded', 'false');
         });
         
+        // Open clicked if not already active
         if (!isActive) {
             item.classList.add('active');
             button.setAttribute('aria-expanded', 'true');
         }
     }
+
+    // Animated Counters
+    const counters = document.querySelectorAll('.stat-number[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-count'));
+                const suffix = counter.querySelector('span') ? counter.querySelector('span').textContent : '';
+                const numberEl = counter.childNodes[0];
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        numberEl.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        numberEl.textContent = Math.floor(current);
+                    }
+                }, 30);
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+    counters.forEach(counter => counterObserver.observe(counter));
 
     // Scroll Reveal
     const revealElements = document.querySelectorAll('.reveal');
@@ -1717,18 +2143,18 @@
     let exitShown = false;
     document.addEventListener('mouseleave', (e) => {
         if (e.clientY <= 0 && !exitShown) {
-            const modal = document.getElementById('exitModal');
-            if(modal) modal.classList.add('active');
+            document.getElementById('exitModal').classList.add('active');
             exitShown = true;
         }
     });
-    const exitClose = document.getElementById('exitClose');
-    if(exitClose) {
-        exitClose.addEventListener('click', () => {
-            const modal = document.getElementById('exitModal');
-            if(modal) modal.classList.remove('active');
-        });
-    }
+    document.getElementById('exitClose').addEventListener('click', () => {
+        document.getElementById('exitModal').classList.remove('active');
+    });
+    document.getElementById('exitModal').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('exitModal')) {
+            document.getElementById('exitModal').classList.remove('active');
+        }
+    });
 
     // Form Submit Handler
     function handleFormSubmit(event) {
@@ -1751,9 +2177,9 @@
         }, 1500);
     }
 
-    // Inject Service Schema
+    // Inject Service Schema for each service
     const services = [
-        { name: "WordPress Development", description: "Custom WordPress website design and development." },
+        { name: "Web Design", description: "Custom website design for Nigerian businesses." },
         { name: "SEO Services", description: "Search engine optimization to improve Google rankings." },
         { name: "Digital Marketing", description: "Meta and Google advertising campaigns." },
         { name: "E-commerce Development", description: "Online store development with payment integration." }
