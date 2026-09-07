@@ -1,1462 +1,2011 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Website Design Services | High-Converting Digital Experiences | Obara Digital</title>
-  <meta name="description" content="Transform your online presence with Obara Digital's premium website design services. We craft bespoke, high-converting, responsive, and SEO-optimized web solutions for ambitious brands.">
-  <meta name="keywords" content="website design services, custom web design, responsive web design, UX/UI design, e-commerce web design, web development agency, Obara Digital">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://obaradigital.com/services/website-design/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium WordPress Website Design & Development | Obara Digital</title>
+    <meta name="description" content="Obara Digital builds premium, conversion-focused WordPress websites designed to establish authority, generate leads, and support paid advertising campaigns.">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WordPress Website Design & Development | Obara Digital">
+    <meta property="og:description" content="High-performance WordPress websites built for businesses that demand credibility, lead generation, and scalable growth.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://obaradigital.com/services/website-design/">
-  <meta property="og:title" content="Custom Website Design Services | Obara Digital">
-  <meta property="og:description" content="Elevate your brand with award-winning website design services designed for conversion, speed, and seamless user experience.">
-  <meta property="og:image" content="https://obaradigital.com/assets/og-website-design.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://obaradigital.com/services/website-design/">
-  <meta name="twitter:title" content="Custom Website Design Services | Obara Digital">
-  <meta name="twitter:description" content="Elevate your brand with award-winning website design services designed for conversion, speed, and seamless user experience.">
-  <meta name="twitter:image" content="https://obaradigital.com/assets/twitter-website-design.jpg">
-
-  <!-- Structured Data / JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://obaradigital.com/#organization",
-        "name": "Obara Digital",
-        "url": "https://obaradigital.com",
-        "logo": "https://obaradigital.com/assets/logo.png",
-        "sameAs": [
-          "https://twitter.com/obaradigital",
-          "https://linkedin.com/company/obaradigital",
-          "https://github.com/obaradigital"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-800-555-0199",
-          "contactType": "customer service",
-          "email": "hello@obaradigital.com",
-          "availableLanguage": ["English"]
+    <style>
+        /* ==========================================
+           COLOR SYSTEM & TOKENS
+           ========================================== */
+        :root {
+            --bg-main: #0A0E17;
+            --bg-secondary: #0F172A;
+            --bg-card: rgba(15, 23, 42, 0.7);
+            --bg-glass: rgba(15, 23, 42, 0.85);
+            
+            --primary-blue: #2563EB;
+            --accent-bright: #3B82F6;
+            --accent-light: #60A5FA;
+            --accent-glow: rgba(37, 99, 235, 0.25);
+            
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            
+            --border-light: rgba(255, 255, 255, 0.08);
+            --border-accent: rgba(59, 130, 246, 0.25);
+            --border-hover: rgba(96, 165, 250, 0.5);
+            
+            --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            --container-max: 1240px;
+            --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://obaradigital.com/#localbusiness",
-        "name": "Obara Digital - Web Design Agency",
-        "image": "https://obaradigital.com/assets/office.jpg",
-        "priceRange": "$$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "100 Innovation Way, Suite 400",
-          "addressLocality": "Austin",
-          "addressRegion": "TX",
-          "postalCode": "78701",
-          "addressCountry": "US"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 30.2672,
-          "longitude": -97.7431
-        },
-        "telephone": "+1-800-555-0199"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://obaradigital.com/services/website-design/#service",
-        "name": "Bespoke Website Design Services",
-        "provider": { "@id": "https://obaradigital.com/#organization" },
-        "serviceType": "Web Design & Development",
-        "areaServed": "Worldwide",
-        "description": "Comprehensive website design and UI/UX development tailored to increase conversion rates, brand authority, and digital performance.",
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "2500",
-          "highPrice": "15000"
+
+        /* ==========================================
+           RESET & BASE STYLES
+           ========================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://obaradigital.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://obaradigital.com/services/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Website Design",
-            "item": "https://obaradigital.com/services/website-design/"
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How long does a website design project typically take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most bespoke website design projects take between 4 to 8 weeks depending on the project scope, complexity, required integrations, and feedback iteration cycles."
+
+        html {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Container Layout */
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ==========================================
+           COMPONENTS & BUTTONS
+           ========================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.75rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: 1px solid transparent;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: #FFFFFF;
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-bright);
+            box-shadow: 0 6px 24px rgba(37, 99, 235, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: #10B981;
+            color: #FFFFFF;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #059669;
+            box-shadow: 0 6px 24px rgba(16, 185, 129, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-size: 0.825rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent-bright);
+            margin-bottom: 1rem;
+            padding: 0.35rem 0.85rem;
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 4px;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .section-header p {
+            font-size: 1.15rem;
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 2.25rem;
+            backdrop-filter: blur(12px);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Padding */
+        .section-padding {
+            padding: 7rem 0;
+        }
+
+        /* Scroll Reveal Base */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==========================================
+           1. HEADER & NAVIGATION
+           ========================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 14, 23, 0.8);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-light);
+            transition: var(--transition-smooth);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-blue);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--primary-blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-size: 0.925rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-primary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ==========================================
+           2. HERO SECTION
+           ========================================== */
+        .hero {
+            padding-top: 11rem;
+            padding-bottom: 6rem;
+            position: relative;
+            background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12) 0%, rgba(10, 14, 23, 0) 60%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content h1 span {
+            color: var(--accent-bright);
+            background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 2.25rem;
+            max-width: 540px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Website Interface Mockup */
+        .browser-mockup {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(37, 99, 235, 0.15);
+            position: relative;
+        }
+
+        .browser-header {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .browser-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .browser-dot.red { background: #FF5F56; }
+        .browser-dot.yellow { background: #FFBD2E; }
+        .browser-dot.green { background: #27C93F; }
+
+        .browser-address {
+            margin-left: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            flex-grow: 1;
+            font-family: monospace;
+        }
+
+        .browser-body {
+            padding: 1.5rem;
+            background: var(--bg-main);
+            position: relative;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mock-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .mock-logo { width: 80px; height: 12px; background: var(--primary-blue); border-radius: 3px; }
+        .mock-links { display: flex; gap: 8px; }
+        .mock-link { width: 35px; height: 8px; background: rgba(255,255,255,0.1); border-radius: 2px; }
+
+        .mock-hero-content {
+            padding: 1.5rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mock-title { width: 85%; height: 22px; background: linear-gradient(90deg, var(--text-primary), rgba(255,255,255,0.2)); border-radius: 4px; }
+        .mock-text { width: 65%; height: 10px; background: rgba(255,255,255,0.15); border-radius: 3px; }
+        .mock-btn { width: 100px; height: 28px; background: var(--primary-blue); border-radius: 4px; margin-top: 8px; }
+
+        .mock-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+
+        .mock-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 0.75rem;
+        }
+
+        .mock-card-num { font-family: var(--font-heading); font-weight: 700; color: var(--accent-light); font-size: 1.1rem; }
+        .mock-card-label { font-size: 0.65rem; color: var(--text-muted); }
+
+        /* ==========================================
+           3. TRUST / CREDIBILITY BAR
+           ========================================== */
+        .trust-bar {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 2rem 0;
+        }
+
+        .trust-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .trust-item i {
+            color: var(--accent-bright);
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================
+           4. PROBLEM SECTION
+           ========================================== */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .problem-card {
+            border-left: 3px solid #EF4444;
+        }
+
+        .problem-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .problem-card h3 i {
+            color: #EF4444;
+            font-size: 1rem;
+        }
+
+        /* ==========================================
+           5. WHAT WE BUILD
+           ========================================== */
+        .build-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .build-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .build-card:hover {
+            border-color: var(--border-accent);
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .build-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-bright);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .build-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ==========================================
+           6. WEBSITE FEATURES / BENEFITS
+           ========================================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            color: var(--accent-light);
+            font-size: 1.25rem;
+            margin-top: 0.2rem;
+        }
+
+        .feature-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-content p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* ==========================================
+           7. WORDPRESS ADVANTAGE
+           ========================================== */
+        .wp-section {
+            background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .wp-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .wp-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .wp-list-item i {
+            color: var(--accent-bright);
+            font-size: 1.1rem;
+            margin-top: 0.25rem;
+        }
+
+        .wp-box {
+            background: var(--bg-main);
+            border: 1px solid var(--border-accent);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(37, 99, 235, 0.1);
+        }
+
+        .wp-box i {
+            font-size: 4rem;
+            color: var(--accent-bright);
+            margin-bottom: 1.5rem;
+        }
+
+        /* ==========================================
+           8. BUILDING PROCESS
+           ========================================== */
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            position: relative;
+        }
+
+        .process-step {
+            position: relative;
+        }
+
+        .step-number {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-bright);
+            opacity: 0.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ==========================================
+           9. CONVERSION STRATEGY
+           ========================================== */
+        .conversion-framework {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .framework-step {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .framework-step .step-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--accent-light);
+        }
+
+        .framework-arrow {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        /* ==========================================
+           10. MARKETING CONNECTION
+           ========================================== */
+        .marketing-diagram {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr auto 1fr;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .diagram-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+        }
+
+        .diagram-box.active-box {
+            border-color: var(--border-accent);
+            background: rgba(37, 99, 235, 0.08);
+        }
+
+        .diagram-icon {
+            font-size: 2rem;
+            color: var(--accent-bright);
+            margin-bottom: 1rem;
+        }
+
+        /* ==========================================
+           11. PORTFOLIO SHOWCASE
+           ========================================== */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+        }
+
+        .portfolio-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-6px);
+        }
+
+        .portfolio-img-placeholder {
+            height: 220px;
+            background: #1E293B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-img-placeholder::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, transparent 100%);
+        }
+
+        .portfolio-content {
+            padding: 1.75rem;
+        }
+
+        .portfolio-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-bright);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .portfolio-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ==========================================
+           12. WHO THIS IS FOR
+           ========================================== */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .audience-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            padding: 1.25rem 1.5rem;
+            border-radius: 10px;
+        }
+
+        .audience-item i {
+            color: var(--accent-bright);
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================
+           13. PACKAGES SECTION
+           ========================================== */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .package-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .package-card.featured {
+            border-color: var(--border-accent);
+            background: rgba(15, 23, 42, 0.95);
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.15);
+        }
+
+        .package-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .package-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .package-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .package-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .package-features li i {
+            color: var(--accent-bright);
+            font-size: 0.9rem;
+        }
+
+        /* ==========================================
+           14. FAQ SECTION
+           ========================================== */
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            text-align: left;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question i {
+            transition: var(--transition-smooth);
+            color: var(--accent-bright);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+            padding: 0 1.5rem;
+        }
+
+        .faq-answer p {
+            padding-bottom: 1.5rem;
+            font-size: 0.975rem;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        /* ==========================================
+           15. FINAL CTA SECTION (STRICT LAYOUT)
+           ========================================== */
+        .cta-section {
+            padding: 7rem 0;
+            background: var(--bg-main);
+        }
+
+        .cta-card-wrapper {
+            background: var(--bg-secondary);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 24px;
+            padding: 4rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(37, 99, 235, 0.1);
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .cta-left h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+        }
+
+        .cta-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .cta-benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .cta-benefit-item i {
+            color: var(--accent-bright);
+        }
+
+        .cta-direct-contact {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .cta-direct-contact p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Form Styling */
+        .contact-form-card {
+            background: rgba(10, 14, 23, 0.6);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 2.5rem;
+        }
+
+        .contact-form-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-bright);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-disclaimer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        /* ==========================================
+           16. FOOTER
+           ========================================== */
+        .footer {
+            background: #06090F;
+            border-top: 1px solid var(--border-light);
+            padding: 5rem 0 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand p {
+            margin-top: 1rem;
+            max-width: 300px;
+            font-size: 0.95rem;
+        }
+
+        .footer-column h4 {
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================
+           RESPONSIVE DESIGN (MEDIA QUERIES)
+           ========================================== */
+        @media (max-width: 1024px) {
+            .hero-grid, .wp-grid, .cta-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
             }
-          },
-          {
-            "@type": "Question",
-            "name": "Will my new website be mobile-friendly and optimized for SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolute compliance with responsive mobile standards and core technical SEO best practices (semantic HTML, fast loading speeds, meta tags, and structured data) is built into every project we touch."
+
+            .hero-content h1 {
+                font-size: 2.8rem;
             }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer custom web design or use pre-made templates?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We build 100% custom website designs tailored from scratch to match your specific brand identity, user journey, and conversion targets. We never use restrictive pre-made off-the-shelf templates."
+
+            .marketing-diagram {
+                grid-template-columns: 1fr;
             }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 
-  <style>
-    /* CSS RESET & VARIABLES */
-    :root {
-      --primary: #4f46e5;
-      --primary-hover: #4338ca;
-      --secondary: #06b6d4;
-      --accent: #f59e0b;
-      --dark: #0f172a;
-      --dark-surface: #1e293b;
-      --light: #f8fafc;
-      --light-surface: #ffffff;
-      --gray-100: #f1f5f9;
-      --gray-200: #e2e8f0;
-      --gray-300: #cbd5e1;
-      --gray-600: #475569;
-      --gray-800: #1e293b;
-      --text: #334155;
-      --text-muted: #64748b;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --radius: 12px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-    }
-
-    body {
-      font-family: var(--font-main);
-      background-color: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* UTILITY CLASSES */
-    .container {
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    .section-padding {
-      padding: 5rem 0;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 0.35rem 1rem;
-      background-color: rgba(79, 70, 229, 0.1);
-      color: var(--primary);
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 1rem;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--dark);
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
-
-    .section-subtitle {
-      font-size: 1.125rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 3rem auto;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.875rem 2rem;
-      font-weight: 600;
-      border-radius: var(--radius);
-      transition: var(--transition);
-      cursor: pointer;
-      border: none;
-      font-size: 1rem;
-      gap: 0.5rem;
-    }
-
-    .btn-primary {
-      background-color: var(--primary);
-      color: #ffffff;
-      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--primary-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
-    }
-
-    .btn-secondary {
-      background-color: var(--light-surface);
-      color: var(--dark);
-      border: 1px solid var(--gray-300);
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--gray-100);
-      transform: translateY(-2px);
-    }
-
-    /* HEADER & NAV */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--gray-200);
-      transition: var(--transition);
-    }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 80px;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--dark);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .logo span {
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .nav-links a {
-      font-weight: 500;
-      color: var(--gray-800);
-      transition: var(--transition);
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--dark);
-    }
-
-    /* BREADCRUMBS */
-    .breadcrumb-nav {
-      padding: 1rem 0;
-      background-color: var(--gray-100);
-      margin-top: 80px;
-      font-size: 0.875rem;
-    }
-
-    .breadcrumb-list {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      color: var(--text-muted);
-    }
-
-    .breadcrumb-list a:hover {
-      color: var(--primary);
-    }
-
-    .breadcrumb-separator {
-      color: var(--gray-300);
-    }
-
-    /* HERO SECTION */
-    .hero {
-      padding: 4rem 0 6rem 0;
-      background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, rgba(6, 182, 212, 0.05) 100%);
-      position: relative;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero-content h1 {
-      font-size: 3.25rem;
-      font-weight: 900;
-      color: var(--dark);
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-content h1 span {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-content p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      margin-bottom: 2.5rem;
-    }
-
-    .hero-stats {
-      display: flex;
-      gap: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--gray-200);
-    }
-
-    .stat-item strong {
-      display: block;
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--dark);
-    }
-
-    .stat-item span {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-    }
-
-    .hero-card {
-      background-color: var(--light-surface);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-xl);
-      padding: 2rem;
-      border: 1px solid var(--gray-200);
-      position: relative;
-    }
-
-    .mockup-header {
-      display: flex;
-      gap: 6px;
-      margin-bottom: 1.5rem;
-    }
-
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-    .dot-red { background-color: #ef4444; }
-    .dot-yellow { background-color: #f59e0b; }
-    .dot-green { background-color: #10b981; }
-
-    .mockup-body {
-      background-color: var(--gray-100);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-
-    .skeleton-line {
-      height: 12px;
-      background-color: var(--gray-300);
-      border-radius: 4px;
-      margin-bottom: 0.75rem;
-    }
-    .skeleton-line.w-75 { width: 75%; }
-    .skeleton-line.w-50 { width: 50%; }
-    .skeleton-box {
-      height: 150px;
-      background-color: rgba(79, 70, 229, 0.15);
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    /* SERVICES GRID */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .service-card {
-      background-color: var(--light-surface);
-      padding: 2.5rem;
-      border-radius: var(--radius);
-      border: 1px solid var(--gray-200);
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--primary);
-    }
-
-    .service-icon {
-      width: 60px;
-      height: 60px;
-      background-color: rgba(79, 70, 229, 0.1);
-      color: var(--primary);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .service-card h3 {
-      font-size: 1.35rem;
-      color: var(--dark);
-      margin-bottom: 0.75rem;
-    }
-
-    .service-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    /* PROCESS / SEQUENCE SECTION */
-    .process-steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-      position: relative;
-    }
-
-    .step-card {
-      background-color: var(--light-surface);
-      padding: 2rem;
-      border-radius: var(--radius);
-      border: 1px solid var(--gray-200);
-      position: relative;
-    }
-
-    .step-number {
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: rgba(79, 70, 229, 0.15);
-      position: absolute;
-      top: 1rem;
-      right: 1.5rem;
-    }
-
-    .step-card h4 {
-      font-size: 1.2rem;
-      color: var(--dark);
-      margin-bottom: 0.5rem;
-    }
-
-    .step-card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    /* PORTFOLIO SECTION */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-    }
-
-    .portfolio-card {
-      background-color: var(--light-surface);
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--gray-200);
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-    }
-
-    .portfolio-card:hover {
-      box-shadow: var(--shadow-xl);
-      transform: translateY(-4px);
-    }
-
-    .portfolio-img-wrapper {
-      height: 240px;
-      background-color: var(--gray-200);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    .portfolio-info {
-      padding: 1.5rem;
-    }
-
-    .portfolio-info h3 {
-      font-size: 1.25rem;
-      color: var(--dark);
-      margin-bottom: 0.5rem;
-    }
-
-    .portfolio-info p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-    }
-
-    .portfolio-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      font-size: 0.75rem;
-      background-color: var(--gray-100);
-      padding: 0.25rem 0.6rem;
-      border-radius: 4px;
-      color: var(--gray-600);
-    }
-
-    /* PRICING SECTION */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      align-items: stretch;
-    }
-
-    .pricing-card {
-      background-color: var(--light-surface);
-      border-radius: var(--radius);
-      padding: 2.5rem;
-      border: 1px solid var(--gray-200);
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      transition: var(--transition);
-    }
-
-    .pricing-card.popular {
-      border-color: var(--primary);
-      box-shadow: var(--shadow-xl);
-      transform: scale(1.03);
-    }
-
-    .popular-badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--primary);
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      text-transform: uppercase;
-    }
-
-    .pricing-header h3 {
-      font-size: 1.5rem;
-      color: var(--dark);
-    }
-
-    .pricing-price {
-      font-size: 2.75rem;
-      font-weight: 900;
-      color: var(--dark);
-      margin: 1rem 0;
-    }
-
-    .pricing-price span {
-      font-size: 1rem;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
-
-    .pricing-features {
-      margin: 1.5rem 0 2rem 0;
-      flex-grow: 1;
-    }
-
-    .pricing-features li {
-      padding: 0.5rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-    }
-
-    .pricing-features li::before {
-      content: "✓";
-      color: var(--primary);
-      font-weight: 900;
-    }
-
-    /* TESTIMONIALS SECTION */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial-card {
-      background-color: var(--light-surface);
-      padding: 2rem;
-      border-radius: var(--radius);
-      border: 1px solid var(--gray-200);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .stars {
-      color: var(--accent);
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .testimonial-card p {
-      font-style: italic;
-      color: var(--text);
-      margin-bottom: 1.5rem;
-    }
-
-    .author-info {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .author-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: var(--gray-300);
-    }
-
-    .author-details strong {
-      display: block;
-      color: var(--dark);
-    }
-
-    .author-details span {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    /* FAQ ACCORDION */
-    .faq-wrapper {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      background-color: var(--light-surface);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      margin-bottom: 1rem;
-      overflow: hidden;
-    }
-
-    .faq-question {
-      width: 100%;
-      padding: 1.25rem 1.5rem;
-      text-align: left;
-      background: none;
-      border: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: var(--dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-      padding: 0 1.5rem;
-      color: var(--text-muted);
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 200px;
-      padding: 0 1.5rem 1.25rem 1.5rem;
-    }
-
-    .faq-toggle {
-      font-size: 1.5rem;
-      transition: var(--transition);
-    }
-
-    .faq-item.active .faq-toggle {
-      transform: rotate(45deg);
-    }
-
-    /* CONTACT FORM SECTION */
-    .contact-container {
-      background-color: var(--dark);
-      border-radius: 20px;
-      padding: 4rem;
-      color: white;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-    }
-
-    .contact-info h2 {
-      font-size: 2.25rem;
-      color: white;
-      margin-bottom: 1rem;
-    }
-
-    .contact-info p {
-      color: var(--gray-300);
-      margin-bottom: 2rem;
-    }
-
-    .form-group {
-      margin-bottom: 1.25rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--gray-200);
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 0.875rem 1rem;
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      color: white;
-      font-family: inherit;
-    }
-
-    .form-control:focus {
-      outline: none;
-      border-color: var(--primary);
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    textarea.form-control {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    /* INTERNAL LINKS / FOOTER NAV */
-    .internal-links {
-      background-color: var(--gray-100);
-      padding: 3rem 0;
-      border-top: 1px solid var(--gray-200);
-    }
-
-    .links-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-    }
-
-    .link-group h5 {
-      font-size: 1rem;
-      color: var(--dark);
-      margin-bottom: 1rem;
-      font-weight: 700;
-    }
-
-    .link-group ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    .link-group ul li a {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      transition: var(--transition);
-    }
-
-    .link-group ul li a:hover {
-      color: var(--primary);
-    }
-
-    /* FOOTER */
-    footer {
-      background-color: var(--dark);
-      color: var(--gray-300);
-      padding: 2rem 0;
-      text-align: center;
-      font-size: 0.875rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 992px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-      .contact-container {
-        grid-template-columns: 1fr;
-        padding: 2rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
-      .mobile-menu-btn {
-        display: block;
-      }
-      .hero-content h1 {
-        font-size: 2.25rem;
-      }
-      .section-title {
-        font-size: 2rem;
-      }
-      .pricing-card.popular {
-        transform: none;
-      }
-    }
-  </style>
+            .diagram-arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--bg-secondary);
+                border-bottom: 1px solid var(--border-light);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                transform: translateY(-150%);
+                transition: var(--transition-smooth);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 8rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+
+            .section-header h2, .cta-left h2 {
+                font-size: 2rem;
+            }
+
+            .cta-card-wrapper {
+                padding: 2rem 1.5rem;
+            }
+
+            .conversion-framework {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .framework-arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            /* Mobile Order Strict enforcement for CTA */
+            .cta-grid {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cta-left {
+                order: 1;
+            }
+
+            .cta-right {
+                order: 2;
+                margin-top: 2rem;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+            .btn, .glass-card, .portfolio-card {
+                transition: none;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container navbar">
-      <a href="https://obaradigital.com" class="logo">
-        Obara<span>Digital</span>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#portfolio">Work</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem;">Get Started</a></li>
-        </ul>
-      </nav>
-      <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">☰</button>
-    </div>
-  </header>
-
-  <!-- BREADCRUMBS -->
-  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-    <div class="container">
-      <div class="breadcrumb-list">
-        <a href="https://obaradigital.com">Home</a>
-        <span class="breadcrumb-separator">/</span>
-        <a href="https://obaradigital.com/services/">Services</a>
-        <span class="breadcrumb-separator">/</span>
-        <span aria-current="page">Website Design Services</span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <span class="badge">Bespoke Web Design</span>
-        <h1>Engineered for <span>Conversions</span> & Brand Authority</h1>
-        <p>We craft high-performance, aesthetically stunning custom websites designed to engage your target audience and scale your revenue.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Start Your Project</a>
-          <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+    <!-- 1. HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                Obara Digital<span class="logo-dot"></span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#website-design" class="nav-link active">Website Design</a>
+                <a href="#landing-pages" class="nav-link">Landing Pages</a>
+                <a href="#running-ads" class="nav-link">Running Ads</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <a href="#start" class="btn btn-primary header-cta">Start Your Website</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <strong>250+</strong>
-            <span>Websites Launched</span>
-          </div>
-          <div class="stat-item">
-            <strong>99.8%</strong>
-            <span>Client Satisfaction</span>
-          </div>
-          <div class="stat-item">
-            <strong>3.5x</strong>
-            <span>Avg. Conversion Lift</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="mockup-header">
-          <div class="dot dot-red"></div>
-          <div class="dot dot-yellow"></div>
-          <div class="dot dot-green"></div>
-        </div>
-        <div class="mockup-body">
-          <div class="skeleton-box">Interactive UI/UX Preview</div>
-          <div class="skeleton-line"></div>
-          <div class="skeleton-line w-75"></div>
-          <div class="skeleton-line w-50"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- SERVICES SECTION -->
-  <section id="services" class="section-padding">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">Our Expertise</span>
-        <h2 class="section-title">Comprehensive Website Design Solutions</h2>
-        <p class="section-subtitle">From strategic design systems to custom full-stack development, we deliver web experiences that outperform the competition.</p>
-      </div>
-
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Custom UI/UX Design</h3>
-          <p>User-centered interfaces crafted to guide visitors effortlessly through your conversion funnel with high aesthetic appeal.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">⚡</div>
-          <h3>High-Performance Development</h3>
-          <p>Clean, semantic code engineered for lightning-fast loading speeds, passing Core Web Vitals with flying colors.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">📱</div>
-          <h3>Mobile-First Responsive Design</h3>
-          <p>Flawless rendering and intuitive navigation across smartphones, tablets, laptops, and ultra-wide displays.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">🛒</div>
-          <h3>E-Commerce Web Design</h3>
-          <p>Scalable, secure, and intuitive e-commerce stores designed to minimize cart abandonment and maximize average order value.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">🔍</div>
-          <h3>SEO & Schema Optimization</h3>
-          <p>Built-in technical SEO foundations, structured data markup, and content hierarchy to maximize organic search visibility.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">⚙️</div>
-          <h3>CMS Integration & Training</h3>
-          <p>Empowering your team with intuitive content management platforms like WordPress, Webflow, or custom headless CMS options.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS / SEQUENCE SECTION -->
-  <section id="process" class="section-padding" style="background-color: var(--gray-100);">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">How We Work</span>
-        <h2 class="section-title">Our Proven Web Design Process</h2>
-        <p class="section-subtitle">A structured, collaborative approach ensuring timely delivery without compromising quality or performance.</p>
-      </div>
-
-      <div class="process-steps">
-        <div class="step-card">
-          <span class="step-number">01</span>
-          <h4>Discovery & Strategy</h4>
-          <p>We analyze your business goals, target audience, competitive landscape, and key performance metrics.</p>
-        </div>
-
-        <div class="step-card">
-          <span class="step-number">02</span>
-          <h4>Wireframing & UI/UX</h4>
-          <p>Creating visual architecture, wireframes, and interactive prototypes for design validation.</p>
-        </div>
-
-        <div class="step-card">
-          <span class="step-number">03</span>
-          <h4>Development & Build</h4>
-          <p>Translating approved designs into clean, responsive, and robust code using modern standards.</p>
-        </div>
-
-        <div class="step-card">
-          <span class="step-number">04</span>
-          <h4>Testing & Launch</h4>
-          <p>Rigorous cross-browser testing, SEO audit, accessibility checks, and seamless live deployment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" class="section-padding">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">Featured Projects</span>
-        <h2 class="section-title">Our Latest Design Work</h2>
-        <p class="section-subtitle">Take a look at how we’ve helped innovative companies transform their digital presence.</p>
-      </div>
-
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <div class="portfolio-img-wrapper">
-            <span>SaaS Platform Redesign</span>
-          </div>
-          <div class="portfolio-info">
-            <h3>Apex Analytics Platform</h3>
-            <p>Complete overhaul of user dashboard and marketing site resulting in a 140% boost in free trial signups.</p>
-            <div class="portfolio-tags">
-              <span class="tag">UI/UX</span>
-              <span class="tag">React</span>
-              <span class="tag">SaaS</span>
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section class="hero" id="about">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">WordPress Website Design</span>
+                    <h1>Your Website Should Do More Than <span>Look Good.</span></h1>
+                    <p class="hero-description">We build premium WordPress websites designed to turn visitors into enquiries, leads, and customers.</p>
+                    <div class="hero-actions">
+                        <a href="#start" class="btn btn-primary">Start Your Website</a>
+                        <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <span class="browser-dot red"></span>
+                            <span class="browser-dot yellow"></span>
+                            <span class="browser-dot green"></span>
+                            <div class="browser-address">https://obaradigital.com</div>
+                        </div>
+                        <div class="browser-body">
+                            <div class="mock-nav">
+                                <div class="mock-logo"></div>
+                                <div class="mock-links">
+                                    <div class="mock-link"></div>
+                                    <div class="mock-link"></div>
+                                    <div class="mock-link"></div>
+                                </div>
+                            </div>
+                            <div class="mock-hero-content">
+                                <div class="mock-title"></div>
+                                <div class="mock-text"></div>
+                                <div class="mock-btn"></div>
+                            </div>
+                            <div class="mock-metrics">
+                                <div class="mock-card">
+                                    <div class="mock-card-num">99.8%</div>
+                                    <div class="mock-card-label">Uptime Architecture</div>
+                                </div>
+                                <div class="mock-card">
+                                    <div class="mock-card-num">&lt;1.2s</div>
+                                    <div class="mock-card-label">Load Velocity</div>
+                                </div>
+                                <div class="mock-card">
+                                    <div class="mock-card-num">+45%</div>
+                                    <div class="mock-card-label">Avg. Lead Flow</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
+        </section>
 
-        <article class="portfolio-card">
-          <div class="portfolio-img-wrapper">
-            <span>E-Commerce Flagship Store</span>
-          </div>
-          <div class="portfolio-info">
-            <h3>Luxe Lifestyle Brand</h3>
-            <p>Custom Shopify design featuring dynamic product personalization and streamlined one-page checkout.</p>
-            <div class="portfolio-tags">
-              <span class="tag">E-Commerce</span>
-              <span class="tag">Shopify</span>
-              <span class="tag">Branding</span>
+        <!-- 3. TRUST / CREDIBILITY BAR -->
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item"><i class="fa-solid fa-circle-check"></i> WordPress Websites</div>
+                    <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Mobile Responsive</div>
+                    <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Conversion Focused</div>
+                    <div class="trust-item"><i class="fa-solid fa-circle-check"></i> SEO-Friendly Structure</div>
+                </div>
             </div>
-          </div>
-        </article>
+        </section>
 
-        <article class="portfolio-card">
-          <div class="portfolio-img-wrapper">
-            <span>Corporate Portal</span>
-          </div>
-          <div class="portfolio-info">
-            <h3>Vanguard Legal Group</h3>
-            <p>Modern corporate web design prioritizing credibility, attorney showcases, and lead generation.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Corporate</span>
-              <span class="tag">WordPress</span>
-              <span class="tag">SEO</span>
+        <!-- 4. PROBLEM SECTION -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">The Business Challenge</span>
+                    <h2>Your Website Could Be Costing You Customers.</h2>
+                    <p>A poorly structured website quietly undermines your advertising efforts and brand reputation every single day.</p>
+                </div>
+                <div class="problems-grid">
+                    <div class="glass-card problem-card reveal">
+                        <h3><i class="fa-solid fa-triangle-exclamation"></i> Outdated Visual Presence</h3>
+                        <p>Modern buyers make snap decisions. An outdated design immediately lowers perceived value and erodes trust before your sales copy is even read.</p>
+                    </div>
+                    <div class="glass-card problem-card reveal">
+                        <h3><i class="fa-solid fa-mobile-xmark"></i> Friction-Heavy Mobile UX</h3>
+                        <p>Over 60% of your traffic arrives via mobile. Slow responsive shifts, tiny buttons, and unoptimized layouts lead to immediate drop-offs.</p>
+                    </div>
+                    <div class="glass-card problem-card reveal">
+                        <h3><i class="fa-solid fa-route"></i> Weak Next-Step Directions</h3>
+                        <p>If visitors do not instantly understand what you offer or how to take action, they navigate away to a competitor with a clearer path.</p>
+                    </div>
+                    <div class="glass-card problem-card reveal">
+                        <h3><i class="fa-solid fa-filter-circle-xmark"></i> Paid Traffic Disconnect</h3>
+                        <p>Running Meta or Google Ads to a generic, slow, or cluttered homepage burns ad budget without yielding measurable enquiries.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- PRICING SECTION -->
-  <section id="pricing" class="section-padding" style="background-color: var(--gray-100);">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">Transparent Investment</span>
-        <h2 class="section-title">Website Design Packages</h2>
-        <p class="section-subtitle">Flexible solutions tailored to your business size, growth stage, and custom feature needs.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3>Starter</h3>
-            <div class="pricing-price">$2,500 <span>/ project</span></div>
-            <p>Ideal for startups and small businesses establishing a professional web presence.</p>
-          </div>
-          <ul class="pricing-features">
-            <li>Up to 5 Custom Pages</li>
-            <li>100% Mobile Responsive</li>
-            <li>Basic SEO Setup</li>
-            <li>Contact Form Integration</li>
-            <li>2 Weeks Post-Launch Support</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Get Started</a>
-        </div>
-
-        <div class="pricing-card popular">
-          <span class="popular-badge">Most Popular</span>
-          <div class="pricing-header">
-            <h3>Professional</h3>
-            <div class="pricing-price">$5,500 <span>/ project</span></div>
-            <p>Comprehensive solution for growing companies needing advanced marketing capabilities.</p>
-          </div>
-          <ul class="pricing-features">
-            <li>Up to 12 Custom Pages</li>
-            <li>Advanced UI/UX Animation</li>
-            <li>CMS Integration & Training</li>
-            <li>Full Schema & SEO Optimization</li>
-            <li>Speed Optimization (< 1.5s)</li>
-            <li>30 Days Post-Launch Support</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3>Enterprise</h3>
-            <div class="pricing-price">$12,000+ <span>/ project</span></div>
-            <p>Tailored web systems, complex web apps, and high-volume e-commerce stores.</p>
-          </div>
-          <ul class="pricing-features">
-            <li>Unlimited Custom Pages</li>
-            <li>Custom Web Applications</li>
-            <li>Third-party API Integrations</li>
-            <li>Dedicated UX Researcher</li>
-            <li>E-Commerce Architecture</li>
-            <li>90 Days Priority Support</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section class="section-padding">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">Client Praise</span>
-        <h2 class="section-title">What Our Clients Say</h2>
-        <p class="section-subtitle">Read how our web design solutions have helped businesses scale and stand out online.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Obara Digital transformed our outdated website into our most effective sales asset. Conversion rates jumped 45% in the first month post-launch!"</p>
-          <div class="author-info">
-            <div class="author-avatar"></div>
-            <div class="author-details">
-              <strong>Sarah Jenkins</strong>
-              <span>CMO, CloudFlow Tech</span>
+        <!-- 5. WHAT WE BUILD -->
+        <section class="section-padding" style="background: var(--bg-secondary);" id="website-design">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Core Expertise</span>
+                    <h2>What We Build</h2>
+                    <p>Engineered WordPress solutions tailored specifically to your operational goals and sales channels.</p>
+                </div>
+                <div class="build-grid">
+                    <div class="build-card reveal">
+                        <div class="build-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3>Business Websites</h3>
+                        <p>Professional websites designed to establish authority, present clear capabilities, and generate qualified enquiries.</p>
+                    </div>
+                    <div class="build-card reveal">
+                        <div class="build-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Service Websites</h3>
+                        <p>Structured specifically around specialized services, clearly mapping out customer pain points and conversion journeys.</p>
+                    </div>
+                    <div class="build-card reveal">
+                        <div class="build-icon"><i class="fa-solid fa-building-shield"></i></div>
+                        <h3>Corporate Websites</h3>
+                        <p>A sophisticated digital presence engineered for established firms requiring multi-tiered information design and seamless credibility.</p>
+                    </div>
+                    <div class="build-card reveal">
+                        <div class="build-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>Professional Websites</h3>
+                        <p>High-impact digital platforms for consultants, private advisors, executives, and personal commercial brands.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"The team's attention to detail, speed, and design precision blew us away. They delivered ahead of schedule and exceeded every expectation."</p>
-          <div class="author-info">
-            <div class="author-avatar"></div>
-            <div class="author-details">
-              <strong>Marcus Vance</strong>
-              <span>Founder, Elevate Retail</span>
+        <!-- 6. WEBSITE FEATURES / BENEFITS -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Standard Architecture</span>
+                    <h2>Built for Speed, Conversion & Scalability</h2>
+                    <p>Every website we develop is loaded with structural features that support business performance.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item reveal">
+                        <i class="fa-brands fa-wordpress feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Responsive WordPress Engine</h4>
+                            <p>Clean, custom WordPress implementation structured for long-term scalability and security.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-mobile-screen feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Mobile-First Experience</h4>
+                            <p>Pixel-perfect responsiveness across mobile devices, tablets, and massive desktop screens.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-bullseye feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Conversion-Focused Layout</h4>
+                            <p>Visual layout structures designed to direct user attention toward business actions.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-arrow-pointer feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Clear Calls-to-Action</h4>
+                            <p>Strategic CTA placement across all key interaction points to maximize lead capture.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-envelope-open-text feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Contact & Lead Forms</h4>
+                            <p>Reliable form systems configured with spam protection and immediate email routing.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-brands fa-whatsapp feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>WhatsApp Integration</h4>
+                            <p>Direct communication bridges allowing prospects to message your team instantly.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-bolt feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Fast-Loading Structure</h4>
+                            <p>Optimized image assets, efficient code execution, and lean page setups.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-magnifying-glass feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>SEO-Friendly Foundation</h4>
+                            <p>Clean semantic markup, header hierarchies, and site architecture ready for search engine indexing.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-chart-line feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Analytics Readiness</h4>
+                            <p>Integrated baseline code for Meta Pixel, Google Analytics, and conversion tracking tags.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-share-nodes feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Social Media Integration</h4>
+                            <p>Seamless cross-linking to your official social profiles and content channels.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-shield-halved feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Secure & Maintainable Setup</h4>
+                            <p>Hardened WordPress core configuration designed to prevent vulnerabilities.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item reveal">
+                        <i class="fa-solid fa-sliders feature-icon"></i>
+                        <div class="feature-content">
+                            <h4>Easy Content Management</h4>
+                            <p>Intuitive backend management allowing your internal team to update text and images with ease.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Working with Obara Digital felt like extending our internal team. Their strategic UI/UX insights were vital to our recent Series-A funding round."</p>
-          <div class="author-info">
-            <div class="author-avatar"></div>
-            <div class="author-details">
-              <strong>Elena Rostova</strong>
-              <span>Product Lead, FinTech Global</span>
+        <!-- 7. WORDPRESS ADVANTAGE -->
+        <section class="section-padding wp-section">
+            <div class="container">
+                <div class="wp-grid">
+                    <div class="wp-content reveal">
+                        <span class="eyebrow">Platform Advantage</span>
+                        <h2>Built on WordPress. Built for Growth.</h2>
+                        <p>WordPress powers over 40% of the web for a reason: it offers complete ownership, infinite flexibility, and zero platform lock-in.</p>
+                        <p>When properly architected, WordPress delivers an enterprise-grade base that evolves effortlessly alongside your marketing expansion.</p>
+                        <div class="wp-list">
+                            <div class="wp-list-item">
+                                <i class="fa-solid fa-check"></i>
+                                <div><strong>Full Ownership & Control:</strong> You own your website, data, and assets completely.</div>
+                            </div>
+                            <div class="wp-list-item">
+                                <i class="fa-solid fa-check"></i>
+                                <div><strong>Scalable Infrastructure:</strong> Add new landing pages, campaign funnels, or service arms without rebuilding.</div>
+                            </div>
+                            <div class="wp-list-item">
+                                <i class="fa-solid fa-check"></i>
+                                <div><strong>Marketing Tool Integration:</strong> Connect directly with CRMs, email marketing tools, and ad platform tracking.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-box-wrapper reveal">
+                        <div class="wp-box">
+                            <i class="fa-brands fa-wordpress"></i>
+                            <h3>Professional Implementation Matters</h3>
+                            <p>WordPress is a tool. In untrained hands, it becomes slow and bloated. Engineered properly, it becomes your company's most profitable digital asset.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+
+        <!-- 8. OUR WEBSITE BUILDING PROCESS -->
+        <section class="section-padding" id="process">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Methodology</span>
+                    <h2>From Idea to Launch</h2>
+                    <p>A structured, multi-phase engineering process ensuring every objective is met with precision.</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">01</div>
+                        <h3>Discover</h3>
+                        <p>Deep review of your target market, positioning goals, key offer dynamics, and explicit conversion requirements.</p>
+                    </div>
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">02</div>
+                        <h3>Plan</h3>
+                        <p>Structuring the sitemap, organizing user journeys, laying out page logic, and defining call-to-action paths.</p>
+                    </div>
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">03</div>
+                        <h3>Build</h3>
+                        <p>Developing the website in WordPress with clean code, desktop/mobile responsiveness, and brand styling.</p>
+                    </div>
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">04</div>
+                        <h3>Optimize</h3>
+                        <p>Finetuning performance speeds, form functionality, cross-device rendering, and interaction details.</p>
+                    </div>
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">05</div>
+                        <h3>Launch</h3>
+                        <p>Final domain configuration, SSL verification, security hardening, and production deployment.</p>
+                    </div>
+                    <div class="glass-card process-step reveal">
+                        <div class="step-number">06</div>
+                        <h3>Grow</h3>
+                        <p>Connecting your website to advertising channels, landing pages, and ongoing marketing campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CONVERSION-FOCUSED DESIGN SECTION -->
+        <section class="section-padding" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Strategic Architecture</span>
+                    <h2>A Beautiful Website Is Only the Beginning</h2>
+                    <p>Visual style opens the door, but strategic page architecture closes the lead. We structure every page to guide visitors toward specific commercial actions.</p>
+                </div>
+                <div class="conversion-framework reveal">
+                    <div class="framework-step">
+                        <div class="step-title">1. Attention</div>
+                        <p style="font-size: 0.85rem;">Clear Value Statement</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right framework-arrow"></i>
+                    <div class="framework-step">
+                        <div class="step-title">2. Trust</div>
+                        <p style="font-size: 0.85rem;">Professional Presentation</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right framework-arrow"></i>
+                    <div class="framework-step">
+                        <div class="step-title">3. Value</div>
+                        <p style="font-size: 0.85rem;">Service Capabilities</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right framework-arrow"></i>
+                    <div class="framework-step">
+                        <div class="step-title">4. Proof</div>
+                        <p style="font-size: 0.85rem;">Credibility Signals</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right framework-arrow"></i>
+                    <div class="framework-step">
+                        <div class="step-title">5. Action</div>
+                        <p style="font-size: 0.85rem;">Inquiry & Lead Capture</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. WEBSITE + MARKETING CONNECTION -->
+        <section class="section-padding" id="landing-pages">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Ecosystem Integration</span>
+                    <h2>Your Website Should Work With Your Marketing</h2>
+                    <p>A website shouldn't exist in isolation. It forms the core foundation of your online client acquisition system.</p>
+                </div>
+                <div class="marketing-diagram reveal">
+                    <div class="diagram-box" id="running-ads">
+                        <i class="fa-solid fa-rectangle-ad diagram-icon"></i>
+                        <h3>Paid Traffic Channels</h3>
+                        <p>Meta Ads, Google Search, Social Media & Referral Traffic</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right diagram-arrow" style="color: var(--accent-bright); font-size: 1.5rem;"></i>
+                    <div class="diagram-box active-box">
+                        <i class="fa-brands fa-wordpress diagram-icon"></i>
+                        <h3>WordPress Core Website</h3>
+                        <p>Authority Hub, Service Pages & Specialized Landing Pages</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right diagram-arrow" style="color: var(--accent-bright); font-size: 1.5rem;"></i>
+                    <div class="diagram-box">
+                        <i class="fa-solid fa-filter-circle-dollar diagram-icon"></i>
+                        <h3>Business Growth</h3>
+                        <p>Qualified Enquiries, Phone Calls & Client Conversions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. PORTFOLIO / WORK SHOWCASE -->
+        <section class="section-padding" style="background: var(--bg-secondary);" id="portfolio">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Work Showcase</span>
+                    <h2>Recent Website Architecture</h2>
+                    <p>Examine how we build tailored digital experiences for commercial clients.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card reveal">
+                        <div class="portfolio-img-placeholder">
+                            <i class="fa-solid fa-laptop-code fa-3x"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Real Estate & Property</span>
+                            <h3>Prime Property Hub</h3>
+                            <p>Designed to establish premium authority and streamline direct property consultation enquiries.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card reveal">
+                        <div class="portfolio-img-placeholder">
+                            <i class="fa-solid fa-chart-pie fa-3x"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Financial Consultancy</span>
+                            <h3>Apex Capital Advisory</h3>
+                            <p>Structured to build immediate corporate trust and capture high-value strategic consultation leads.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card reveal">
+                        <div class="portfolio-img-placeholder">
+                            <i class="fa-solid fa-briefcase fa-3x"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">B2B Professional Services</span>
+                            <h3>Vanguard Logistics Solutions</h3>
+                            <p>A multi-page corporate web application built to convert industrial corporate clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. WHO THIS SERVICE IS FOR -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Ideal Alignment</span>
+                    <h2>Is Your Business Ready for a Better Website?</h2>
+                    <p>We work best with companies that value professional presentation and structured lead generation.</p>
+                </div>
+                <div class="audience-grid">
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses launching a new brand</div>
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses with an outdated website</div>
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses moving from social media to a website</div>
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses preparing to run ad campaigns</div>
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses that need more enquiries</div>
+                    <div class="audience-item reveal"><i class="fa-solid fa-check"></i> Businesses that want a professional presence</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. OPTIONAL WEBSITE PACKAGES -->
+        <section class="section-padding" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Service Options</span>
+                    <h2>Website Development Packages</h2>
+                    <p>Select the baseline package that matches your current business requirements.</p>
+                </div>
+                <div class="packages-grid">
+                    <div class="glass-card package-card reveal">
+                        <div>
+                            <div class="package-header">
+                                <h3>Starter Website</h3>
+                                <p>For businesses that need a professional online foundation.</p>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-check"></i> Core Page Structure (Up to 5 Pages)</li>
+                                <li><i class="fa-solid fa-check"></i> Responsive WordPress Build</li>
+                                <li><i class="fa-solid fa-check"></i> Contact Form Integration</li>
+                                <li><i class="fa-solid fa-check"></i> WhatsApp Direct Button</li>
+                                <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+                            </ul>
+                        </div>
+                        <a href="#start" class="btn btn-secondary" style="width: 100%;">Request a Quote</a>
+                    </div>
+
+                    <div class="glass-card package-card featured reveal">
+                        <div>
+                            <div class="package-header">
+                                <span class="eyebrow" style="margin-bottom:0.5rem;">Recommended</span>
+                                <h3>Growth Website</h3>
+                                <p>For businesses that need a stronger conversion-focused site.</p>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-check"></i> Everything in Starter</li>
+                                <li><i class="fa-solid fa-check"></i> Expanded Pages Structure</li>
+                                <li><i class="fa-solid fa-check"></i> Conversion-Focused Sections</li>
+                                <li><i class="fa-solid fa-check"></i> Analytics & Pixel Setup</li>
+                                <li><i class="fa-solid fa-check"></i> Lead Generation Forms</li>
+                            </ul>
+                        </div>
+                        <a href="#start" class="btn btn-primary" style="width: 100%;">Request a Quote</a>
+                    </div>
+
+                    <div class="glass-card package-card reveal">
+                        <div>
+                            <div class="package-header">
+                                <h3>Premium Business</h3>
+                                <p>For businesses requiring a comprehensive online presence.</p>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fa-solid fa-check"></i> Custom WordPress Development</li>
+                                <li><i class="fa-solid fa-check"></i> Advanced Page Architecture</li>
+                                <li><i class="fa-solid fa-check"></i> Conversion Strategy Alignment</li>
+                                <li><i class="fa-solid fa-check"></i> Marketing Stack Integration</li>
+                                <li><i class="fa-solid fa-check"></i> Performance Speed Optimization</li>
+                            </ul>
+                        </div>
+                        <a href="#start" class="btn btn-secondary" style="width: 100%;">Let's Discuss Your Website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. FAQ SECTION -->
+        <section class="section-padding" id="faq">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">Clarity</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Direct answers to standard development questions.</p>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">What type of websites do you build? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>We specialize strictly in commercial WordPress websites for businesses, service providers, corporate entities, and professional brands who need credibility, clear structure, and lead generation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you build websites using WordPress? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. WordPress is our primary platform because it offers unmatched stability, customizability, marketing integration capabilities, and full backend ownership for your business.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can you redesign my existing website? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We evaluate your current content and structure, migrate what works, and completely rebuild the design and codebase to match modern web standards and conversion principles.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Will my website work on mobile? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. Mobile optimization is a core component of our technical build process. Your website will render smoothly on mobile devices, tablets, and desktops.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can you integrate WhatsApp? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes, we can integrate direct WhatsApp action channels allowing prospective clients to immediately message your team with a single click.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can my website be used with Meta or Google Ads? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. Our websites are built with fast loading speeds, clear call-to-action paths, and tracking code readiness specifically to handle paid traffic from ad campaigns.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I update my website myself? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. Once launched, you will have complete administrative access to update text, post new content, update service details, and manage lead records easily.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How long does a website take to build? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Most standard business builds are completed within 2 to 4 weeks, depending on scope, page volume, and content readiness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. FINAL CTA (STRICT MOBILE & DESKTOP STRUCTURE) -->
+        <section class="cta-section" id="start">
+            <div class="container">
+                <div class="cta-card-wrapper">
+                    <div class="cta-grid">
+                        
+                        <!-- LEFT COLUMN -->
+                        <div class="cta-left">
+                            <span class="eyebrow">READY TO BUILD BETTER?</span>
+                            <h2>Your Next Website Should Work as Hard as Your Business.</h2>
+                            <p>Let's build a professional WordPress website that gives your business the credibility, structure, and conversion path it needs to grow.</p>
+                            
+                            <div class="cta-benefits">
+                                <div class="cta-benefit-item">
+                                    <i class="fa-solid fa-circle-check"></i> Professional WordPress Development
+                                </div>
+                                <div class="cta-benefit-item">
+                                    <i class="fa-solid fa-circle-check"></i> Conversion-Focused Structure
+                                </div>
+                                <div class="cta-benefit-item">
+                                    <i class="fa-solid fa-circle-check"></i> Built for Your Marketing Goals
+                                </div>
+                            </div>
+
+                            <div class="cta-direct-contact">
+                                <p>Prefer to talk directly?</p>
+                                <a href="https://wa.me/" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN / FORM -->
+                        <div class="cta-right">
+                            <div class="contact-form-card">
+                                <h3>Tell Us About Your Website</h3>
+                                <form id="websiteForm">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" class="form-control" placeholder="john@company.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone / WhatsApp</label>
+                                        <input type="tel" id="phone" class="form-control" placeholder="+234..." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="businessName">Business Name</label>
+                                        <input type="text" id="businessName" class="form-control" placeholder="Your Business Ltd." required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website">Current Website (optional)</label>
+                                        <input type="url" id="website" class="form-control" placeholder="https://yourwebsite.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="type">What type of website do you need?</label>
+                                        <select id="type" class="form-control" required>
+                                            <option value="" disabled selected>Select an option</option>
+                                            <option value="business">New Business Website</option>
+                                            <option value="redesign">Website Redesign</option>
+                                            <option value="landing">Campaign Landing Page</option>
+                                            <option value="other">Other WordPress Service</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goals">Tell us about your business and website goals</label>
+                                        <textarea id="goals" class="form-control" placeholder="Briefly describe what you offer and what you need your website to achieve..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" style="width: 100%;">Request Website Strategy</button>
+                                    <p class="form-disclaimer">We'll review your requirements and get back to you.</p>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 16. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        Obara Digital<span class="logo-dot"></span>
+                    </a>
+                    <p>Websites, landing pages, and advertising built to help businesses grow.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#website-design">Website Design</a>
+                        <a href="#landing-pages">Landing Pages</a>
+                        <a href="#running-ads">Running Ads</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#process">Process</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#website-design">WordPress Development</a>
+                        <a href="#website-design">Business Websites</a>
+                        <a href="#landing-pages">Landing Pages</a>
+                        <a href="#running-ads">Ad Campaign Setup</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i> Direct Messaging Available
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i> contact@obaradigital.com
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Obara Digital. All Rights Reserved.</p>
+                <p>Built with WordPress Engineering Excellence.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- FAQ SECTION -->
-  <section id="faq" class="section-padding" style="background-color: var(--gray-100);">
-    <div class="container">
-      <div class="text-center">
-        <span class="badge">Got Questions?</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-subtitle">Everything you need to know about our web design services and process.</p>
-      </div>
+    <!-- JAVASCRIPT ANIMATIONS & INTERACTIONS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
 
-      <div class="faq-wrapper">
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>How long does a website design project typically take?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Most bespoke website design projects take between 4 to 8 weeks depending on project scope, complexity, required integrations, and feedback iteration cycles.</p>
-          </div>
-        </div>
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    const icon = mobileToggle.querySelector('i');
+                    if (navMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                    } else {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
 
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Will my new website be mobile-friendly and optimized for SEO?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Absolute compliance with responsive mobile standards and core technical SEO best practices (semantic HTML, fast loading speeds, meta tags, and structured data) is built into every project we touch.</p>
-          </div>
-        </div>
+            // Close mobile menu on link click
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    if (mobileToggle) {
+                        const icon = mobileToggle.querySelector('i');
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
 
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do you offer custom web design or use pre-made templates?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We build 100% custom website designs tailored from scratch to match your specific brand identity, user journey, and conversion targets. We never use restrictive pre-made off-the-shelf templates.</p>
-          </div>
-        </div>
+            // Scroll Reveal Animation via IntersectionObserver
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
 
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Will I be able to update content myself after launch?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes, we build our sites on user-friendly content management systems (CMS) and provide full video training so your team can easily update text, images, and blog posts without technical assistance.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            const observer = new IntersectionObserver((entries, observerInstance) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observerInstance.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
 
-  <!-- CONTACT FORM SECTION -->
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <div class="contact-container">
-        <div class="contact-info">
-          <h2>Ready to Elevate Your Web Presence?</h2>
-          <p>Fill out the form to schedule a free strategy consultation. Let’s discuss your goals and build something extraordinary together.</p>
-          <div style="margin-top: 2rem;">
-            <p><strong>Email Us:</strong> hello@obaradigital.com</p>
-            <p style="margin-top: 0.5rem;"><strong>Call Us:</strong> +1 (800) 555-0199</p>
-            <p style="margin-top: 0.5rem;"><strong>Office:</strong> 100 Innovation Way, Austin, TX</p>
-          </div>
-        </div>
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
 
-        <form id="contactForm" onsubmit="handleFormSubmit(event)">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
-          </div>
+            // FAQ Accordion Toggle
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    // Close all open FAQs
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
-          </div>
+                    // Open clicked one if it wasn't already open
+                    if (!isActive) {
+                        faqItem.classList.add('active');
+                    }
+                });
+            });
 
-          <div class="form-group">
-            <label for="serviceType">Service Interested In</label>
-            <select id="serviceType" class="form-control">
-              <option value="custom-design">Custom Web Design</option>
-              <option value="e-commerce">E-Commerce Solution</option>
-              <option value="redesign">Website Redesign</option>
-              <option value="enterprise">Enterprise Web App</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Project Details</label>
-            <textarea id="message" class="form-control" placeholder="Tell us about your project goals, timeline, and budget..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTERNAL LINKS SECTION -->
-  <section class="internal-links">
-    <div class="container">
-      <div class="links-grid">
-        <div class="link-group">
-          <h5>Core Services</h5>
-          <ul>
-            <li><a href="https://obaradigital.com/services/website-design/">Website Design</a></li>
-            <li><a href="https://obaradigital.com/services/ui-ux-design/">UI/UX Design</a></li>
-            <li><a href="https://obaradigital.com/services/ecommerce/">E-Commerce Solutions</a></li>
-            <li><a href="https://obaradigital.com/services/seo/">Search Engine Optimization</a></li>
-          </ul>
-        </div>
-
-        <div class="link-group">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="https://obaradigital.com/about/">About Obara Digital</a></li>
-            <li><a href="https://obaradigital.com/portfolio/">Case Studies</a></li>
-            <li><a href="https://obaradigital.com/careers/">Careers</a></li>
-            <li><a href="https://obaradigital.com/contact/">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="link-group">
-          <h5>Resources</h5>
-          <ul>
-            <li><a href="https://obaradigital.com/blog/">Digital Strategy Blog</a></li>
-            <li><a href="https://obaradigital.com/guides/web-design-cost/">Web Design Pricing Guide</a></li>
-            <li><a href="https://obaradigital.com/tools/seo-checker/">Free SEO Checker</a></li>
-          </ul>
-        </div>
-
-        <div class="link-group">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="https://obaradigital.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="https://obaradigital.com/terms-of-service/">Terms of Service</a></li>
-            <li><a href="https://obaradigital.com/accessibility/">Accessibility Statement</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Obara Digital. All rights reserved. Premium Custom Website Design Services.</p>
-    </div>
-  </footer>
-
-  <!-- JAVASCRIPT -->
-  <script>
-    // FAQ Accordion Functionality
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        const isActive = faqItem.classList.contains('active');
-        
-        // Close all faq items
-        document.querySelectorAll('.faq-item').forEach(item => {
-          item.classList.remove('active');
+            // Form Submit Interception
+            const websiteForm = document.getElementById('websiteForm');
+            if (websiteForm) {
+                websiteForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you for submitting your website requirements. The Obara Digital team will review your project and get back to you shortly.');
+                    websiteForm.reset();
+                });
+            }
         });
-
-        // Toggle clicked item
-        if (!isActive) {
-          faqItem.classList.add('active');
-        }
-      });
-    });
-
-    // Mobile Navigation Toggle
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (mobileBtn) {
-      mobileBtn.addEventListener('click', () => {
-        if (navLinks.style.display === 'flex') {
-          navLinks.style.display = 'none';
-        } else {
-          navLinks.style.display = 'flex';
-          navLinks.style.flexDirection = 'column';
-          navLinks.style.position = 'absolute';
-          navLinks.style.top = '80px';
-          navLinks.style.left = '0';
-          navLinks.style.width = '100%';
-          navLinks.style.backgroundColor = '#ffffff';
-          navLinks.style.padding = '2rem';
-          navLinks.style.boxShadow = '0 10px 15px rgba(0,0,0,0.1)';
-        }
-      });
-    }
-
-    // Contact Form Handler
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('fullName').value;
-      alert(`Thank you, ${name}! Your request has been received. Our team will contact you within 24 hours.`);
-      document.getElementById('contactForm').reset();
-    }
-  </script>
+    </script>
 </body>
 </html>
